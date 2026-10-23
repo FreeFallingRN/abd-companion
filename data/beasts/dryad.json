@@ -9,44 +9,51 @@
     "life",
     "earth"
   ],
+  "lore": "Niri is a Royal Dryad contracted in Chapter 77. Possesses plant, life, and spiritual healing affinities.",
   "milestones": [
     {
-      "minChapter": 77,
-      "maxChapter": 90,
-      "starRank": 2,
-      "subRank": "high",
-      "bloodlineTier": "royal",
+      "species": "Royal Dryad Sprout",
       "bloodlinePurity": 40,
+      "bloodlineTier": "royal",
+      "bondPercentage": 50,
+      "bondStage": "blood",
       "cognitionStage": "juvenile",
       "iq": 90,
-      "bondStage": "blood",
-      "bondPercentage": 50,
+      "maxChapter": 90,
+      "minChapter": 77,
+      "traits": [
+        { "name": "Fast Regeneration", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Continuous health and stamina restoration when near terrain" },
+        { "name": "Tough Body", "sharingStatus": "partial", "sharedPercent": 15, "tamerEffect": "Bark-textured skin layer deflecting basic physical strikes" },
+        { "name": "Half-Spirit Body", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Evolution requirement)" },
+        { "name": "High Mana Regeneration", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "+50% natural ambient mana recovery" }
+      ],
+      "starRank": 2,
+      "subRank": "high",
       "unlockedSkillIds": [
         "natures_heal",
         "vine_estranglement",
         "spike_pores"
       ],
-      "sharedTraits": [
-        {
-          "traitId": "fast_regeneration",
-          "name": "Fast Regeneration",
-          "effect": "Passive physical and mana regeneration scaled to surrounding plant life",
-          "transferredToTamer": true,
-          "unlockedChapter": 65
-        }
-      ]
+      "_key": "m_77_dryad"
     },
     {
-      "minChapter": 91,
-      "maxChapter": null,
-      "starRank": 3,
-      "subRank": "high",
-      "bloodlineTier": "royal",
+      "species": "Royal Dryad",
       "bloodlinePurity": 85,
+      "bloodlineTier": "royal",
+      "bondPercentage": 85,
+      "bondStage": "blood",
       "cognitionStage": "adolescent",
       "iq": 125,
-      "bondStage": "blood",
-      "bondPercentage": 85,
+      "maxChapter": null,
+      "minChapter": 91,
+      "traits": [
+        { "name": "Fast Regeneration", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Rapid cellular and spiritual recovery channeled from flora" },
+        { "name": "Tough Body", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Bark-textured skin granting Peak 4★ natural physical durability (Ch. 474)" },
+        { "name": "Half-Spirit Body", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "50% immunity to toxins, paralysis, curses, and soul erosion" },
+        { "name": "High Mana Regeneration", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Continuous high-output ambient mana replenishment" }
+      ],
+      "starRank": 3,
+      "subRank": "high",
       "unlockedSkillIds": [
         "natures_heal",
         "vine_estranglement",
@@ -54,22 +61,7 @@
         "solar_beam",
         "chlorophyll_barrier"
       ],
-      "sharedTraits": [
-        {
-          "traitId": "fast_regeneration",
-          "name": "Fast Regeneration",
-          "effect": "Continuous health and stamina restoration",
-          "transferredToTamer": true,
-          "unlockedChapter": 65
-        },
-        {
-          "traitId": "half_spirit_body",
-          "name": "Half-Spirit Body",
-          "effect": "50% immunity to environmental toxins, curses, and soul erosion",
-          "transferredToTamer": true,
-          "unlockedChapter": 95
-        }
-      ]
+      "_key": "m_91_dryad"
     }
   ]
 }

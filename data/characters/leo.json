@@ -3,164 +3,134 @@
   "id": "leo",
   "name": "Leonel (Leo)",
   "title": "Dual-Soul Pact Master / Fief Sovereign",
-  "role": "protagonist",
-  "talents": [
-    {
-      "id": "bestiary_of_souls",
-      "name": "Bestiary of Souls (Primordial Talent)",
-      "starRank": 10,
-      "description": "Allows instant core synthesis, hidden evolution recipe diagnostics, skill extraction and soul-bond resonance.",
-      "unlockedChapter": 1
-    },
-    {
-      "id": "beast_space_dominion",
-      "name": "Beast Space Dominion",
-      "starRank": 8,
-      "description": "Expansive pocket dimension that accelerates recovery, bloodline absorption, and resting beast mana regeneration.",
-      "unlockedChapter": 28
-    }
-  ],
+  "soulRank": "rare",
+  "primaryAffinity": "Dual Soul Anomaly",
+  "biography": "Pact Master of the Bestiary of Souls.",
   "milestones": [
     {
-      "minChapter": 1,
-      "maxChapter": 25,
-      "level": 3,
       "attributes": {
-        "vitality": 3.2,
-        "strength": 2.8,
-        "agility": 3.0,
-        "stamina": 3.5,
+        "agility": 3,
         "intelligence": 1.2,
-        "maxMana": 96.0,
-        "unassignedPoints": 0
-      },
-      "soulProfile": {
-        "mortalSoulRank": "common",
-        "mortalSoulValue": 1,
-        "primordialSoulValue": 7,
-        "combinedMultiplier": 8,
-        "statSoftCapPercent": 10,
-        "maxContractSlots": 1,
-        "skillCapacity": 7
+        "maxMana": 96,
+        "stamina": 3.5,
+        "strength": 2.8,
+        "unassignedPoints": 0,
+        "vitality": 3.2
       },
       "contractedBeastIds": [
         "shyra"
       ],
+      "copiedSkillIds": [],
+      "level": 3,
+      "maxChapter": 25,
+      "minChapter": 1,
       "personalSkillIds": [
         "stealth",
         "critical_strike"
       ],
-      "copiedSkillIds": []
+      "soulProfile": {
+        "combinedMultiplier": 8,
+        "maxContractSlots": 1,
+        "mortalSoulRank": "common",
+        "mortalSoulValue": 1,
+        "primordialSoulValue": 7,
+        "skillCapacity": 7,
+        "statSoftCapPercent": 10
+      },
+      "_key": "char_m_1_leo"
     },
     {
-      "minChapter": 26,
-      "maxChapter": 70,
-      "level": 12,
       "attributes": {
-        "vitality": 14.5,
-        "strength": 12.0,
-        "agility": 15.0,
-        "stamina": 16.0,
+        "agility": 15,
         "intelligence": 8.5,
-        "maxMana": 765.0,
-        "unassignedPoints": 4
-      },
-      "soulProfile": {
-        "mortalSoulRank": "uncommon",
-        "mortalSoulValue": 2,
-        "primordialSoulValue": 7,
-        "combinedMultiplier": 9,
-        "statSoftCapPercent": 20,
-        "maxContractSlots": 2,
-        "skillCapacity": 9
+        "maxMana": 765,
+        "stamina": 16,
+        "strength": 12,
+        "unassignedPoints": 4,
+        "vitality": 14.5
       },
       "contractedBeastIds": [
         "shyra",
-        "krik",
+        "kazz",
         "dryad"
       ],
+      "copiedSkillIds": [
+        "shadow_pounce"
+      ],
+      "level": 12,
+      "maxChapter": 70,
+      "minChapter": 26,
       "personalSkillIds": [
         "stealth",
         "critical_strike",
         "mana_sense"
       ],
-      "copiedSkillIds": [
-        "shadow_pounce"
-      ]
+      "soulProfile": {
+        "combinedMultiplier": 9,
+        "maxContractSlots": 2,
+        "mortalSoulRank": "uncommon",
+        "mortalSoulValue": 2,
+        "primordialSoulValue": 7,
+        "skillCapacity": 9,
+        "statSoftCapPercent": 20
+      },
+      "_key": "char_m_26_leo"
     },
     {
-      "minChapter": 71,
-      "maxChapter": 120,
-      "level": 24,
       "attributes": {
-        "vitality": 38.0,
-        "strength": 34.0,
-        "agility": 42.0,
-        "stamina": 40.0,
-        "intelligence": 25.0,
-        "maxMana": 2500.0,
-        "unassignedPoints": 8
-      },
-      "soulProfile": {
-        "mortalSoulRank": "rare",
-        "mortalSoulValue": 3,
-        "primordialSoulValue": 7,
-        "combinedMultiplier": 10,
-        "statSoftCapPercent": 30,
-        "maxContractSlots": 3,
-        "skillCapacity": 11
+        "agility": 42,
+        "intelligence": 25,
+        "maxMana": 2500,
+        "stamina": 40,
+        "strength": 34,
+        "unassignedPoints": 8,
+        "vitality": 38
       },
       "contractedBeastIds": [
         "shyra",
-        "krik",
+        "kazz",
         "dryad",
         "agnivar"
       ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "natures_heal",
+        "obsidian_armor"
+      ],
+      "level": 24,
+      "maxChapter": 120,
+      "minChapter": 71,
       "personalSkillIds": [
         "stealth",
         "critical_strike",
         "mana_sense",
         "blade_mastery"
       ],
-      "copiedSkillIds": [
-        "shadow_pounce",
-        "natures_heal",
-        "obsidian_armor"
-      ]
+      "soulProfile": {
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "skillCapacity": 11,
+        "statSoftCapPercent": 30
+      },
+      "_key": "char_m_71_leo"
     },
     {
-      "minChapter": 121,
-      "maxChapter": null,
-      "level": 45,
       "attributes": {
-        "vitality": 95.0,
-        "strength": 88.0,
-        "agility": 105.0,
-        "stamina": 98.0,
-        "intelligence": 72.0,
-        "maxMana": 7920.0,
-        "unassignedPoints": 16
-      },
-      "soulProfile": {
-        "mortalSoulRank": "super_rare",
-        "mortalSoulValue": 4,
-        "primordialSoulValue": 7,
-        "combinedMultiplier": 11,
-        "statSoftCapPercent": 40,
-        "maxContractSlots": 4,
-        "skillCapacity": 13
+        "agility": 105,
+        "intelligence": 72,
+        "maxMana": 7920,
+        "stamina": 98,
+        "strength": 88,
+        "unassignedPoints": 16,
+        "vitality": 95
       },
       "contractedBeastIds": [
         "shyra",
         "dryad",
         "agnivar"
-      ],
-      "personalSkillIds": [
-        "stealth",
-        "critical_strike",
-        "mana_sense",
-        "blade_mastery",
-        "spatial_blink"
       ],
       "copiedSkillIds": [
         "shadow_pounce",
@@ -168,7 +138,27 @@
         "obsidian_armor",
         "infernal_breath",
         "shadow_domain"
-      ]
+      ],
+      "level": 45,
+      "maxChapter": null,
+      "minChapter": 121,
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery",
+        "spatial_blink"
+      ],
+      "soulProfile": {
+        "combinedMultiplier": 11,
+        "maxContractSlots": 4,
+        "mortalSoulRank": "super_rare",
+        "mortalSoulValue": 4,
+        "primordialSoulValue": 7,
+        "skillCapacity": 13,
+        "statSoftCapPercent": 40
+      },
+      "_key": "char_m_121_leo"
     }
   ]
 }

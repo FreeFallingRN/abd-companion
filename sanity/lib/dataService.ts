@@ -1,9 +1,10 @@
 import { client } from './client';
 import { isDemoMode } from '../env';
+import { urlForImage } from './image';
 
 // Import local JSON datasets as guaranteed offline fallback
 import shyraData from '@/data/beasts/shyra.json';
-import krikData from '@/data/beasts/krik.json';
+import kazzData from '@/data/beasts/kazz.json';
 import dryadData from '@/data/beasts/dryad.json';
 import agnivarData from '@/data/beasts/agnivar.json';
 import ashiraData from '@/data/beasts/ashira.json';
@@ -18,12 +19,25 @@ import mihoData from '@/data/characters/miho.json';
 import skillsData from '@/data/mechanics/skills.json';
 import soulRanksData from '@/data/mechanics/soul_ranks.json';
 import bloodlinesData from '@/data/mechanics/bloodlines.json';
+import traitsData from '@/data/mechanics/traits.json';
 
 import academiesData from '@/data/world/academies.json';
 import dangerZonesData from '@/data/world/danger_zones.json';
 import chaptersData from '@/data/chapters.json';
 
+export interface MilestoneTrait {
+  name: string;
+  sharingStatus?: 'locked' | 'partial' | 'full';
+  sharedPercent?: number;
+  tamerEffect?: string;
+}
+
 export interface Milestone {
+  _key?: string;
+  species?: string;
+  portrait?: any;
+  portraitAssetId?: string;
+  imageUrl?: string;
   minChapter: number;
   maxChapter: number | null;
   starRank: number;
@@ -35,13 +49,7 @@ export interface Milestone {
   bondStage: string;
   bondPercentage: number;
   unlockedSkillIds: string[];
-  sharedTraits?: Array<{
-    traitId?: string;
-    name: string;
-    effect: string;
-    transferredToTamer?: boolean;
-    unlockedChapter?: number;
-  }>;
+  traits?: Array<string | MilestoneTrait>;
 }
 
 export interface BeastRecord {
@@ -58,6 +66,7 @@ export interface BeastRecord {
 }
 
 export interface CharacterMilestone {
+  _key?: string;
   minChapter?: number;
   maxChapter?: number | null;
   chapter?: number;
@@ -110,7 +119,7 @@ export const LOCAL_BEASTS: BeastRecord[] = [
   zelutData as unknown as BeastRecord,
   agnivarData as unknown as BeastRecord,
   ashiraData as unknown as BeastRecord,
-  krikData as unknown as BeastRecord,
+  kazzData as unknown as BeastRecord,
 ];
 
 export const LOCAL_CHARACTERS: CharacterRecord[] = [
@@ -121,10 +130,87 @@ export const LOCAL_CHARACTERS: CharacterRecord[] = [
 
 export const LOCAL_CHAPTERS = chaptersData;
 export const LOCAL_SKILLS = skillsData;
+export const LOCAL_TRAITS = traitsData;
 export const LOCAL_SOUL_RANKS = soulRanksData;
 export const LOCAL_BLOODLINES = bloodlinesData;
 export const LOCAL_ACADEMIES = academiesData;
 export const LOCAL_DANGER_ZONES = dangerZonesData;
+
+export interface TraitRecord {
+  id: string;
+  name: string;
+  element?: string;
+  description: string;
+  unlockedChapter?: number;
+}
+
+export function getTraitByName(nameOrId: string): TraitRecord | undefined {
+  if (!nameOrId) return undefined;
+  const search = nameOrId.trim().toLowerCase();
+  return (LOCAL_TRAITS as TraitRecord[]).find(
+    (t) => t.name.toLowerCase() === search || t.id.toLowerCase() === search.replace(/\s+/g, '_')
+  );
+}
+
+export function getTraitById(traitId: string): TraitRecord | undefined {
+  return getTraitByName(traitId);
+}
+
+export interface ProcessedTrait {
+  id: string;
+  name: string;
+  effect: string;
+  sharingStatus: 'locked' | 'partial' | 'full';
+  sharedPercent?: number;
+  tamerEffect?: string;
+  isSharedWithTamer: boolean;
+}
+
+export function getMilestoneTraits(milestone?: Milestone | null): ProcessedTrait[] {
+  if (!milestone || !milestone.traits || milestone.traits.length === 0) return [];
+
+  return milestone.traits.map((t) => {
+    const rawName = typeof t === 'string' ? t : t.name;
+    const found = getTraitByName(rawName);
+    const traitObj = typeof t === 'object' && t !== null ? t : undefined;
+
+    const sharingStatus = traitObj?.sharingStatus || 'locked';
+    const isShared = sharingStatus === 'full' || sharingStatus === 'partial';
+
+    return {
+      id: found?.id || rawName.toLowerCase().replace(/\s+/g, '_'),
+      name: found?.name || rawName,
+      effect: found?.description || 'Specialty trait.',
+      sharingStatus,
+      sharedPercent: traitObj?.sharedPercent,
+      tamerEffect: traitObj?.tamerEffect,
+      isSharedWithTamer: isShared,
+    };
+  });
+}
+
+export function getBeastImageUrl(beast: BeastRecord, milestone?: Milestone | null): string | undefined {
+  if (milestone) {
+    if (milestone.portrait) {
+      const url = urlForImage(milestone.portrait);
+      if (url) return url;
+    }
+    if (milestone.portraitAssetId) {
+      const url = urlForImage(milestone.portraitAssetId);
+      if (url) return url;
+    }
+    if (milestone.imageUrl) return milestone.imageUrl;
+  }
+  if (beast.portrait) {
+    const url = urlForImage(beast.portrait);
+    if (url) return url;
+  }
+  if ((beast as any).portraitAssetId) {
+    const url = urlForImage((beast as any).portraitAssetId);
+    if (url) return url;
+  }
+  return beast.imageUrl;
+}
 
 /**
  * Progression & Anti-Spoiler filter for a beast given a selected chapter
@@ -138,6 +224,8 @@ export function getBeastSnapshotAtChapter(beast: BeastRecord, chapter: number) {
       name: 'Undiscovered Beast',
       species: 'Unknown Domain Creature',
       currentMilestone: null,
+      portrait: null,
+      imageUrl: undefined,
     };
   }
 
@@ -152,8 +240,10 @@ export function getBeastSnapshotAtChapter(beast: BeastRecord, chapter: number) {
     isUnlocked: true,
     contractChapter: beast.contractChapter,
     name: beast.name,
-    species: beast.species,
+    species: matchingMilestone?.species || beast.species,
     currentMilestone: matchingMilestone,
+    portrait: matchingMilestone?.portrait || matchingMilestone?.portraitAssetId || beast.portrait || (beast as any).portraitAssetId,
+    imageUrl: getBeastImageUrl(beast, matchingMilestone),
   };
 }
 

@@ -1,6 +1,6 @@
 import { defineConfig } from 'sanity';
 import { structureTool } from 'sanity/structure';
-import { visionTool } from '@sanity/vision';
+import { presentationTool } from 'sanity/presentation';
 import { schemaTypes } from './sanity/schemaTypes';
 import { projectId, dataset } from './sanity/env';
 
@@ -14,7 +14,7 @@ export default defineConfig({
 
   plugins: [
     structureTool({
-      title: 'Grimoire Codex (Data Editor)',
+      title: 'Data Editor',
       structure: (S) =>
         S.list()
           .title('Dominion Codex Sections')
@@ -53,6 +53,14 @@ export default defineConfig({
                   .defaultOrdering([{ field: 'tier', direction: 'asc' }])
               ),
             S.listItem()
+              .title('🧬 Beast Traits & Specialties')
+              .child(
+                S.documentList()
+                  .title('Contracted & Shared Traits')
+                  .filter('_type == "trait"')
+                  .defaultOrdering([{ field: 'name', direction: 'asc' }])
+              ),
+            S.listItem()
               .title('🗺️ Realm Geography & Danger Zones')
               .child(
                 S.documentList()
@@ -61,10 +69,11 @@ export default defineConfig({
               ),
           ]),
     }),
-    visionTool({
-      title: 'GROQ Playground (Dev)',
-      defaultApiVersion: 'v2025-02-19',
-      defaultDataset: dataset || 'production',
+    presentationTool({
+      title: 'Visual Editing',
+      previewUrl: {
+        preview: '/',
+      },
     }),
   ],
 

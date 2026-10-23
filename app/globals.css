@@ -904,6 +904,173 @@ html.light .app-header {
   font-weight: 700;
 }
 
+/* Beast Traits & Tamer Synergy Section */
+.beast-traits-section {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--outline-variant);
+}
+
+.traits-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.traits-header-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--on-surface);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.traits-header-counter {
+  font-size: 11px;
+  font-weight: 700;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 12px;
+  padding: 2px 8px;
+}
+
+.traits-chips-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trait-chip {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--surface-container-highest);
+  border: 1px solid var(--outline-variant);
+  transition: all 0.2s ease;
+}
+
+.trait-chip.shared-full {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.06);
+}
+
+.trait-chip.shared-partial {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.06);
+}
+
+.trait-chip.locked {
+  opacity: 0.7;
+  border-color: rgba(148, 163, 184, 0.25);
+}
+
+.trait-chip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.trait-chip-name {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--on-surface);
+}
+
+.trait-status-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.badge-full {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.badge-partial {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.badge-locked {
+  background: rgba(100, 116, 139, 0.2);
+  color: #94a3b8;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+.trait-chip-effect {
+  font-size: 12px;
+  color: var(--on-surface-variant);
+  line-height: 1.4;
+}
+
+.trait-tamer-effect {
+  font-size: 12px;
+  margin-top: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(255, 183, 125, 0.1);
+  border-left: 3px solid var(--primary);
+  color: var(--on-surface);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.tamer-label {
+  color: var(--primary);
+  font-weight: 800;
+  margin-right: 4px;
+}
+
+.codex-traits-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.codex-traits-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--on-surface-variant);
+  margin-right: 2px;
+}
+
+.codex-trait-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--outline-variant);
+}
+
+.codex-trait-tag.shared-full {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.codex-trait-tag.shared-partial {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+.codex-trait-tag.locked {
+  background: var(--surface-container);
+  color: var(--on-surface-variant);
+  opacity: 0.75;
+}
+
 /* ==========================================================================
    Tab 2: Beast Codex Components
    ========================================================================== */
@@ -1551,7 +1718,82 @@ html.light .bottom-nav {
   border: 1px solid var(--outline-variant);
   border-radius: 10px;
   padding: 12px 14px;
+  transition: all 0.2s ease;
 }
+.milestone-item.current-stage {
+  border-color: var(--primary);
+  box-shadow: 0 0 16px rgba(255, 183, 125, 0.15);
+}
+
+.milestone-card-layout {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+@media (max-width: 580px) {
+  .milestone-card-layout {
+    flex-direction: column;
+  }
+}
+
+.milestone-thumb-wrap {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1.5px solid var(--primary);
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+.milestone-thumb-wrap:hover {
+  transform: scale(1.03);
+}
+
+.milestone-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.milestone-thumb-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fbbf24;
+  font-size: 9px;
+  font-weight: 800;
+  text-align: center;
+  padding: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.milestone-thumb-placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  border: 1px dashed var(--outline-variant);
+  background: var(--surface-container-low);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.milestone-content-block {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
 .milestone-top {
   display: flex;
   justify-content: space-between;
@@ -1561,9 +1803,32 @@ html.light .bottom-nav {
 }
 .milestone-top .ch-range {
   color: var(--primary);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 .milestone-top .star-rank {
   color: var(--primary);
+}
+
+.active-stage-pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(255, 183, 125, 0.2);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  padding: 1px 8px;
+  vertical-align: middle;
+}
+
+.milestone-species-title {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
 }
 
 .milestone-details {
@@ -1580,6 +1845,92 @@ html.light .bottom-nav {
   color: var(--secondary);
   margin-top: 4px;
   font-weight: 700;
+}
+
+.milestone-traits-container {
+  margin-top: 10px;
+  border-top: 1px dashed var(--outline-variant);
+  padding-top: 8px;
+}
+
+.milestone-traits-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--on-surface);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.milestone-traits-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.milestone-trait-card {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant);
+  transition: all 0.2s ease;
+}
+
+.milestone-trait-card.shared-full {
+  border-left: 3px solid #10b981;
+}
+
+.milestone-trait-card.shared-partial {
+  border-left: 3px solid #f59e0b;
+}
+
+.milestone-trait-card.locked {
+  border-left: 3px solid #64748b;
+  opacity: 0.8;
+}
+
+.milestone-trait-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.milestone-trait-name {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--on-surface);
+}
+
+.milestone-trait-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.milestone-trait-desc {
+  font-size: 12px;
+  color: var(--on-surface-variant);
+  line-height: 1.4;
+}
+
+.milestone-trait-tamer {
+  font-size: 12px;
+  margin-top: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(255, 183, 125, 0.1);
+  border-left: 3px solid var(--primary);
+  color: var(--on-surface);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.tamer-synergy-tag {
+  color: var(--primary);
+  font-weight: 800;
+  margin-right: 4px;
 }
 
 .milestone-trait-text {

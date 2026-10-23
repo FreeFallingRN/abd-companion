@@ -7,39 +7,33 @@
   "elementAffinity": [
     "earth"
   ],
+  "lore": "Howl is a living mountain colossus contracted in Chapter 120. Possesses massive mineral density and infinite stone growth.",
   "milestones": [
     {
-      "minChapter": 120,
-      "maxChapter": null,
-      "starRank": 3,
-      "subRank": "low",
-      "bloodlineTier": "mortal",
+      "species": "Cragveil Colossus",
       "bloodlinePurity": 50,
+      "bloodlineTier": "mortal",
+      "bondPercentage": 52,
+      "bondStage": "chain",
       "cognitionStage": "juvenile",
       "iq": 70,
-      "bondStage": "chain",
-      "bondPercentage": 52,
+      "maxChapter": null,
+      "minChapter": 120,
+      "traits": [
+        { "name": "Endless Growth", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Colossus mineral accumulation (Beast only)" },
+        { "name": "Controlled Weight Flow", "sharingStatus": "partial", "sharedPercent": 40, "tamerEffect": "Redistributes kinetic impact to walk lighter or hit harder" },
+        { "name": "Titanic Endurance", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "+50% stamina capacity and shock dispersal across tissues" },
+        { "name": "Geo-Resonance Sense", "sharingStatus": "partial", "sharedPercent": 30, "tamerEffect": "Vibrational detection of subterranean footsteps and stone shift" },
+        { "name": "Natural Habitat Harmonisation", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Micro-ecosystem creation (Beast only)" }
+      ],
+      "starRank": 3,
+      "subRank": "low",
       "unlockedSkillIds": [
         "controlled_weight_flow",
         "geo_resonance_sense",
         "titanic_endurance"
       ],
-      "sharedTraits": [
-        {
-          "traitId": "endless_growth",
-          "name": "Endless Growth",
-          "effect": "Continuous physical mass and mineral density accumulation over time",
-          "transferredToTamer": false,
-          "unlockedChapter": 120
-        },
-        {
-          "traitId": "titanic_endurance",
-          "name": "Titanic Endurance",
-          "effect": "Massive stamina capacity and kinetic shock absorption",
-          "transferredToTamer": true,
-          "unlockedChapter": 130
-        }
-      ]
+      "_key": "m_120_howl"
     }
   ]
 }

@@ -7,39 +7,30 @@
   "elementAffinity": [
     "ice"
   ],
+  "lore": "Zelut Whisk is a Frostwhisk Mouse contracted in Chapter 426. Masters rodent swarm networking and cryogenic concealment.",
   "milestones": [
     {
-      "minChapter": 426,
-      "maxChapter": null,
-      "starRank": 2,
-      "subRank": "peak",
-      "bloodlineTier": "super",
+      "species": "Frostwhisk Mouse",
       "bloodlinePurity": 82,
+      "bloodlineTier": "super",
+      "bondPercentage": 88,
+      "bondStage": "blood",
       "cognitionStage": "adolescent",
       "iq": 105,
-      "bondStage": "blood",
-      "bondPercentage": 88,
+      "maxChapter": null,
+      "minChapter": 426,
+      "traits": [
+        { "name": "Swarm Command", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Sensory feedback from coordinated rodent scouts" },
+        { "name": "Iceveil Chill", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Thermal signature masking and internal body heat suppression" }
+      ],
+      "starRank": 2,
+      "subRank": "peak",
       "unlockedSkillIds": [
         "swarm_bond",
         "iceveil_hide",
         "essence_harvesting"
       ],
-      "sharedTraits": [
-        {
-          "traitId": "swarm_command",
-          "name": "Swarm Command",
-          "effect": "Commands and coordinates rodent swarms for scouting, reconnaissance, and battlefield corpse harvesting.",
-          "transferredToTamer": true,
-          "unlockedChapter": 426
-        },
-        {
-          "traitId": "iceveil_chill",
-          "name": "Iceveil Chill",
-          "effect": "Sub-zero body temperature control that masks heat signatures and cools the tamer in extreme thermal conditions.",
-          "transferredToTamer": true,
-          "unlockedChapter": 426
-        }
-      ]
+      "_key": "m_426_zelut"
     }
   ]
 }

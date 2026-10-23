@@ -9,57 +9,56 @@
     "darkness",
     "shadow"
   ],
+  "lore": "Nyxa is an Eclipse Sun Direwolf contracted in Chapter 117. Carries the royal Solmora Lunareth Imperium Lineage.",
   "milestones": [
     {
-      "minChapter": 117,
-      "maxChapter": 160,
-      "starRank": 2,
-      "subRank": "middle",
-      "bloodlineTier": "royal",
+      "species": "Eclipse Direwolf Pup",
       "bloodlinePurity": 10,
+      "bloodlineTier": "royal",
+      "bondPercentage": 44,
+      "bondStage": "chain",
       "cognitionStage": "adolescent",
       "iq": 105,
-      "bondStage": "chain",
-      "bondPercentage": 44,
+      "maxChapter": 160,
+      "minChapter": 117,
+      "traits": [
+        { "name": "Sun-Blessed Physique", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant until eclipse baptism" },
+        { "name": "Moon-Shadow Instincts", "sharingStatus": "partial", "sharedPercent": 25, "tamerEffect": "+25% nocturnal perception and evasion" },
+        { "name": "Triple-Aura Ferocity", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" },
+        { "name": "Celestial Polarity Surge", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" }
+      ],
+      "starRank": 2,
+      "subRank": "middle",
       "unlockedSkillIds": [
         "astral_aura_weave",
         "lunar_blink"
       ],
-      "sharedTraits": [
-        {
-          "traitId": "moon_shadow_instincts",
-          "name": "Moon-Shadow Instincts",
-          "effect": "Passive reflex and evasion amplification in dim lighting",
-          "transferredToTamer": false,
-          "unlockedChapter": 117
-        }
-      ]
+      "_key": "m_117_nyxa"
     },
     {
-      "minChapter": 161,
-      "maxChapter": null,
-      "starRank": 3,
-      "subRank": "pseudo",
-      "bloodlineTier": "royal",
+      "species": "Eclipse Sun Direwolf",
       "bloodlinePurity": 35,
+      "bloodlineTier": "royal",
+      "bondPercentage": 65,
+      "bondStage": "blood",
       "cognitionStage": "adolescent",
       "iq": 120,
-      "bondStage": "blood",
-      "bondPercentage": 65,
+      "maxChapter": null,
+      "minChapter": 161,
+      "traits": [
+        { "name": "Sun-Blessed Physique", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "+50% daylight kinetic empowerment and vitality" },
+        { "name": "Moon-Shadow Instincts", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Absolute nocturnal reflex sharpening and shadow blending" },
+        { "name": "Triple-Aura Ferocity", "sharingStatus": "partial", "sharedPercent": 45, "tamerEffect": "Tripartite intimidation aura projecting mental suppression" },
+        { "name": "Celestial Polarity Surge", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Alternates polar radiant light and void disruption" }
+      ],
+      "starRank": 3,
+      "subRank": "pseudo",
       "unlockedSkillIds": [
         "astral_aura_weave",
         "lunar_blink",
         "celestial_polarity_surge"
       ],
-      "sharedTraits": [
-        {
-          "traitId": "sun_blessed_physique",
-          "name": "Sun-Blessed Physique",
-          "effect": "Daytime physical strength and kinetic force empowerment",
-          "transferredToTamer": true,
-          "unlockedChapter": 170
-        }
-      ]
+      "_key": "m_161_nyxa"
     }
   ]
 }

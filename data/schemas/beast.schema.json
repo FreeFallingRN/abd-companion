@@ -64,7 +64,7 @@
           "bondStage",
           "bondPercentage",
           "unlockedSkillIds",
-          "sharedTraits"
+          "traits"
         ],
         "properties": {
           "minChapter": {
@@ -141,35 +141,41 @@
               "type": "string"
             }
           },
-          "sharedTraits": {
+          "species": {
+            "type": "string"
+          },
+          "portraitAssetId": {
+            "type": "string"
+          },
+          "traits": {
             "type": "array",
             "items": {
-              "type": "object",
-              "required": [
-                "traitId",
-                "name",
-                "effect",
-                "transferredToTamer",
-                "unlockedChapter"
-              ],
-              "properties": {
-                "traitId": {
+              "oneOf": [
+                {
                   "type": "string"
                 },
-                "name": {
-                  "type": "string"
-                },
-                "effect": {
-                  "type": "string"
-                },
-                "transferredToTamer": {
-                  "type": "boolean"
-                },
-                "unlockedChapter": {
-                  "type": "integer",
-                  "minimum": 1
+                {
+                  "type": "object",
+                  "required": ["name"],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "sharingStatus": {
+                      "type": "string",
+                      "enum": ["locked", "partial", "full"]
+                    },
+                    "sharedPercent": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100
+                    },
+                    "tamerEffect": {
+                      "type": "string"
+                    }
+                  }
                 }
-              }
+              ]
             }
           }
         }

@@ -3,45 +3,39 @@
   "id": "miho",
   "name": "Miho",
   "title": "Spirit Reinforcer & Core Channeler",
-  "role": "ally",
-  "talents": [
-    {
-      "id": "spirit_reinforcer",
-      "name": "Spirit Reinforcer",
-      "starRank": 6,
-      "description": "Contracts beast cores directly into spirit space, releasing twice the standard elemental output without holding the physical core.",
-      "unlockedChapter": 211
-    }
-  ],
+  "soulRank": "rare",
+  "primaryAffinity": "Dual Soul Anomaly",
+  "biography": "Pact Master of the Bestiary of Souls.",
   "milestones": [
     {
-      "minChapter": 200,
-      "maxChapter": null,
-      "level": 20,
       "attributes": {
-        "vitality": 22.0,
-        "strength": 16.0,
-        "agility": 32.0,
-        "stamina": 25.0,
-        "intelligence": 38.0,
-        "maxMana": 1140.0,
-        "unassignedPoints": 4
-      },
-      "soulProfile": {
-        "mortalSoulRank": "rare",
-        "mortalSoulValue": 3,
-        "primordialSoulValue": 0,
-        "combinedMultiplier": 3,
-        "statSoftCapPercent": 30,
-        "maxContractSlots": 3,
-        "skillCapacity": 11
+        "agility": 32,
+        "intelligence": 38,
+        "maxMana": 1140,
+        "stamina": 25,
+        "strength": 16,
+        "unassignedPoints": 4,
+        "vitality": 22
       },
       "contractedBeastIds": [],
+      "copiedSkillIds": [],
+      "level": 20,
+      "maxChapter": null,
+      "minChapter": 200,
       "personalSkillIds": [
         "spirit_reinforce",
         "core_resonance"
       ],
-      "copiedSkillIds": []
+      "soulProfile": {
+        "combinedMultiplier": 3,
+        "maxContractSlots": 3,
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 0,
+        "skillCapacity": 11,
+        "statSoftCapPercent": 30
+      },
+      "_key": "char_m_200_miho"
     }
   ]
 }

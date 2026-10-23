@@ -10,6 +10,8 @@ import {
   LOCAL_SKILLS,
   LOCAL_CHAPTERS,
   getBeastSnapshotAtChapter,
+  getMilestoneTraits,
+  getBeastImageUrl,
   BeastRecord,
   CharacterRecord,
   fetchAllBeasts,
@@ -389,7 +391,7 @@ export default function HomePage() {
                 const snapshot = getBeastSnapshotAtChapter(beast, currentChapter);
                 const isUnlocked = snapshot.isUnlocked;
                 const m = snapshot.currentMilestone;
-                const beastImg = (beast.portrait && urlForImage(beast.portrait)) || beast.imageUrl;
+                const beastImg = getBeastImageUrl(beast, m);
 
                 if (!isUnlocked) {
                   return (
@@ -432,8 +434,8 @@ export default function HomePage() {
                               e.stopPropagation();
                               setSelectedImage({
                                 url: beastImg,
-                                title: beast.name,
-                                subtitle: `${beast.species} • Contract Ch. ${beast.contractChapter}`,
+                                title: `${beast.name} (${snapshot.species})`,
+                                subtitle: `★ ${m?.starRank} (${m?.subRank}) • Contract Ch. ${beast.contractChapter}`,
                               });
                             }}
                             title="Click to view full image"
@@ -447,7 +449,7 @@ export default function HomePage() {
                         )}
                         <div>
                           <h4 className="companion-name">{beast.name}</h4>
-                          <span className="companion-species">{beast.species}</span>
+                          <span className="companion-species">{snapshot.species}</span>
                         </div>
                       </div>
                       <span className="rank-badge">
@@ -500,11 +502,54 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                    {m?.sharedTraits && m.sharedTraits.length > 0 && (
-                      <div className="trait-highlight">
-                        ✨ Shared Trait: {m.sharedTraits[0].name}
-                      </div>
-                    )}
+                    {/* All Beast Traits & Tamer Sharing Breakdown */}
+                    {(() => {
+                      const allTraits = getMilestoneTraits(m);
+                      if (allTraits.length === 0) return null;
+                      const sharedTraits = allTraits.filter((t) => t.isSharedWithTamer);
+
+                      return (
+                        <div className="beast-traits-section">
+                          <div className="traits-header-row">
+                            <span className="traits-header-title">
+                              <span className="material-symbols-outlined" style={{ fontSize: '15px' }}>tune</span>
+                              Beast Traits ({allTraits.length})
+                            </span>
+                            <span className="traits-header-counter">
+                              {sharedTraits.length} Shared with Leo
+                            </span>
+                          </div>
+
+                          <div className="traits-chips-grid">
+                            {allTraits.map((t) => {
+                              const isFull = t.sharingStatus === 'full';
+                              const isPartial = t.sharingStatus === 'partial';
+                              return (
+                                <div
+                                  key={t.id}
+                                  className={`trait-chip ${isFull ? 'shared-full' : isPartial ? 'shared-partial' : 'locked'}`}
+                                >
+                                  <div className="trait-chip-header">
+                                    <span className="trait-chip-name">{t.name}</span>
+                                    <span className={`trait-status-badge ${isFull ? 'badge-full' : isPartial ? 'badge-partial' : 'badge-locked'}`}>
+                                      {isFull && '✨ 100% Shared'}
+                                      {isPartial && `⚡ ${t.sharedPercent || 50}% Shared`}
+                                      {!isFull && !isPartial && '🔒 Beast Only'}
+                                    </span>
+                                  </div>
+                                  <div className="trait-chip-effect">{t.effect}</div>
+                                  {t.tamerEffect && (
+                                    <div className="trait-tamer-effect">
+                                      <span className="tamer-label">Leo Benefit:</span> {t.tamerEffect}
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    })()}
                   </article>
                 );
               })}
@@ -615,7 +660,7 @@ export default function HomePage() {
               {filteredBeasts.map((beast) => {
                 const snapshot = getBeastSnapshotAtChapter(beast, currentChapter);
                 const m = snapshot.currentMilestone;
-                const beastImg = (beast.portrait && urlForImage(beast.portrait)) || beast.imageUrl;
+                const beastImg = getBeastImageUrl(beast, m);
                 return (
                   <article
                     key={beast.id}
@@ -640,8 +685,8 @@ export default function HomePage() {
                               e.stopPropagation();
                               setSelectedImage({
                                 url: beastImg,
-                                title: beast.name,
-                                subtitle: `${beast.species} • Contract Ch. ${beast.contractChapter}`,
+                                title: `${beast.name} (${snapshot.species})`,
+                                subtitle: `★ ${m?.starRank || 1} (${m?.subRank || 'low'}) • Contract Ch. ${beast.contractChapter}`,
                               });
                             }}
                             title="Click to view full image"
@@ -655,7 +700,7 @@ export default function HomePage() {
                         )}
                         <div>
                           <h4 className="companion-name">{beast.name}</h4>
-                          <span className="companion-species">{beast.species}</span>
+                          <span className="companion-species">{snapshot.species}</span>
                         </div>
                       </div>
                       <span className="rank-badge">
@@ -669,7 +714,28 @@ export default function HomePage() {
                         </span>
                       ))}
                     </div>
-                    <p className="codex-lore">
+                    {/* Trait Strip */}
+                    {(() => {
+                      const traits = getMilestoneTraits(m);
+                      if (traits.length === 0) return null;
+                      return (
+                        <div className="codex-traits-summary">
+                          <span className="codex-traits-label">Traits:</span>
+                          {traits.map((t) => (
+                            <span
+                              key={t.id}
+                              className={`codex-trait-tag ${t.sharingStatus === 'full' ? 'shared-full' : t.sharingStatus === 'partial' ? 'shared-partial' : 'locked'}`}
+                              title={`${t.name}: ${t.effect}${t.tamerEffect ? ` | Leo: ${t.tamerEffect}` : ''}`}
+                            >
+                              {t.sharingStatus === 'full' ? '✨ ' : t.sharingStatus === 'partial' ? '⚡ ' : '🔒 '}
+                              {t.name}
+                              {t.sharingStatus === 'partial' && ` (${t.sharedPercent}%)`}
+                            </span>
+                          ))}
+                        </div>
+                      );
+                    })()}
+                    <p className="codex-lore" style={{ marginTop: '8px' }}>
                       {beast.lore || `${beast.name} is a canonical companion within the Dominion.`}
                     </p>
                   </article>
@@ -788,6 +854,67 @@ export default function HomePage() {
                       </span>
                     </div>
                   </div>
+
+                  {/* Canonical Tamer Progression Milestones */}
+                  <h3 className="dossier-section-heading" style={{ marginTop: '1.75rem' }}>
+                    Tamer Progression Milestones ({leoChar?.milestones?.length || 4} Canonical Stages)
+                  </h3>
+                  <div className="milestones-list">
+                    {(leoChar?.milestones || []).map((m, idx) => {
+                      const minCh = m.minChapter ?? m.chapter ?? 1;
+                      const maxCh = m.maxChapter;
+                      const isActive =
+                        minCh <= currentChapter &&
+                        (maxCh === null || maxCh === undefined || maxCh >= currentChapter);
+                      const isPast = maxCh !== null && maxCh !== undefined && maxCh < currentChapter;
+                      const isFuture = minCh > currentChapter;
+
+                      return (
+                        <div
+                          key={m._key || idx}
+                          className="milestone-item"
+                          style={{
+                            borderLeft: isActive ? '3px solid var(--primary)' : '1px solid var(--outline-variant)',
+                            background: isActive ? 'rgba(129, 140, 248, 0.08)' : undefined,
+                            opacity: isFuture ? 0.6 : 1,
+                          }}
+                        >
+                          <div className="milestone-top">
+                            <span className="ch-range">
+                              Chapters {minCh} – {maxCh ? maxCh : 'Ongoing'}
+                            </span>
+                            <span className="star-rank" style={{ color: isActive ? 'var(--primary)' : undefined, fontWeight: 700 }}>
+                              {isActive ? '⚡ ACTIVE STAGE' : isPast ? '✓ Completed' : '🔒 Future'} • Level {m.level || 1}
+                            </span>
+                          </div>
+
+                          {m.soulProfile && (
+                            <div style={{ color: 'var(--secondary)', fontWeight: 700, fontSize: '0.85rem', marginBottom: '4px' }}>
+                              Soul Rank: {m.soulProfile.mortalSoulRank?.replace(/_/g, ' ').toUpperCase()} (Mortal Value {m.soulProfile.mortalSoulValue} + Primordial {m.soulProfile.primordialSoulValue}) • Contract Slots: {m.soulProfile.maxContractSlots}
+                            </div>
+                          )}
+
+                          {m.attributes && (
+                            <div className="milestone-details">
+                              VIT: <strong>{m.attributes.vitality}</strong> • STR: <strong>{m.attributes.strength}</strong> • AGI: <strong>{m.attributes.agility}</strong> • STA: <strong>{m.attributes.stamina}</strong> • INT: <strong>{m.attributes.intelligence}</strong>
+                            </div>
+                          )}
+
+                          {m.contractedBeastIds && m.contractedBeastIds.length > 0 && (
+                            <div className="milestone-bond-text">
+                              Contracted Beasts: {m.contractedBeastIds.map((id) => id.toUpperCase()).join(' • ')}
+                            </div>
+                          )}
+
+                          {m.copiedSkillIds && m.copiedSkillIds.length > 0 && (
+                            <div className="milestone-trait-text" style={{ color: 'var(--tertiary)' }}>
+                              ⚔️ Copied Beast Skills: {m.copiedSkillIds.map((s) => s.replace(/_/g, ' ')).join(', ')}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </section>
             ) : (
@@ -832,6 +959,37 @@ export default function HomePage() {
                   <span className="badge-tag secondary">Affinity: Light / Life</span>
                   <span className="badge-tag tertiary">Soul Rank: Super Rare (Value 4)</span>
                 </div>
+
+                {/* Lily Progression Milestones */}
+                {lilyChar?.milestones && lilyChar.milestones.length > 0 && (
+                  <div style={{ marginTop: '1.5rem' }}>
+                    <h4 style={{ fontSize: '13px', fontWeight: 700, color: 'var(--on-surface-variant)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>
+                      Progression Milestones
+                    </h4>
+                    <div className="milestones-list">
+                      {lilyChar.milestones.map((m, idx) => (
+                        <div key={m._key || idx} className="milestone-item">
+                          <div className="milestone-top">
+                            <span className="ch-range">
+                              Chapters {m.minChapter ?? 1} – {m.maxChapter ? m.maxChapter : 'Ongoing'}
+                            </span>
+                            <span className="star-rank">Level {m.level || 1}</span>
+                          </div>
+                          {m.attributes && (
+                            <div className="milestone-details">
+                              VIT: <strong>{m.attributes.vitality}</strong> • INT: <strong>{m.attributes.intelligence}</strong> • AGI: <strong>{m.attributes.agility}</strong> • Max Mana: <strong>{m.attributes.maxMana}</strong>
+                            </div>
+                          )}
+                          {m.personalSkillIds && m.personalSkillIds.length > 0 && (
+                            <div className="milestone-trait-text">
+                              ✨ Skills: {m.personalSkillIds.map((s) => s.replace(/_/g, ' ')).join(', ')}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </section>
             )}
           </div>
@@ -1013,40 +1171,46 @@ export default function HomePage() {
               </button>
             </div>
 
-            {/* Beast Artwork in Modal (Supports Sanity Studio uploaded images) */}
-            {((selectedBeast.portrait && urlForImage(selectedBeast.portrait)) || selectedBeast.imageUrl) && (
-              <div
-                style={{
-                  width: '100%',
-                  height: '240px',
-                  borderRadius: '14px',
-                  overflow: 'hidden',
-                  marginBottom: '1.25rem',
-                  border: '1.5px solid var(--primary)',
-                  cursor: 'pointer',
-                  position: 'relative',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-                }}
-                onClick={() => {
-                  const imgUrl = (selectedBeast.portrait && urlForImage(selectedBeast.portrait)) || selectedBeast.imageUrl;
-                  if (imgUrl) {
+            {/* Beast Artwork in Modal (Prioritizes Active Form at Current Chapter, Falls back to Base) */}
+            {(() => {
+              const activeSnapshot = getBeastSnapshotAtChapter(selectedBeast, currentChapter);
+              const activeImg = getBeastImageUrl(selectedBeast, activeSnapshot.currentMilestone);
+              if (!activeImg) return null;
+
+              return (
+                <div
+                  style={{
+                    width: '100%',
+                    height: '240px',
+                    borderRadius: '14px',
+                    overflow: 'hidden',
+                    marginBottom: '1.25rem',
+                    border: '1.5px solid var(--primary)',
+                    cursor: 'pointer',
+                    position: 'relative',
+                    boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+                  }}
+                  onClick={() => {
                     setSelectedImage({
-                      url: imgUrl,
-                      title: selectedBeast.name,
-                      subtitle: `${selectedBeast.species} • Contract Chapter ${selectedBeast.contractChapter}`,
+                      url: activeImg,
+                      title: `${selectedBeast.name} (${activeSnapshot.species})`,
+                      subtitle: `Evolutionary Form at Ch. ${currentChapter} • Contract Ch. ${selectedBeast.contractChapter}`,
                     });
-                  }
-                }}
-                title="Click to view full image"
-              >
-                <img
-                  src={(selectedBeast.portrait && urlForImage(selectedBeast.portrait)) || selectedBeast.imageUrl}
-                  alt={selectedBeast.name}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-                <span className="avatar-zoom-hint material-symbols-outlined">zoom_in</span>
-              </div>
-            )}
+                  }}
+                  title="Click to view full image"
+                >
+                  <img
+                    src={activeImg}
+                    alt={selectedBeast.name}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                  <div style={{ position: 'absolute', bottom: '8px', left: '10px', background: 'rgba(0,0,0,0.75)', borderRadius: '6px', padding: '3px 10px', fontSize: '11px', color: '#fbbf24', fontWeight: 700 }}>
+                    Active Form (Ch. {currentChapter}): {activeSnapshot.species}
+                  </div>
+                  <span className="avatar-zoom-hint material-symbols-outlined">zoom_in</span>
+                </div>
+              );
+            })()}
 
             <div className="modal-meta-row">
               Contract Chapter: <strong>Chapter {selectedBeast.contractChapter}</strong> • Element:{' '}
@@ -1058,30 +1222,110 @@ export default function HomePage() {
             </h4>
 
             <div className="milestones-list">
-              {selectedBeast.milestones.map((m, idx) => (
-                <div key={idx} className="milestone-item">
-                  <div className="milestone-top">
-                    <span className="ch-range">
-                      Chapters {m.minChapter} – {m.maxChapter ? m.maxChapter : 'Ongoing'}
-                    </span>
-                    <span className="star-rank">
-                      ★ {m.starRank} ({m.subRank})
-                    </span>
-                  </div>
-                  <div className="milestone-details">
-                    Bloodline: <strong>{m.bloodlineTier} ({m.bloodlinePurity}%)</strong> • Cognition:{' '}
-                    <strong>{m.cognitionStage}</strong> (IQ {m.iq ?? '—'})
-                  </div>
-                  <div className="milestone-bond-text">
-                    Bond: {m.bondStage.toUpperCase()} ({m.bondPercentage}%)
-                  </div>
-                  {m.sharedTraits && m.sharedTraits.length > 0 && (
-                    <div className="milestone-trait-text">
-                      ✨ Shared Trait: {m.sharedTraits[0].name} — {m.sharedTraits[0].effect}
+              {selectedBeast.milestones.map((m, idx) => {
+                const milestoneImg = getBeastImageUrl(selectedBeast, m);
+                const isFormSpecific = !!((m.portrait && urlForImage(m.portrait)) || m.imageUrl || (m.portraitAssetId && urlForImage(m.portraitAssetId)));
+                const traits = getMilestoneTraits(m);
+                const minCh = m.minChapter;
+                const maxCh = m.maxChapter;
+                const isCurrentStage = minCh <= currentChapter && (maxCh === null || maxCh === undefined || maxCh >= currentChapter);
+
+                return (
+                  <div key={idx} className={`milestone-item ${isCurrentStage ? 'current-stage' : ''}`}>
+                    <div className="milestone-card-layout">
+                      {milestoneImg ? (
+                        <div
+                          className="milestone-thumb-wrap"
+                          onClick={() =>
+                            setSelectedImage({
+                              url: milestoneImg,
+                              title: `${selectedBeast.name} — ${m.species || 'Evolutionary Form'}`,
+                              subtitle: `Stage ★ ${m.starRank} (${m.subRank}) • Chapters ${m.minChapter}–${m.maxChapter || 'Ongoing'}`,
+                            })
+                          }
+                          title="Click to view full evolutionary illustration"
+                        >
+                          <img
+                            src={milestoneImg}
+                            alt={m.species || selectedBeast.name}
+                            className="milestone-thumb-img"
+                          />
+                          <span className="milestone-thumb-tag">★ {m.starRank} {isFormSpecific ? 'Form' : 'Base'}</span>
+                        </div>
+                      ) : (
+                        <div className="milestone-thumb-placeholder" title="Base form portrait used. You can upload an evolutionary form portrait in Data Editor / Studio!">
+                          <span className="material-symbols-outlined" style={{ fontSize: '24px', color: 'var(--outline)' }}>image</span>
+                          <span style={{ fontSize: '10px', color: 'var(--outline)', fontWeight: 700 }}>Base Form</span>
+                        </div>
+                      )}
+
+                      <div className="milestone-content-block">
+                        <div className="milestone-top">
+                          <span className="ch-range">
+                            Chapters {m.minChapter} – {m.maxChapter ? m.maxChapter : 'Ongoing'}
+                            {isCurrentStage && <span className="active-stage-pill">⚡ Active at Ch. {currentChapter}</span>}
+                          </span>
+                          <span className="star-rank">
+                            ★ {m.starRank} ({m.subRank})
+                          </span>
+                        </div>
+
+                        {m.species && (
+                          <div className="milestone-species-title">
+                            Form: <strong>{m.species}</strong>
+                          </div>
+                        )}
+
+                        <div className="milestone-details">
+                          Bloodline: <strong>{m.bloodlineTier} ({m.bloodlinePurity}%)</strong> • Cognition:{' '}
+                          <strong>{m.cognitionStage}</strong> (IQ {m.iq ?? '—'})
+                        </div>
+                        <div className="milestone-bond-text">
+                          Bond: {m.bondStage.toUpperCase()} ({m.bondPercentage}%)
+                        </div>
+
+                        {/* Complete Traits & Leo Sharing Breakdown */}
+                        {traits.length > 0 && (
+                          <div className="milestone-traits-container">
+                            <div className="milestone-traits-label">
+                              Inherent Traits & Leo Sharing ({traits.length}):
+                            </div>
+                            <div className="milestone-traits-grid">
+                              {traits.map((t) => {
+                                const isFull = t.sharingStatus === 'full';
+                                const isPartial = t.sharingStatus === 'partial';
+                                return (
+                                  <div
+                                    key={t.id}
+                                    className={`milestone-trait-card ${isFull ? 'shared-full' : isPartial ? 'shared-partial' : 'locked'}`}
+                                  >
+                                    <div className="milestone-trait-header">
+                                      <span className="milestone-trait-name">{t.name}</span>
+                                      <span
+                                        className={`milestone-trait-badge ${isFull ? 'badge-full' : isPartial ? 'badge-partial' : 'badge-locked'}`}
+                                      >
+                                        {isFull && '✨ 100% Shared with Leo'}
+                                        {isPartial && `⚡ Shared with Leo (${t.sharedPercent || 50}%)`}
+                                        {!isFull && !isPartial && '🔒 Beast Only (Locked)'}
+                                      </span>
+                                    </div>
+                                    <div className="milestone-trait-desc">{t.effect}</div>
+                                    {t.tamerEffect && (
+                                      <div className="milestone-trait-tamer">
+                                        <span className="tamer-synergy-tag">Leo Benefit:</span> {t.tamerEffect}
+                                      </div>
+                                    )}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  )}
-                </div>
-              ))}
+                  </div>
+                );
+              })}
             </div>
 
             <div className="modal-footer">

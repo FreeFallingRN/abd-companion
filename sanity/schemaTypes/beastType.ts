@@ -69,6 +69,21 @@ export const beastType = defineType({
           title: 'Milestone Stage',
           fields: [
             defineField({
+              name: 'species',
+              title: 'Species / Evolutionary Form Name',
+              type: 'string',
+              description: 'The species name for this stage (e.g. Obsidian Panther Cub -> Obsidian Panther -> Void-Obsidian Panther).',
+            }),
+            defineField({
+              name: 'portrait',
+              title: 'Evolutionary Form Illustration / Portrait',
+              type: 'image',
+              description: 'Specific artwork for this evolutionary form (e.g. cub vs adult vs cosmic void). Falls back to main beast portrait if blank.',
+              options: {
+                hotspot: true,
+              },
+            }),
+            defineField({
               name: 'minChapter',
               title: 'Unlocked at Chapter (minChapter)',
               type: 'number',
@@ -169,22 +184,92 @@ export const beastType = defineType({
               of: [{ type: 'string' }],
             }),
             defineField({
-              name: 'sharedTraits',
-              title: 'Shared Traits Transferred to Tamer',
+              name: 'traits',
+              title: 'Specialty Traits & Tamer Bond Sharing',
               type: 'array',
+              description: 'Traits possessed by the beast in this stage, including how much Leo unlocks or shares through their bond.',
               of: [
                 {
                   type: 'object',
-                  name: 'sharedTrait',
+                  name: 'beastMilestoneTrait',
+                  title: 'Beast Trait',
                   fields: [
-                    defineField({ name: 'name', title: 'Trait Name', type: 'string' }),
-                    defineField({ name: 'effect', title: 'Trait Effect', type: 'string' }),
-                    defineField({ name: 'unlockedChapter', title: 'Unlocked Chapter', type: 'number' }),
+                    defineField({
+                      name: 'name',
+                      title: 'Trait Name',
+                      type: 'string',
+                      validation: (Rule) => Rule.required(),
+                    }),
+                    defineField({
+                      name: 'sharingStatus',
+                      title: 'Sharing with Leo (Tamer)',
+                      type: 'string',
+                      options: {
+                        list: [
+                          { title: '🔒 Locked (Beast Only — 0% transferred)', value: 'locked' },
+                          { title: '⚡ Partially Shared (Unlocking with Bond)', value: 'partial' },
+                          { title: '✨ Fully Unlocked / Transferred (100% Shared)', value: 'full' },
+                        ],
+                        layout: 'radio',
+                      },
+                      initialValue: 'locked',
+                    }),
+                    defineField({
+                      name: 'sharedPercent',
+                      title: 'Shared Transfer Percentage (%)',
+                      type: 'number',
+                      description: 'e.g. 10%, 20%, 70%, 90%, or 100%. Leave 0 or blank if Locked.',
+                      validation: (Rule) => Rule.min(0).max(100),
+                    }),
+                    defineField({
+                      name: 'tamerEffect',
+                      title: 'Tamer Synergy / Shared Benefit',
+                      type: 'string',
+                      description: 'Optional note on how this manifests on Leo (e.g. "Bark-textured skin with Peak 4★ durability").',
+                    }),
                   ],
+                  preview: {
+                    select: {
+                      name: 'name',
+                      sharingStatus: 'sharingStatus',
+                      sharedPercent: 'sharedPercent',
+                    },
+                    prepare({ name, sharingStatus, sharedPercent }) {
+                      let badge = '🔒 Beast Only';
+                      if (sharingStatus === 'full') badge = '✨ Fully Shared (100%)';
+                      else if (sharingStatus === 'partial') badge = `⚡ Partial (${sharedPercent || 50}%)`;
+                      return {
+                        title: name || 'Unnamed Trait',
+                        subtitle: badge,
+                      };
+                    },
+                  },
                 },
               ],
             }),
           ],
+          preview: {
+            select: {
+              starRank: 'starRank',
+              subRank: 'subRank',
+              minChapter: 'minChapter',
+              maxChapter: 'maxChapter',
+              species: 'species',
+              bloodlineTier: 'bloodlineTier',
+              media: 'portrait',
+            },
+            prepare({ starRank, subRank, minChapter, maxChapter, species, bloodlineTier, media }) {
+              const rankFormatted = starRank ? `${starRank}★ ${subRank ? subRank.toUpperCase() : ''}` : (subRank || 'Stage');
+              const chapterRange = maxChapter ? `Ch. ${minChapter}–${maxChapter}` : `Ch. ${minChapter}+`;
+              const title = species ? `${species} (${rankFormatted})` : rankFormatted;
+              const subtitle = `${chapterRange} • Bloodline: ${bloodlineTier || 'Standard'}`;
+              return {
+                title,
+                subtitle,
+                media,
+              };
+            },
+          },
         },
       ],
     }),

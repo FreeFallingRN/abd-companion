@@ -57,22 +57,11 @@ async function run() {
           console.log(`    -> Missing _key on milestone minChapter=${m.minChapter}. Assigning ${milestoneKey}`);
         }
 
-        const updatedTraits = (m.sharedTraits || []).map((t, tIdx) => {
-          const traitKey = t._key || generateKey(`trait_${t.traitId || tIdx}`);
-          if (!t._key) {
-            needsUpdate = true;
-            console.log(`      -> Missing _key on sharedTrait '${t.name || t.traitId}'. Assigning ${traitKey}`);
-          }
-          return {
-            ...t,
-            _key: traitKey,
-          };
-        });
-
+        const { sharedTraits, unlockedTraitIds, ...restMilestone } = m;
         return {
-          ...m,
+          ...restMilestone,
           _key: milestoneKey,
-          sharedTraits: updatedTraits,
+          traits: m.traits || [],
         };
       });
 

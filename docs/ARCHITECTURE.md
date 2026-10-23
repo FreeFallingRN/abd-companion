@@ -146,9 +146,10 @@ Each entry is strictly typed with numeric ranks, enum sub-ranks, and chapter num
       "bondStage": "chain",
       "bondPercentage": 35,
       "unlockedSkillIds": ["shadow_pounce", "feral_instinct"],
-      "sharedTraits": []
+      "traits": []
     },
     {
+      "species": "Obsidian Panther Cub",
       "minChapter": 71,
       "maxChapter": null,
       "starRank": 2,
@@ -160,15 +161,7 @@ Each entry is strictly typed with numeric ranks, enum sub-ranks, and chapter num
       "bondStage": "blood",
       "bondPercentage": 78,
       "unlockedSkillIds": ["shadow_pounce", "obsidian_armor", "abyssal_roar"],
-      "sharedTraits": [
-        {
-          "traitId": "obsidian_hide",
-          "name": "Obsidian Hide",
-          "effect": "+100% physical defense when shadow-infused",
-          "transferredToTamer": true,
-          "unlockedChapter": 76
-        }
-      ]
+      "traits": ["Obsidian Hide"]
     }
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "kazz",
+  "name": "Kazz",
+  "species": "Kobolt (Faint Draconic Lineage)",
+  "contractChapter": 53,
+  "elementAffinity": [
+    "earth",
+    "draconic"
+  ],
+  "lore": "Kazz is Leo's earth goblin/kobold companion contracted in Chapter 53. Endowed with faint draconic ancestry.",
+  "milestones": [
+    {
+      "species": "Kobolt",
+      "bloodlinePurity": 35,
+      "bloodlineTier": "ordinary",
+      "bondPercentage": 40,
+      "bondStage": "chain",
+      "cognitionStage": "juvenile",
+      "iq": 60,
+      "maxChapter": 80,
+      "minChapter": 53,
+      "traits": [
+        { "name": "Darkvision", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Clear vision through cave and tunnel darkness" },
+        { "name": "Pack Instinct", "sharingStatus": "partial", "sharedPercent": 35, "tamerEffect": "+35% spatial coordination when fighting alongside companions" }
+      ],
+      "starRank": 1,
+      "subRank": "middle",
+      "unlockedSkillIds": [
+        "pack_instinct",
+        "tunnelling"
+      ],
+      "_key": "m_53_kazz"
+    },
+    {
+      "species": "Kobolt Raider",
+      "bloodlinePurity": 55,
+      "bloodlineTier": "mortal",
+      "bondPercentage": 60,
+      "bondStage": "chain",
+      "cognitionStage": "juvenile",
+      "iq": 75,
+      "maxChapter": null,
+      "minChapter": 81,
+      "traits": [
+        { "name": "Darkvision", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Total non-magical and subterranean dark vision" },
+        { "name": "Pack Instinct", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Seamless battlefield synergy and ambush reflex multiplication" }
+      ],
+      "starRank": 2,
+      "subRank": "low",
+      "unlockedSkillIds": [
+        "pack_instinct",
+        "tunnelling",
+        "draconic_scale_reinforce"
+      ],
+      "_key": "m_81_kazz"
+    }
+  ]
+}

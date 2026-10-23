@@ -3,45 +3,39 @@
   "id": "lily",
   "name": "Lily",
   "title": "Spirit Calling Prodigy / Soulmate Resonance Partner",
-  "role": "partner",
-  "talents": [
-    {
-      "id": "spirit_caller",
-      "name": "Spirit Caller",
-      "starRank": 8,
-      "description": "Allows contracting ethereal spirits, elemental manifestations, and spiritual nature entities.",
-      "unlockedChapter": 1
-    }
-  ],
+  "soulRank": "rare",
+  "primaryAffinity": "Dual Soul Anomaly",
+  "biography": "Pact Master of the Bestiary of Souls.",
   "milestones": [
     {
-      "minChapter": 1,
-      "maxChapter": 70,
-      "level": 10,
       "attributes": {
-        "vitality": 8.0,
-        "strength": 5.0,
-        "agility": 10.0,
-        "stamina": 9.0,
-        "intelligence": 18.0,
-        "maxMana": 540.0,
-        "unassignedPoints": 2
-      },
-      "soulProfile": {
-        "mortalSoulRank": "rare",
-        "mortalSoulValue": 3,
-        "primordialSoulValue": 0,
-        "combinedMultiplier": 3,
-        "statSoftCapPercent": 30,
-        "maxContractSlots": 3,
-        "skillCapacity": 11
+        "agility": 10,
+        "intelligence": 18,
+        "maxMana": 540,
+        "stamina": 9,
+        "strength": 5,
+        "unassignedPoints": 2,
+        "vitality": 8
       },
       "contractedBeastIds": [],
+      "copiedSkillIds": [],
+      "level": 10,
+      "maxChapter": 70,
+      "minChapter": 1,
       "personalSkillIds": [
         "spirit_shield",
         "mana_dart"
       ],
-      "copiedSkillIds": []
+      "soulProfile": {
+        "combinedMultiplier": 3,
+        "maxContractSlots": 3,
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 0,
+        "skillCapacity": 11,
+        "statSoftCapPercent": 30
+      },
+      "_key": "char_m_1_lily"
     }
   ]
 }

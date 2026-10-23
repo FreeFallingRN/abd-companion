@@ -8,39 +8,30 @@
     "fire",
     "draconic"
   ],
+  "lore": "Ashira is a Flame Wyvern contracted in Chapter 536. Commands draconic fire sovereignty and magma flight.",
   "milestones": [
     {
-      "minChapter": 536,
-      "maxChapter": null,
-      "starRank": 2,
-      "subRank": "high",
-      "bloodlineTier": "super",
+      "species": "Flame Wyvern",
       "bloodlinePurity": 74,
+      "bloodlineTier": "super",
+      "bondPercentage": 70,
+      "bondStage": "blood",
       "cognitionStage": "juvenile",
       "iq": 95,
-      "bondStage": "blood",
-      "bondPercentage": 70,
+      "maxChapter": null,
+      "minChapter": 536,
+      "traits": [
+        { "name": "Flame Ward Marking", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Absolute ambient and draconic flame damage immunity" },
+        { "name": "Hoard Resonance", "sharingStatus": "partial", "sharedPercent": 60, "tamerEffect": "+60% vitality recovery scaled to nearby precious minerals" }
+      ],
+      "starRank": 2,
+      "subRank": "high",
       "unlockedSkillIds": [
         "pyro_shielding",
         "flame_sovereignty",
         "wyvern_dive"
       ],
-      "sharedTraits": [
-        {
-          "traitId": "flame_ward_marking",
-          "name": "Flame Ward Marking",
-          "effect": "Allies marked by Ashira are immune to damage from fire and flames under her sphere of control.",
-          "transferredToTamer": true,
-          "unlockedChapter": 536
-        },
-        {
-          "traitId": "hoard_resonance",
-          "name": "Hoard Resonance",
-          "effect": "Passive combat empowerment and vitality recovery fueled by hoarded gems and mineral treasures.",
-          "transferredToTamer": true,
-          "unlockedChapter": 537
-        }
-      ]
+      "_key": "m_536_ashira"
     }
   ]
 }
