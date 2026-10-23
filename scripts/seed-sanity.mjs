@@ -2,6 +2,21 @@ import fs from 'fs';
 import path from 'path';
 import { createClient } from '@sanity/client';
 
+// Auto-load .env.local
+const envLocalPath = path.join(process.cwd(), '.env.local');
+if (fs.existsSync(envLocalPath)) {
+  const envContent = fs.readFileSync(envLocalPath, 'utf8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
+      const idx = trimmed.indexOf('=');
+      const key = trimmed.slice(0, idx).trim();
+      const val = trimmed.slice(idx + 1).trim().replace(/^['"]|['"]$/g, '');
+      process.env[key] = val;
+    }
+  }
+}
+
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || process.env.SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
 const token = process.env.SANITY_API_WRITE_TOKEN;
@@ -128,21 +143,17 @@ if (token && projectId && projectId !== 'demo') {
     useCdn: false,
   });
 
-  async function seed() {
-    let count = 0;
-    for (const doc of documents) {
-      try {
-        await client.createOrReplace(doc);
-        count++;
-        process.stdout.write(`• Seeded ${doc._type}: ${doc.name || doc.id || doc._id}\n`);
-      } catch (err) {
-        console.error(`Error seeding ${doc._id}:`, err.message);
-      }
+  let count = 0;
+  for (const doc of documents) {
+    try {
+      await client.createOrReplace(doc);
+      count++;
+      process.stdout.write(`• Seeded ${doc._type}: ${doc.name || doc.id || doc._id}\n`);
+    } catch (err) {
+      console.error(`Error seeding ${doc._id}:`, err.message);
     }
-    console.log(`\n✓ Successfully seeded ${count}/${documents.length} documents into Sanity dataset '${dataset}'!`);
   }
-
-  seed().catch((err) => console.error('Seeding error:', err));
+  console.log(`\n✓ Successfully seeded ${count}/${documents.length} documents into Sanity dataset '${dataset}'!`);
 } else {
   console.log(`\nNote: To seed directly via API, set SANITY_API_WRITE_TOKEN in .env.local.`);
   console.log(`Alternatively, you can import sanity-dataset-export.ndjson using:`);
