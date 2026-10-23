@@ -14,7 +14,7 @@ export default defineConfig({
 
   plugins: [
     structureTool({
-      title: 'Grimoire Codex',
+      title: 'Grimoire Codex (Data Editor)',
       structure: (S) =>
         S.list()
           .title('Dominion Codex Sections')
@@ -62,7 +62,9 @@ export default defineConfig({
           ]),
     }),
     visionTool({
-      defaultApiVersion: '2024-01-01',
+      title: 'GROQ Playground (Dev)',
+      defaultApiVersion: 'v2025-02-19',
+      defaultDataset: dataset || 'production',
     }),
   ],
 

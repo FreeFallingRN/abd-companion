@@ -41,6 +41,15 @@ if (fs.existsSync(beastsDir)) {
   const beastFiles = fs.readdirSync(beastsDir).filter((f) => f.endsWith('.json'));
   for (const file of beastFiles) {
     const beast = JSON.parse(fs.readFileSync(path.join(beastsDir, file), 'utf8'));
+    const milestones = (beast.milestones || []).map((m, mIdx) => ({
+      ...m,
+      _key: m._key || `m_${m.minChapter || mIdx}_${beast.id}`,
+      sharedTraits: (m.sharedTraits || []).map((t, tIdx) => ({
+        ...t,
+        _key: t._key || `trait_${t.traitId || tIdx}_${m.minChapter || mIdx}`,
+      })),
+    }));
+
     documents.push({
       _id: `beast-${beast.id}`,
       _type: 'beast',
@@ -50,7 +59,7 @@ if (fs.existsSync(beastsDir)) {
       contractChapter: beast.contractChapter,
       elementAffinity: beast.elementAffinity || [],
       lore: beast.lore || `${beast.name} is a canonical companion of Leo.`,
-      milestones: beast.milestones || [],
+      milestones,
     });
   }
 }
@@ -61,6 +70,11 @@ if (fs.existsSync(charsDir)) {
   const charFiles = fs.readdirSync(charsDir).filter((f) => f.endsWith('.json'));
   for (const file of charFiles) {
     const char = JSON.parse(fs.readFileSync(path.join(charsDir, file), 'utf8'));
+    const milestones = (char.milestones || []).map((m, mIdx) => ({
+      ...m,
+      _key: m._key || `char_m_${m.minChapter || mIdx}_${char.id}`,
+    }));
+
     documents.push({
       _id: `character-${char.id}`,
       _type: 'character',
@@ -70,7 +84,7 @@ if (fs.existsSync(charsDir)) {
       soulRank: char.soulProfile?.mortalSoulRank || 'rare',
       primaryAffinity: 'Dual Soul Anomaly',
       biography: `Pact Master of the Bestiary of Souls.`,
-      milestones: char.milestones || [],
+      milestones,
     });
   }
 }

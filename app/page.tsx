@@ -313,9 +313,6 @@ export default function HomePage() {
               <div className="parameters-section">
                 <div className="parameters-header">
                   <span>Canonical Parameters (Ch. {currentChapter})</span>
-                  <span className="highlight">
-                    {currentChapter < 8 ? 'Base Awakening' : '100% Stat Sharing (0 Mana Upkeep)'}
-                  </span>
                 </div>
                 <div className="params-grid-5">
                   <div className="param-card">
