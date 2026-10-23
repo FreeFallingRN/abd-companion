@@ -1,0 +1,27 @@
+[
+  {
+    "id": "aurelius",
+    "name": "Aurelius Beast Academy",
+    "tier": "Top 10 Continental Academy",
+    "bastion": "Outer Sector 09 Bastion (Low-Blue Tier, 18,450 PP)",
+    "departments": [
+      "Beast Taming",
+      "Spirit Calling",
+      "Battle Master",
+      "Core Alchemy & Nurturing"
+    ],
+    "description": "Premier institution located at the border of the civilized zones, guarding against beast tides."
+  },
+  {
+    "id": "royal_beast_academy",
+    "name": "Imperial Royal Academy",
+    "tier": "Apex Sovereign Institution",
+    "bastion": "Imperial Capital Central Bastion (Gold Tier)",
+    "departments": [
+      "Sovereign Command",
+      "Draconic Arts",
+      "High Sorcery"
+    ],
+    "description": "Aristocratic institution training high nobles and royal bloodline tamers."
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "tier": "ordinary",
+    "starCeiling": 2,
+    "examples": "Grey Slimes, Goblins, Kobolts (base)",
+    "description": "Common wild monsters; growth strictly caps at 2 Stars."
+  },
+  {
+    "tier": "mortal",
+    "starCeiling": 3,
+    "rareCeiling": 4,
+    "examples": "Windbreath Hounds, Ironhide Boars, Cragveil Colossus",
+    "description": "Standard hunting beasts; caps at 3 Stars (extreme mutations reach 4\u2605)."
+  },
+  {
+    "tier": "super",
+    "starCeiling": 5,
+    "rareCeiling": 6,
+    "examples": "Mistprowler Tigers, Cedar Treants, Agnivar / Flame Wyverns",
+    "description": "High-tier predators; naturally reaches 5 Stars (rare chance of 6\u2605)."
+  },
+  {
+    "tier": "noble",
+    "starCeiling": 7,
+    "examples": "Shyra / Obsidian Panthers, Shadowstripe Lynxes",
+    "description": "Aristocratic beast lineages; ceiling extends up to 7 Stars."
+  },
+  {
+    "tier": "royal",
+    "starCeiling": 8,
+    "examples": "Primordial Grove Dryads, Eclipse Sun Direwolf Imperium Line",
+    "description": "7 Stars easily achieved; inherently capable of breaking into 8 Stars."
+  },
+  {
+    "tier": "divine",
+    "starCeiling": 10,
+    "examples": "Primordial Entities, World Arbiters, God Beasts",
+    "description": "9 Stars standard; capable of ascending into a true God Beast."
+  }
+]

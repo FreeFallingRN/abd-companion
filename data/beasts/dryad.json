@@ -1,0 +1,75 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "dryad",
+  "name": "Niri",
+  "species": "Primordial Grove Dryad",
+  "contractChapter": 42,
+  "elementAffinity": [
+    "nature",
+    "life",
+    "earth"
+  ],
+  "milestones": [
+    {
+      "minChapter": 42,
+      "maxChapter": 90,
+      "starRank": 2,
+      "subRank": "high",
+      "bloodlineTier": "royal",
+      "bloodlinePurity": 40,
+      "cognitionStage": "juvenile",
+      "iq": 90,
+      "bondStage": "blood",
+      "bondPercentage": 50,
+      "unlockedSkillIds": [
+        "natures_heal",
+        "vine_estranglement",
+        "spike_pores"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "fast_regeneration",
+          "name": "Fast Regeneration",
+          "effect": "Passive physical and mana regeneration scaled to surrounding plant life",
+          "transferredToTamer": true,
+          "unlockedChapter": 65
+        }
+      ]
+    },
+    {
+      "minChapter": 91,
+      "maxChapter": null,
+      "starRank": 3,
+      "subRank": "high",
+      "bloodlineTier": "royal",
+      "bloodlinePurity": 85,
+      "cognitionStage": "adolescent",
+      "iq": 125,
+      "bondStage": "blood",
+      "bondPercentage": 85,
+      "unlockedSkillIds": [
+        "natures_heal",
+        "vine_estranglement",
+        "spike_pores",
+        "solar_beam",
+        "chlorophyll_barrier"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "fast_regeneration",
+          "name": "Fast Regeneration",
+          "effect": "Continuous health and stamina restoration",
+          "transferredToTamer": true,
+          "unlockedChapter": 65
+        },
+        {
+          "traitId": "half_spirit_body",
+          "name": "Half-Spirit Body",
+          "effect": "50% immunity to environmental toxins, curses, and soul erosion",
+          "transferredToTamer": true,
+          "unlockedChapter": 95
+        }
+      ]
+    }
+  ]
+}

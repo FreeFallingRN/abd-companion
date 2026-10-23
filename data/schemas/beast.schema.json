@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Beast",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "species",
+    "contractChapter",
+    "milestones"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "species": {
+      "type": "string"
+    },
+    "contractChapter": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "elementAffinity": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "darkness",
+          "shadow",
+          "fire",
+          "water",
+          "earth",
+          "wind",
+          "lightning",
+          "light",
+          "space",
+          "nature",
+          "poison",
+          "life",
+          "death",
+          "neutral",
+          "draconic"
+        ]
+      }
+    },
+    "milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "minChapter",
+          "starRank",
+          "subRank",
+          "bloodlineTier",
+          "bloodlinePurity",
+          "cognitionStage",
+          "iq",
+          "bondStage",
+          "bondPercentage",
+          "unlockedSkillIds",
+          "sharedTraits"
+        ],
+        "properties": {
+          "minChapter": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "maxChapter": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "starRank": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "subRank": {
+            "type": "string",
+            "enum": [
+              "pseudo",
+              "low",
+              "middle",
+              "high",
+              "peak"
+            ]
+          },
+          "bloodlineTier": {
+            "type": "string",
+            "enum": [
+              "ordinary",
+              "mortal",
+              "super",
+              "noble",
+              "royal",
+              "divine"
+            ]
+          },
+          "bloodlinePurity": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "cognitionStage": {
+            "type": "string",
+            "enum": [
+              "feral",
+              "juvenile",
+              "adolescent",
+              "mature",
+              "transcendent"
+            ]
+          },
+          "iq": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "bondStage": {
+            "type": "string",
+            "enum": [
+              "chain",
+              "blood",
+              "soul"
+            ]
+          },
+          "bondPercentage": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "unlockedSkillIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sharedTraits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "traitId",
+                "name",
+                "effect",
+                "transferredToTamer",
+                "unlockedChapter"
+              ],
+              "properties": {
+                "traitId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "effect": {
+                  "type": "string"
+                },
+                "transferredToTamer": {
+                  "type": "boolean"
+                },
+                "unlockedChapter": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

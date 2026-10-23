@@ -1,0 +1,39 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "agnivar",
+  "name": "Agnivar",
+  "species": "Hoarding Wyvern",
+  "contractChapter": 98,
+  "elementAffinity": [
+    "fire",
+    "draconic"
+  ],
+  "milestones": [
+    {
+      "minChapter": 98,
+      "maxChapter": 160,
+      "starRank": 2,
+      "subRank": "peak",
+      "bloodlineTier": "super",
+      "bloodlinePurity": 76,
+      "cognitionStage": "adolescent",
+      "iq": 110,
+      "bondStage": "blood",
+      "bondPercentage": 75,
+      "unlockedSkillIds": [
+        "infernal_breath",
+        "wyvern_dive",
+        "treasure_sense"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "lesser_draconic_majesty",
+          "name": "Lesser Draconic Majesty",
+          "effect": "Passive intimidation aura causing lesser reptiles and beasts to freeze",
+          "transferredToTamer": true,
+          "unlockedChapter": 105
+        }
+      ]
+    }
+  ]
+}

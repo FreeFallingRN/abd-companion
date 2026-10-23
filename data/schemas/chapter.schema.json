@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chapter",
+  "type": "object",
+  "required": [
+    "chapterNumber",
+    "title",
+    "arcId",
+    "arcName"
+  ],
+  "properties": {
+    "chapterNumber": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string"
+    },
+    "arcId": {
+      "type": "string"
+    },
+    "arcName": {
+      "type": "string"
+    },
+    "file": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "../schemas/character.schema.json",
+  "id": "lily",
+  "name": "Lily",
+  "title": "Spirit Calling Prodigy / Soulmate Resonance Partner",
+  "role": "partner",
+  "talents": [
+    {
+      "id": "spirit_caller",
+      "name": "Spirit Caller",
+      "starRank": 8,
+      "description": "Allows contracting ethereal spirits, elemental manifestations, and spiritual nature entities.",
+      "unlockedChapter": 1
+    }
+  ],
+  "milestones": [
+    {
+      "minChapter": 1,
+      "maxChapter": 70,
+      "level": 10,
+      "attributes": {
+        "vitality": 8.0,
+        "strength": 5.0,
+        "agility": 10.0,
+        "stamina": 9.0,
+        "intelligence": 18.0,
+        "maxMana": 540.0,
+        "unassignedPoints": 2
+      },
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 0,
+        "combinedMultiplier": 3,
+        "statSoftCapPercent": 30,
+        "maxContractSlots": 3,
+        "skillCapacity": 11
+      },
+      "contractedBeastIds": [],
+      "personalSkillIds": [
+        "spirit_shield",
+        "mana_dart"
+      ],
+      "copiedSkillIds": []
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "nyxa",
+  "name": "Nyxa",
+  "species": "Eclipse Sun Direwolf (Solmora Lunareth Imperium Lineage)",
+  "contractChapter": 117,
+  "elementAffinity": [
+    "light",
+    "darkness",
+    "shadow"
+  ],
+  "milestones": [
+    {
+      "minChapter": 117,
+      "maxChapter": 160,
+      "starRank": 2,
+      "subRank": "middle",
+      "bloodlineTier": "royal",
+      "bloodlinePurity": 10,
+      "cognitionStage": "adolescent",
+      "iq": 105,
+      "bondStage": "chain",
+      "bondPercentage": 44,
+      "unlockedSkillIds": [
+        "astral_aura_weave",
+        "lunar_blink"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "moon_shadow_instincts",
+          "name": "Moon-Shadow Instincts",
+          "effect": "Passive reflex and evasion amplification in dim lighting",
+          "transferredToTamer": false,
+          "unlockedChapter": 117
+        }
+      ]
+    },
+    {
+      "minChapter": 161,
+      "maxChapter": null,
+      "starRank": 3,
+      "subRank": "pseudo",
+      "bloodlineTier": "royal",
+      "bloodlinePurity": 35,
+      "cognitionStage": "adolescent",
+      "iq": 120,
+      "bondStage": "blood",
+      "bondPercentage": 65,
+      "unlockedSkillIds": [
+        "astral_aura_weave",
+        "lunar_blink",
+        "celestial_polarity_surge"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "sun_blessed_physique",
+          "name": "Sun-Blessed Physique",
+          "effect": "Daytime physical strength and kinetic force empowerment",
+          "transferredToTamer": true,
+          "unlockedChapter": 170
+        }
+      ]
+    }
+  ]
+}

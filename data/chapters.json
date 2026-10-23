@@ -1,0 +1,5091 @@
+[
+  {
+    "chapterNumber": 1,
+    "title": "Chapter 1: Nonsense Battle",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter0.html"
+  },
+  {
+    "chapterNumber": 2,
+    "title": "Chapter 2: Another World",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter1.html"
+  },
+  {
+    "chapterNumber": 3,
+    "title": "Chapter 3: Soul",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter2.html"
+  },
+  {
+    "chapterNumber": 4,
+    "title": "Chapter 4: \u2019House\u2019 but a Home",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter3.html"
+  },
+  {
+    "chapterNumber": 5,
+    "title": "Chapter 5: The Trial",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter4.html"
+  },
+  {
+    "chapterNumber": 6,
+    "title": "Chapter 6: The Results",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter5.html"
+  },
+  {
+    "chapterNumber": 7,
+    "title": "Chapter 7: Beast Dominion",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter6.html"
+  },
+  {
+    "chapterNumber": 8,
+    "title": "Chapter 8: Beast Selection",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter7.html"
+  },
+  {
+    "chapterNumber": 9,
+    "title": "Chapter 9: Cat",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter8.html"
+  },
+  {
+    "chapterNumber": 10,
+    "title": "Chapter 10: Weapon and Pet",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter9.html"
+  },
+  {
+    "chapterNumber": 11,
+    "title": "Chapter 11: First Kill",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter10.html"
+  },
+  {
+    "chapterNumber": 12,
+    "title": "Chapter 12: Level 1",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter11.html"
+  },
+  {
+    "chapterNumber": 13,
+    "title": "Chapter 13: Stat Upgrade",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter12.html"
+  },
+  {
+    "chapterNumber": 14,
+    "title": "Chapter 14: Soul Crystal!",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter13.html"
+  },
+  {
+    "chapterNumber": 15,
+    "title": "Chapter 15: Beast & Blade Emporium",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter14.html"
+  },
+  {
+    "chapterNumber": 16,
+    "title": "Chapter 16: Hunters",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter15.html"
+  },
+  {
+    "chapterNumber": 17,
+    "title": "Chapter 17: Trash",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter16.html"
+  },
+  {
+    "chapterNumber": 18,
+    "title": "Chapter 18: Party",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter17.html"
+  },
+  {
+    "chapterNumber": 19,
+    "title": "Chapter 19: Merry Time",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter18.html"
+  },
+  {
+    "chapterNumber": 20,
+    "title": "Chapter 20: Conditioning A Cat",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter19.html"
+  },
+  {
+    "chapterNumber": 21,
+    "title": "Chapter 21: Green Light",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter20.html"
+  },
+  {
+    "chapterNumber": 22,
+    "title": "Chapter 22: Butler",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter21.html"
+  },
+  {
+    "chapterNumber": 23,
+    "title": "Chapter 23: Butler Butcher",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter22.html"
+  },
+  {
+    "chapterNumber": 24,
+    "title": "Chapter 24: Level Up!",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter23.html"
+  },
+  {
+    "chapterNumber": 25,
+    "title": "Chapter 25: Sera\u2019s Culinary",
+    "arcId": "arc_1_awakening",
+    "arcName": "Phase I: Kendru Outskirts & Awakening",
+    "file": "OEBPS/chapter24.html"
+  },
+  {
+    "chapterNumber": 26,
+    "title": "Chapter 26: System\u2019s Suggestion",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter25.html"
+  },
+  {
+    "chapterNumber": 27,
+    "title": "Chapter 27: Spirit Caller",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter26.html"
+  },
+  {
+    "chapterNumber": 28,
+    "title": "Chapter 28: Yandere! (Slight R18)",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter27.html"
+  },
+  {
+    "chapterNumber": 29,
+    "title": "Chapter 29: Confessions (Slight R18)",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter28.html"
+  },
+  {
+    "chapterNumber": 30,
+    "title": "Chapter 30: Crack In Smile",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter29.html"
+  },
+  {
+    "chapterNumber": 31,
+    "title": "Chapter 31: Growing Strong",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter30.html"
+  },
+  {
+    "chapterNumber": 32,
+    "title": "Chapter 32: Blood Bond!",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter31.html"
+  },
+  {
+    "chapterNumber": 33,
+    "title": "Chapter 33: Ticking Nuke (Slight R18)",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter32.html"
+  },
+  {
+    "chapterNumber": 34,
+    "title": "Chapter 34: Give Me Your Baby~ (R18)",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter33.html"
+  },
+  {
+    "chapterNumber": 35,
+    "title": "Chapter 35: Imperial Notice",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter34.html"
+  },
+  {
+    "chapterNumber": 36,
+    "title": "Chapter 36: Snakes",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter35.html"
+  },
+  {
+    "chapterNumber": 37,
+    "title": "Chapter 37: Purged Nest",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter36.html"
+  },
+  {
+    "chapterNumber": 38,
+    "title": "Chapter 38: Dryad!",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter37.html"
+  },
+  {
+    "chapterNumber": 39,
+    "title": "Chapter 39: Spiritual Space",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter38.html"
+  },
+  {
+    "chapterNumber": 40,
+    "title": "Chapter 40: Spiritual Island!",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter39.html"
+  },
+  {
+    "chapterNumber": 41,
+    "title": "Chapter 41: Uneasiness",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter40.html"
+  },
+  {
+    "chapterNumber": 42,
+    "title": "Chapter 42: One Shot",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter41.html"
+  },
+  {
+    "chapterNumber": 43,
+    "title": "Chapter 43: Manure",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter42.html"
+  },
+  {
+    "chapterNumber": 44,
+    "title": "Chapter 44: Baron",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter43.html"
+  },
+  {
+    "chapterNumber": 45,
+    "title": "Chapter 45: Discussions",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter44.html"
+  },
+  {
+    "chapterNumber": 46,
+    "title": "Chapter 46: Spanking The Baron",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter45.html"
+  },
+  {
+    "chapterNumber": 47,
+    "title": "Chapter 47: The Bloom of Power",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter46.html"
+  },
+  {
+    "chapterNumber": 48,
+    "title": "Chapter 48: Night Guest",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter47.html"
+  },
+  {
+    "chapterNumber": 49,
+    "title": "Chapter 49: Annoying Pests",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter48.html"
+  },
+  {
+    "chapterNumber": 50,
+    "title": "Chapter 50: Freeloader? Ain\u2019t No More",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter49.html"
+  },
+  {
+    "chapterNumber": 51,
+    "title": "Chapter 51: Academy Selection",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter50.html"
+  },
+  {
+    "chapterNumber": 52,
+    "title": "Chapter 52: - 8-Stars!",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter51.html"
+  },
+  {
+    "chapterNumber": 53,
+    "title": "Chapter 53: Freedom Flight",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter52.html"
+  },
+  {
+    "chapterNumber": 54,
+    "title": "Chapter 54: Calm Ride?",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter53.html"
+  },
+  {
+    "chapterNumber": 55,
+    "title": "Chapter 55: Trial City",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter54.html"
+  },
+  {
+    "chapterNumber": 56,
+    "title": "Chapter 56: \u2019O\u2019 Discrimination",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter55.html"
+  },
+  {
+    "chapterNumber": 57,
+    "title": "Chapter 57: Display of Power",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter56.html"
+  },
+  {
+    "chapterNumber": 58,
+    "title": "Chapter 58: Scheme (Slight R18)",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter57.html"
+  },
+  {
+    "chapterNumber": 59,
+    "title": "Chapter 59: Insignificant who",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter58.html"
+  },
+  {
+    "chapterNumber": 60,
+    "title": "Chapter 60: Trial Notice",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter59.html"
+  },
+  {
+    "chapterNumber": 61,
+    "title": "Chapter 61: Plots",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter60.html"
+  },
+  {
+    "chapterNumber": 62,
+    "title": "Chapter 62: Demons",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter61.html"
+  },
+  {
+    "chapterNumber": 63,
+    "title": "Chapter 63: Soil Worms",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter62.html"
+  },
+  {
+    "chapterNumber": 64,
+    "title": "Chapter 64: More?!",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter63.html"
+  },
+  {
+    "chapterNumber": 65,
+    "title": "Chapter 65: Family?",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter64.html"
+  },
+  {
+    "chapterNumber": 66,
+    "title": "Chapter 66: System Update!",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter65.html"
+  },
+  {
+    "chapterNumber": 67,
+    "title": "Chapter 67: - 11000!",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter66.html"
+  },
+  {
+    "chapterNumber": 68,
+    "title": "Chapter 68: Natural Treasure - 1",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter67.html"
+  },
+  {
+    "chapterNumber": 69,
+    "title": "Chapter 69: Natural Treasure - 2",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter68.html"
+  },
+  {
+    "chapterNumber": 70,
+    "title": "Chapter 70: Natural Treasure - 3 [Bonus (1/2)]",
+    "arcId": "arc_2_aurelius",
+    "arcName": "Phase II: Aurelius Beast Academy Entrance",
+    "file": "OEBPS/chapter69.html"
+  },
+  {
+    "chapterNumber": 71,
+    "title": "Chapter 71: Rock Golem [Bonus 2/2]",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter70.html"
+  },
+  {
+    "chapterNumber": 72,
+    "title": "Chapter 72: Puppet Golem",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter71.html"
+  },
+  {
+    "chapterNumber": 73,
+    "title": "Chapter 73: Dale",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter72.html"
+  },
+  {
+    "chapterNumber": 74,
+    "title": "Chapter 74: Earthpulse Heartstone",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter73.html"
+  },
+  {
+    "chapterNumber": 75,
+    "title": "Chapter 75: Plan",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter74.html"
+  },
+  {
+    "chapterNumber": 76,
+    "title": "Chapter 76: Level Up!",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter75.html"
+  },
+  {
+    "chapterNumber": 77,
+    "title": "Chapter 77: Ride To Roll On [Bonus 1/2]",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter76.html"
+  },
+  {
+    "chapterNumber": 78,
+    "title": "Chapter 78: Pack? [Bonus 2/2]",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter77.html"
+  },
+  {
+    "chapterNumber": 79,
+    "title": "Chapter 79: Chaos",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter78.html"
+  },
+  {
+    "chapterNumber": 80,
+    "title": "Chapter 80: Enhanced Golem?",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter79.html"
+  },
+  {
+    "chapterNumber": 81,
+    "title": "Chapter 81: Low 3-star",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter80.html"
+  },
+  {
+    "chapterNumber": 82,
+    "title": "Chapter 82: Tucking Tails",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter81.html"
+  },
+  {
+    "chapterNumber": 83,
+    "title": "Chapter 83: - 3 Cored Golem? Meh",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter82.html"
+  },
+  {
+    "chapterNumber": 84,
+    "title": "Chapter 84: - 233450!",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter83.html"
+  },
+  {
+    "chapterNumber": 85,
+    "title": "Chapter 85: The Treasure",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter84.html"
+  },
+  {
+    "chapterNumber": 86,
+    "title": "Chapter 86: That\u2019s Not A Treasure!",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter85.html"
+  },
+  {
+    "chapterNumber": 87,
+    "title": "Chapter 87: Brittle Carnage [Bonus 1/2]",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter86.html"
+  },
+  {
+    "chapterNumber": 88,
+    "title": "Chapter 88: The Real Treasure",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter87.html"
+  },
+  {
+    "chapterNumber": 89,
+    "title": "Chapter 89: Glass Cannon [Bonus 2/2]",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter88.html"
+  },
+  {
+    "chapterNumber": 90,
+    "title": "Chapter 90: Desperate Tree",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter89.html"
+  },
+  {
+    "chapterNumber": 91,
+    "title": "Chapter 91: To Be Honest, Feels A Bit Low [Bonus 1/2]",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter90.html"
+  },
+  {
+    "chapterNumber": 92,
+    "title": "Chapter 92: No Plant Rights Activist Complaining Right?",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter91.html"
+  },
+  {
+    "chapterNumber": 93,
+    "title": "Chapter 93: Soul Plundering? [Bonus 2/2]",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter92.html"
+  },
+  {
+    "chapterNumber": 94,
+    "title": "Chapter 94: Purple Tier Heartstones",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter93.html"
+  },
+  {
+    "chapterNumber": 95,
+    "title": "Chapter 95: Elk In Need",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter94.html"
+  },
+  {
+    "chapterNumber": 96,
+    "title": "Chapter 96: Rich!",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter95.html"
+  },
+  {
+    "chapterNumber": 97,
+    "title": "Chapter 97: Another Low 3-Star!",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter96.html"
+  },
+  {
+    "chapterNumber": 98,
+    "title": "Chapter 98: Arranging the Chaos",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter97.html"
+  },
+  {
+    "chapterNumber": 99,
+    "title": "Chapter 99: Skill Synthesis",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter98.html"
+  },
+  {
+    "chapterNumber": 100,
+    "title": "Chapter 100: Elven Conspiracy - 1",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter99.html"
+  },
+  {
+    "chapterNumber": 101,
+    "title": "Chapter 101: Elven Conspiracy - 2",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter100.html"
+  },
+  {
+    "chapterNumber": 102,
+    "title": "Chapter 102: Elven Conspiracy - 3",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter101.html"
+  },
+  {
+    "chapterNumber": 103,
+    "title": "Chapter 103: Something\u2019s Not Right",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter102.html"
+  },
+  {
+    "chapterNumber": 104,
+    "title": "Chapter 104: Alive...?",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter103.html"
+  },
+  {
+    "chapterNumber": 105,
+    "title": "Chapter 105: Storm",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter104.html"
+  },
+  {
+    "chapterNumber": 106,
+    "title": "Chapter 106: Shyra... A Wolf?",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter105.html"
+  },
+  {
+    "chapterNumber": 107,
+    "title": "Chapter 107: Wha\u2014",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter106.html"
+  },
+  {
+    "chapterNumber": 108,
+    "title": "Chapter 108: Colossus - 1",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter107.html"
+  },
+  {
+    "chapterNumber": 109,
+    "title": "Chapter 109: Colossus - 2",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter108.html"
+  },
+  {
+    "chapterNumber": 110,
+    "title": "Chapter 110: Colossus - 3",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter109.html"
+  },
+  {
+    "chapterNumber": 111,
+    "title": "Chapter 111: Colossus - 4",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter110.html"
+  },
+  {
+    "chapterNumber": 112,
+    "title": "Chapter 112: Miho",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter111.html"
+  },
+  {
+    "chapterNumber": 113,
+    "title": "Chapter 113: Rock Ox - 1",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter112.html"
+  },
+  {
+    "chapterNumber": 114,
+    "title": "Chapter 114: Rock Ox - 2",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter113.html"
+  },
+  {
+    "chapterNumber": 115,
+    "title": "Chapter 115: Spirit Caller",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter114.html"
+  },
+  {
+    "chapterNumber": 116,
+    "title": "Chapter 116: Thunder Storm",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter115.html"
+  },
+  {
+    "chapterNumber": 117,
+    "title": "Chapter 117: Lion",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter116.html"
+  },
+  {
+    "chapterNumber": 118,
+    "title": "Chapter 118: Colossus - 5 (Continued)",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter117.html"
+  },
+  {
+    "chapterNumber": 119,
+    "title": "Chapter 119: Colossus - 6",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter118.html"
+  },
+  {
+    "chapterNumber": 120,
+    "title": "Chapter 120: Colossus - 7",
+    "arcId": "arc_3_blood_bond",
+    "arcName": "Phase III: Fief Frontier & Blood Bond Resonance",
+    "file": "OEBPS/chapter119.html"
+  },
+  {
+    "chapterNumber": 121,
+    "title": "Chapter 121: Sitting Duck Finally Tamed",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter120.html"
+  },
+  {
+    "chapterNumber": 122,
+    "title": "Chapter 122: Beast Tide [Bonus 1/2]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter121.html"
+  },
+  {
+    "chapterNumber": 123,
+    "title": "Chapter 123: Brant\u2019s Relief[Bonus 2/2]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter122.html"
+  },
+  {
+    "chapterNumber": 124,
+    "title": "Chapter 124: Brant\u2019s Game",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter123.html"
+  },
+  {
+    "chapterNumber": 125,
+    "title": "Chapter 125: Miho\u2019s Dread",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter124.html"
+  },
+  {
+    "chapterNumber": 126,
+    "title": "Chapter 126: Alric\u2019s Dread",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter125.html"
+  },
+  {
+    "chapterNumber": 127,
+    "title": "Chapter 127: Time Capsule",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter126.html"
+  },
+  {
+    "chapterNumber": 128,
+    "title": "Chapter 128: This Is So Peak",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter127.html"
+  },
+  {
+    "chapterNumber": 129,
+    "title": "Chapter 129: Walking Fortress",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter128.html"
+  },
+  {
+    "chapterNumber": 130,
+    "title": "Chapter 130: Giant Turret",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter129.html"
+  },
+  {
+    "chapterNumber": 131,
+    "title": "Chapter 131: Chaotic Battlefield",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter130.html"
+  },
+  {
+    "chapterNumber": 132,
+    "title": "Chapter 132: Talents and Soul",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter131.html"
+  },
+  {
+    "chapterNumber": 133,
+    "title": "Chapter 133: Frost Bear",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter132.html"
+  },
+  {
+    "chapterNumber": 134,
+    "title": "Chapter 134: Cragveil Colossus",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter133.html"
+  },
+  {
+    "chapterNumber": 135,
+    "title": "Chapter 135: Another?!",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter134.html"
+  },
+  {
+    "chapterNumber": 136,
+    "title": "Chapter 136: Storm",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter135.html"
+  },
+  {
+    "chapterNumber": 137,
+    "title": "Chapter 137: If I Can\u2019t get you, No One\u2019s Gettin\u2019 You",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter136.html"
+  },
+  {
+    "chapterNumber": 138,
+    "title": "Chapter 138: A Tamed Colossus [1/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter137.html"
+  },
+  {
+    "chapterNumber": 139,
+    "title": "Chapter 139: Dead? - 1 [2/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter138.html"
+  },
+  {
+    "chapterNumber": 140,
+    "title": "Chapter 140: Blood Monger - 1 [3/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter139.html"
+  },
+  {
+    "chapterNumber": 141,
+    "title": "Chapter 141: Blood Monger - 2 [4/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter140.html"
+  },
+  {
+    "chapterNumber": 142,
+    "title": "Chapter 142: Blood Monger - 3 [5/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter141.html"
+  },
+  {
+    "chapterNumber": 143,
+    "title": "Chapter 143: Colossus Vs Colossus - 1 [6/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter142.html"
+  },
+  {
+    "chapterNumber": 144,
+    "title": "Chapter 144: Colossus Vs Colossus - 2 [7/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter143.html"
+  },
+  {
+    "chapterNumber": 145,
+    "title": "Chapter 145: Metal Demon - 1 [8/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter144.html"
+  },
+  {
+    "chapterNumber": 146,
+    "title": "Chapter 146: Metal Demon - 2 [9/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter145.html"
+  },
+  {
+    "chapterNumber": 147,
+    "title": "Chapter 147: Damages [10/10]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter146.html"
+  },
+  {
+    "chapterNumber": 148,
+    "title": "Chapter 148: Immortal Flame",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter147.html"
+  },
+  {
+    "chapterNumber": 149,
+    "title": "Chapter 149: Tsk",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter148.html"
+  },
+  {
+    "chapterNumber": 150,
+    "title": "Chapter 150: Child?",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter149.html"
+  },
+  {
+    "chapterNumber": 151,
+    "title": "Chapter 151: Growing Obsession - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter150.html"
+  },
+  {
+    "chapterNumber": 152,
+    "title": "Chapter 152: Growing Obsession - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter151.html"
+  },
+  {
+    "chapterNumber": 153,
+    "title": "Chapter 153: Growing Obsession - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter152.html"
+  },
+  {
+    "chapterNumber": 154,
+    "title": "Chapter 154: She Is A Gone Case",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter153.html"
+  },
+  {
+    "chapterNumber": 155,
+    "title": "Chapter 155: True Confession And Acceptance",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter154.html"
+  },
+  {
+    "chapterNumber": 156,
+    "title": "Chapter 156: How am I supposed to concentrate on pleasing you like that?! (R18)",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter155.html"
+  },
+  {
+    "chapterNumber": 157,
+    "title": "Chapter 157: Great Time (R18)",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter156.html"
+  },
+  {
+    "chapterNumber": 158,
+    "title": "Chapter 158: The Call - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter157.html"
+  },
+  {
+    "chapterNumber": 159,
+    "title": "Chapter 159: The Call - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter158.html"
+  },
+  {
+    "chapterNumber": 160,
+    "title": "Chapter 160: Angel - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter159.html"
+  },
+  {
+    "chapterNumber": 161,
+    "title": "Chapter 161: Angel - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter160.html"
+  },
+  {
+    "chapterNumber": 162,
+    "title": "Chapter 162: Angel - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter161.html"
+  },
+  {
+    "chapterNumber": 163,
+    "title": "Chapter 163: A Mistake?",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter162.html"
+  },
+  {
+    "chapterNumber": 164,
+    "title": "Chapter 164: Back To The City",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter163.html"
+  },
+  {
+    "chapterNumber": 165,
+    "title": "Chapter 165: Academy Admission",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter164.html"
+  },
+  {
+    "chapterNumber": 166,
+    "title": "Chapter 166: Sacred Vow",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter165.html"
+  },
+  {
+    "chapterNumber": 167,
+    "title": "Chapter 167: To The Academy -1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter166.html"
+  },
+  {
+    "chapterNumber": 168,
+    "title": "Chapter 168: To The Academy - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter167.html"
+  },
+  {
+    "chapterNumber": 169,
+    "title": "Chapter 169: To The Academy - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter168.html"
+  },
+  {
+    "chapterNumber": 170,
+    "title": "Chapter 170: New Start New Rules - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter169.html"
+  },
+  {
+    "chapterNumber": 171,
+    "title": "Chapter 171: New Start New Rules - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter170.html"
+  },
+  {
+    "chapterNumber": 172,
+    "title": "Chapter 172: Reaching The Academy, Death Match? - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter171.html"
+  },
+  {
+    "chapterNumber": 173,
+    "title": "Chapter 173: Reaching The Academy, Death Match? - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter172.html"
+  },
+  {
+    "chapterNumber": 174,
+    "title": "Chapter 174: Reaching The Academy, Death Match? - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter173.html"
+  },
+  {
+    "chapterNumber": 175,
+    "title": "Chapter 175: Reaching The Academy, Death Match? - 4",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter174.html"
+  },
+  {
+    "chapterNumber": 176,
+    "title": "Chapter 176: Death Wish",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter175.html"
+  },
+  {
+    "chapterNumber": 177,
+    "title": "Chapter 177: Real Truth - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter176.html"
+  },
+  {
+    "chapterNumber": 178,
+    "title": "Chapter 178: Real Truth - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter177.html"
+  },
+  {
+    "chapterNumber": 179,
+    "title": "Chapter 179: Fluke",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter178.html"
+  },
+  {
+    "chapterNumber": 180,
+    "title": "Chapter 180: Secret Buried Forever [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter179.html"
+  },
+  {
+    "chapterNumber": 181,
+    "title": "Chapter 181: Territories",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter180.html"
+  },
+  {
+    "chapterNumber": 182,
+    "title": "Chapter 182: Aurelius Hall",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter181.html"
+  },
+  {
+    "chapterNumber": 183,
+    "title": "Chapter 183: Territories Explained [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter182.html"
+  },
+  {
+    "chapterNumber": 184,
+    "title": "Chapter 184: Rescue",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter183.html"
+  },
+  {
+    "chapterNumber": 185,
+    "title": "Chapter 185: First Camp Together In The Wild",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter184.html"
+  },
+  {
+    "chapterNumber": 186,
+    "title": "Chapter 186: Beacon [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter185.html"
+  },
+  {
+    "chapterNumber": 187,
+    "title": "Chapter 187: Sleepy (Slight R18)",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter186.html"
+  },
+  {
+    "chapterNumber": 188,
+    "title": "Chapter 188: Talk",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter187.html"
+  },
+  {
+    "chapterNumber": 189,
+    "title": "Chapter 189: Back To Aurelius Hall [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter188.html"
+  },
+  {
+    "chapterNumber": 190,
+    "title": "Chapter 190: Sophomore Archer",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter189.html"
+  },
+  {
+    "chapterNumber": 191,
+    "title": "Chapter 191: Fluxsoil Heart",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter190.html"
+  },
+  {
+    "chapterNumber": 192,
+    "title": "Chapter 192: Druid [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter191.html"
+  },
+  {
+    "chapterNumber": 193,
+    "title": "Chapter 193: Bigfoot!",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter192.html"
+  },
+  {
+    "chapterNumber": 194,
+    "title": "Chapter 194: Bigfoot Trapped",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter193.html"
+  },
+  {
+    "chapterNumber": 195,
+    "title": "Chapter 195: Fruit Haul [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter194.html"
+  },
+  {
+    "chapterNumber": 196,
+    "title": "Chapter 196: Scarred Mighty Man",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter195.html"
+  },
+  {
+    "chapterNumber": 197,
+    "title": "Chapter 197: Real Might And A Deity - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter196.html"
+  },
+  {
+    "chapterNumber": 198,
+    "title": "Chapter 198: Real Might And A Deity - 2 [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter197.html"
+  },
+  {
+    "chapterNumber": 199,
+    "title": "Chapter 199: Real Might And A Deity - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter198.html"
+  },
+  {
+    "chapterNumber": 200,
+    "title": "Chapter 200: Domesticated Pet?",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter199.html"
+  },
+  {
+    "chapterNumber": 201,
+    "title": "Chapter 201: Terraforming [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter200.html"
+  },
+  {
+    "chapterNumber": 202,
+    "title": "Chapter 202: Riches",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter201.html"
+  },
+  {
+    "chapterNumber": 203,
+    "title": "Chapter 203: Fertiliser",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter202.html"
+  },
+  {
+    "chapterNumber": 204,
+    "title": "Chapter 204: Territory Registration [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter203.html"
+  },
+  {
+    "chapterNumber": 205,
+    "title": "Chapter 205: Smartass Instructor",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter204.html"
+  },
+  {
+    "chapterNumber": 206,
+    "title": "Chapter 206: Smartass Leo",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter205.html"
+  },
+  {
+    "chapterNumber": 207,
+    "title": "Chapter 207: Academy Benefits [Bonus]",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter206.html"
+  },
+  {
+    "chapterNumber": 208,
+    "title": "Chapter 208: Mana Contract",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter207.html"
+  },
+  {
+    "chapterNumber": 209,
+    "title": "Chapter 209: First Class",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter208.html"
+  },
+  {
+    "chapterNumber": 210,
+    "title": "Chapter 210: Analysis",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter209.html"
+  },
+  {
+    "chapterNumber": 211,
+    "title": "Chapter 211: Advancement Materials",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter210.html"
+  },
+  {
+    "chapterNumber": 212,
+    "title": "Chapter 212: Ranked Match",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter211.html"
+  },
+  {
+    "chapterNumber": 213,
+    "title": "Chapter 213: Headache",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter212.html"
+  },
+  {
+    "chapterNumber": 214,
+    "title": "Chapter 214: Nord",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter213.html"
+  },
+  {
+    "chapterNumber": 215,
+    "title": "Chapter 215: Soul Damaging Weapon",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter214.html"
+  },
+  {
+    "chapterNumber": 216,
+    "title": "Chapter 216: Soul Healing, Leon Shocked",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter215.html"
+  },
+  {
+    "chapterNumber": 217,
+    "title": "Chapter 217: Trapped - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter216.html"
+  },
+  {
+    "chapterNumber": 218,
+    "title": "Chapter 218: Trapped - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter217.html"
+  },
+  {
+    "chapterNumber": 219,
+    "title": "Chapter 219: Trapped - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter218.html"
+  },
+  {
+    "chapterNumber": 220,
+    "title": "Chapter 220: Trapped - 4",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter219.html"
+  },
+  {
+    "chapterNumber": 221,
+    "title": "Chapter 221: Territory Attack",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter220.html"
+  },
+  {
+    "chapterNumber": 222,
+    "title": "Chapter 222: To To And Beyond",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter221.html"
+  },
+  {
+    "chapterNumber": 223,
+    "title": "Chapter 223: Cool Down",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter222.html"
+  },
+  {
+    "chapterNumber": 224,
+    "title": "Chapter 224: Competition Preparations - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter223.html"
+  },
+  {
+    "chapterNumber": 225,
+    "title": "Chapter 225: Competition Preparations - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter224.html"
+  },
+  {
+    "chapterNumber": 226,
+    "title": "Chapter 226: Competition Preparations - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter225.html"
+  },
+  {
+    "chapterNumber": 227,
+    "title": "Chapter 227: Competition Preparations - 4",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter226.html"
+  },
+  {
+    "chapterNumber": 228,
+    "title": "Chapter 228: New Year\u2019s Eve",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter227.html"
+  },
+  {
+    "chapterNumber": 229,
+    "title": "Chapter 229: Competition Eve",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter228.html"
+  },
+  {
+    "chapterNumber": 230,
+    "title": "Chapter 230: Opening Ceremony",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter229.html"
+  },
+  {
+    "chapterNumber": 231,
+    "title": "Chapter 231: Competition Day - 1, Miho\u2019s Clean Win",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter230.html"
+  },
+  {
+    "chapterNumber": 232,
+    "title": "Chapter 232: Tavian Gridfall",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter231.html"
+  },
+  {
+    "chapterNumber": 233,
+    "title": "Chapter 233: Array Master - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter232.html"
+  },
+  {
+    "chapterNumber": 234,
+    "title": "Chapter 234: Array Master And 3 Ls",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter233.html"
+  },
+  {
+    "chapterNumber": 235,
+    "title": "Chapter 235: I Didn\u2019t See You Fight?",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter234.html"
+  },
+  {
+    "chapterNumber": 236,
+    "title": "Chapter 236: Competition Day 2 to Day 5",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter235.html"
+  },
+  {
+    "chapterNumber": 237,
+    "title": "Chapter 237: Arena - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter236.html"
+  },
+  {
+    "chapterNumber": 238,
+    "title": "Chapter 238: Humbling",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter237.html"
+  },
+  {
+    "chapterNumber": 239,
+    "title": "Chapter 239: Tower Defence - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter238.html"
+  },
+  {
+    "chapterNumber": 240,
+    "title": "Chapter 240: Tower Defence - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter239.html"
+  },
+  {
+    "chapterNumber": 241,
+    "title": "Chapter 241: Tower Defence - 3",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter240.html"
+  },
+  {
+    "chapterNumber": 242,
+    "title": "Chapter 242: Instructor Prosecution - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter241.html"
+  },
+  {
+    "chapterNumber": 243,
+    "title": "Chapter 243: Instructor Prosecution - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter242.html"
+  },
+  {
+    "chapterNumber": 244,
+    "title": "Chapter 244: Competition Day 6 - 7",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter243.html"
+  },
+  {
+    "chapterNumber": 245,
+    "title": "Chapter 245: Miho\u2019s Challenge Issue - 1",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter244.html"
+  },
+  {
+    "chapterNumber": 246,
+    "title": "Chapter 246: Miho\u2019s Challenge Issue - 2",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter245.html"
+  },
+  {
+    "chapterNumber": 247,
+    "title": "Chapter 247: Aina Vs Miho",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter246.html"
+  },
+  {
+    "chapterNumber": 248,
+    "title": "Chapter 248: Easy Win?",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter247.html"
+  },
+  {
+    "chapterNumber": 249,
+    "title": "Chapter 249: Interrogation",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter248.html"
+  },
+  {
+    "chapterNumber": 250,
+    "title": "Chapter 250: Spy Repellants",
+    "arcId": "arc_4_bastion_league",
+    "arcName": "Phase IV: Bastion Defense & Inter-Academy League",
+    "file": "OEBPS/chapter249.html"
+  },
+  {
+    "chapterNumber": 251,
+    "title": "Chapter 251: Baby",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter250.html"
+  },
+  {
+    "chapterNumber": 252,
+    "title": "Chapter 252: Anal Queen - 1 (R18)",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter251.html"
+  },
+  {
+    "chapterNumber": 253,
+    "title": "Chapter 253: Anal Queen - 2 (R18)",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter252.html"
+  },
+  {
+    "chapterNumber": 254,
+    "title": "Chapter 254: Mana Limit",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter253.html"
+  },
+  {
+    "chapterNumber": 255,
+    "title": "Chapter 255: Competition Final Phase",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter254.html"
+  },
+  {
+    "chapterNumber": 256,
+    "title": "Chapter 256: Top 10",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter255.html"
+  },
+  {
+    "chapterNumber": 257,
+    "title": "Chapter 257: Rigged Pairs",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter256.html"
+  },
+  {
+    "chapterNumber": 258,
+    "title": "Chapter 258: Betting",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter257.html"
+  },
+  {
+    "chapterNumber": 259,
+    "title": "Chapter 259: Much!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter258.html"
+  },
+  {
+    "chapterNumber": 260,
+    "title": "Chapter 260: Miho Hits Big!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter259.html"
+  },
+  {
+    "chapterNumber": 261,
+    "title": "Chapter 261: Stone",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter260.html"
+  },
+  {
+    "chapterNumber": 262,
+    "title": "Chapter 262: Team Work?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter261.html"
+  },
+  {
+    "chapterNumber": 263,
+    "title": "Chapter 263: Lily Vs Dhalia",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter262.html"
+  },
+  {
+    "chapterNumber": 264,
+    "title": "Chapter 264: New Technique",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter263.html"
+  },
+  {
+    "chapterNumber": 265,
+    "title": "Chapter 265: Tundra",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter264.html"
+  },
+  {
+    "chapterNumber": 266,
+    "title": "Chapter 266: Mammoth",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter265.html"
+  },
+  {
+    "chapterNumber": 267,
+    "title": "Chapter 267: Birds Should Stay In The Sky - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter266.html"
+  },
+  {
+    "chapterNumber": 268,
+    "title": "Chapter 268: Birds Should Stay In The Sky - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter267.html"
+  },
+  {
+    "chapterNumber": 269,
+    "title": "Chapter 269: - 1st Level Matches Over",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter268.html"
+  },
+  {
+    "chapterNumber": 270,
+    "title": "Chapter 270: Loser\u2019s Bracket Winner - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter269.html"
+  },
+  {
+    "chapterNumber": 271,
+    "title": "Chapter 271: Loser\u2019s Bracket Winner - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter270.html"
+  },
+  {
+    "chapterNumber": 272,
+    "title": "Chapter 272: Loser\u2019s Bracket Winner - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter271.html"
+  },
+  {
+    "chapterNumber": 273,
+    "title": "Chapter 273: Loser\u2019s Bracket Winner - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter272.html"
+  },
+  {
+    "chapterNumber": 274,
+    "title": "Chapter 274: Loser\u2019s Bracket Winner - 5",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter273.html"
+  },
+  {
+    "chapterNumber": 275,
+    "title": "Chapter 275: Loser\u2019s Bracket Winner - Final",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter274.html"
+  },
+  {
+    "chapterNumber": 276,
+    "title": "Chapter 276: - 2nd Level Match Start",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter275.html"
+  },
+  {
+    "chapterNumber": 277,
+    "title": "Chapter 277: Lily Vs Aaron",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter276.html"
+  },
+  {
+    "chapterNumber": 278,
+    "title": "Chapter 278: Crazy Vs Closet Crazy",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter277.html"
+  },
+  {
+    "chapterNumber": 279,
+    "title": "Chapter 279: Midnight",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter278.html"
+  },
+  {
+    "chapterNumber": 280,
+    "title": "Chapter 280: Leo Vs Uraan - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter279.html"
+  },
+  {
+    "chapterNumber": 281,
+    "title": "Chapter 281: New Territory Member",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter280.html"
+  },
+  {
+    "chapterNumber": 282,
+    "title": "Chapter 282: Hitman",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter281.html"
+  },
+  {
+    "chapterNumber": 283,
+    "title": "Chapter 283: Gun",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter282.html"
+  },
+  {
+    "chapterNumber": 284,
+    "title": "Chapter 284: Consecutive Surrenders",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter283.html"
+  },
+  {
+    "chapterNumber": 285,
+    "title": "Chapter 285: Birds Should Stay In The Sky",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter284.html"
+  },
+  {
+    "chapterNumber": 286,
+    "title": "Chapter 286: Finale - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter285.html"
+  },
+  {
+    "chapterNumber": 287,
+    "title": "Chapter 287: Finale - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter286.html"
+  },
+  {
+    "chapterNumber": 288,
+    "title": "Chapter 288: Soul Technique",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter287.html"
+  },
+  {
+    "chapterNumber": 289,
+    "title": "Chapter 289: Argh",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter288.html"
+  },
+  {
+    "chapterNumber": 290,
+    "title": "Chapter 290: Final Strike - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter289.html"
+  },
+  {
+    "chapterNumber": 291,
+    "title": "Chapter 291: Final Strike - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter290.html"
+  },
+  {
+    "chapterNumber": 292,
+    "title": "Chapter 292: Over",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter291.html"
+  },
+  {
+    "chapterNumber": 293,
+    "title": "Chapter 293: Rewards - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter292.html"
+  },
+  {
+    "chapterNumber": 294,
+    "title": "Chapter 294: Rewards - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter293.html"
+  },
+  {
+    "chapterNumber": 295,
+    "title": "Chapter 295: Peak",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter294.html"
+  },
+  {
+    "chapterNumber": 296,
+    "title": "Chapter 296: Top-3 Special Rewards - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter295.html"
+  },
+  {
+    "chapterNumber": 297,
+    "title": "Chapter 297: Top-3 Student Rewards - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter296.html"
+  },
+  {
+    "chapterNumber": 298,
+    "title": "Chapter 298: Shaken Mountain",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter297.html"
+  },
+  {
+    "chapterNumber": 299,
+    "title": "Chapter 299: Territory Tier Upgrade And New \u2019Recruits\u2019 Plans - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter298.html"
+  },
+  {
+    "chapterNumber": 300,
+    "title": "Chapter 300: Territory Tier Upgrade And New \u2019Recruits\u2019 Plans - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter299.html"
+  },
+  {
+    "chapterNumber": 301,
+    "title": "Chapter 301: Territory Tier Upgrade And New \u2019Recruits\u2019 Plans - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter300.html"
+  },
+  {
+    "chapterNumber": 302,
+    "title": "Chapter 302: Territory Tier Upgrade And New \u2019Recruits\u2019 Plans - 4 [Bonus 1/4]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter301.html"
+  },
+  {
+    "chapterNumber": 303,
+    "title": "Chapter 303: Combat Slaves",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter302.html"
+  },
+  {
+    "chapterNumber": 304,
+    "title": "Chapter 304: Hydra - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter303.html"
+  },
+  {
+    "chapterNumber": 305,
+    "title": "Chapter 305: Hydra - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter304.html"
+  },
+  {
+    "chapterNumber": 306,
+    "title": "Chapter 306: Hydra - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter305.html"
+  },
+  {
+    "chapterNumber": 307,
+    "title": "Chapter 307: Hydra - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter306.html"
+  },
+  {
+    "chapterNumber": 308,
+    "title": "Chapter 308: Hydra - Final",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter307.html"
+  },
+  {
+    "chapterNumber": 309,
+    "title": "Chapter 309: Spirit Beast Contract",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter308.html"
+  },
+  {
+    "chapterNumber": 310,
+    "title": "Chapter 310: Lily Out Of Control",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter309.html"
+  },
+  {
+    "chapterNumber": 311,
+    "title": "Chapter 311: Stabilisation",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter310.html"
+  },
+  {
+    "chapterNumber": 312,
+    "title": "Chapter 312: Slaves - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter311.html"
+  },
+  {
+    "chapterNumber": 313,
+    "title": "Chapter 313: Slaves - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter312.html"
+  },
+  {
+    "chapterNumber": 314,
+    "title": "Chapter 314: Slaves - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter313.html"
+  },
+  {
+    "chapterNumber": 315,
+    "title": "Chapter 315: Dwarves",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter314.html"
+  },
+  {
+    "chapterNumber": 316,
+    "title": "Chapter 316: Bane Of Spirits",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter315.html"
+  },
+  {
+    "chapterNumber": 317,
+    "title": "Chapter 317: Planning - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter316.html"
+  },
+  {
+    "chapterNumber": 318,
+    "title": "Chapter 318: Planning - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter317.html"
+  },
+  {
+    "chapterNumber": 319,
+    "title": "Chapter 319: If I Could, I Would Hold You All Throughout My Life (Slight R18) [Bonus 2/4]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter318.html"
+  },
+  {
+    "chapterNumber": 320,
+    "title": "Chapter 320: Secret Realm - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter319.html"
+  },
+  {
+    "chapterNumber": 321,
+    "title": "Chapter 321: Secret Realm - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter320.html"
+  },
+  {
+    "chapterNumber": 322,
+    "title": "Chapter 322: Mana Regeneration Potion",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter321.html"
+  },
+  {
+    "chapterNumber": 323,
+    "title": "Chapter 323: Commoner\u2019s Plight",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter322.html"
+  },
+  {
+    "chapterNumber": 324,
+    "title": "Chapter 324: Contract",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter323.html"
+  },
+  {
+    "chapterNumber": 325,
+    "title": "Chapter 325: Wood Elf Secret Realm - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter324.html"
+  },
+  {
+    "chapterNumber": 326,
+    "title": "Chapter 326: Wood Elf Secret Realm - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter325.html"
+  },
+  {
+    "chapterNumber": 327,
+    "title": "Chapter 327: Wood Elf Secret Realm - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter326.html"
+  },
+  {
+    "chapterNumber": 328,
+    "title": "Chapter 328: Wood Elf Secret Realm - 4 [Bonus 3/4]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter327.html"
+  },
+  {
+    "chapterNumber": 329,
+    "title": "Chapter 329: Skewed Scale [Bonus 4/4]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter328.html"
+  },
+  {
+    "chapterNumber": 330,
+    "title": "Chapter 330: Frozen Waterfall",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter329.html"
+  },
+  {
+    "chapterNumber": 331,
+    "title": "Chapter 331: Sylrael",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter330.html"
+  },
+  {
+    "chapterNumber": 332,
+    "title": "Chapter 332: Conquering A Realm - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter331.html"
+  },
+  {
+    "chapterNumber": 333,
+    "title": "Chapter 333: Conquering A Realm - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter332.html"
+  },
+  {
+    "chapterNumber": 334,
+    "title": "Chapter 334: Conquering A Realm - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter333.html"
+  },
+  {
+    "chapterNumber": 335,
+    "title": "Chapter 335: Conquering A Realm - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter334.html"
+  },
+  {
+    "chapterNumber": 336,
+    "title": "Chapter 336: Conquering A Realm - 5",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter335.html"
+  },
+  {
+    "chapterNumber": 337,
+    "title": "Chapter 337: Conquering A Realm - 6",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter336.html"
+  },
+  {
+    "chapterNumber": 338,
+    "title": "Chapter 338: Black and Pink Vs Red and Green - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter337.html"
+  },
+  {
+    "chapterNumber": 339,
+    "title": "Chapter 339: Black and Pink Vs Red and Green - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter338.html"
+  },
+  {
+    "chapterNumber": 340,
+    "title": "Chapter 340: Realm Conquered - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter339.html"
+  },
+  {
+    "chapterNumber": 341,
+    "title": "Chapter 341: Realm Conquered - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter340.html"
+  },
+  {
+    "chapterNumber": 342,
+    "title": "Chapter 342: Slaves Acquired - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter341.html"
+  },
+  {
+    "chapterNumber": 343,
+    "title": "Chapter 343: Slaves Acquired - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter342.html"
+  },
+  {
+    "chapterNumber": 344,
+    "title": "Chapter 344: Slaves Acquired - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter343.html"
+  },
+  {
+    "chapterNumber": 345,
+    "title": "Chapter 345: Slaves Acquired - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter344.html"
+  },
+  {
+    "chapterNumber": 346,
+    "title": "Chapter 346: Slaves Acquired - 5",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter345.html"
+  },
+  {
+    "chapterNumber": 347,
+    "title": "Chapter 347: Slaves Acquired - Last",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter346.html"
+  },
+  {
+    "chapterNumber": 348,
+    "title": "Chapter 348: Strong Talents",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter347.html"
+  },
+  {
+    "chapterNumber": 349,
+    "title": "Chapter 349: Soul Imprints",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter348.html"
+  },
+  {
+    "chapterNumber": 350,
+    "title": "Chapter 350: Back To Territory",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter349.html"
+  },
+  {
+    "chapterNumber": 351,
+    "title": "Chapter 351: Luxurious Sheds - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter350.html"
+  },
+  {
+    "chapterNumber": 352,
+    "title": "Chapter 352: Luxurious Sheds - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter351.html"
+  },
+  {
+    "chapterNumber": 353,
+    "title": "Chapter 353: Luxurious Sheds - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter352.html"
+  },
+  {
+    "chapterNumber": 354,
+    "title": "Chapter 354: Luxurious Sheds - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter353.html"
+  },
+  {
+    "chapterNumber": 355,
+    "title": "Chapter 355: Luxurious Sheds - 5",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter354.html"
+  },
+  {
+    "chapterNumber": 356,
+    "title": "Chapter 356: Fish - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter355.html"
+  },
+  {
+    "chapterNumber": 357,
+    "title": "Chapter 357: Fish - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter356.html"
+  },
+  {
+    "chapterNumber": 358,
+    "title": "Chapter 358: Fish - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter357.html"
+  },
+  {
+    "chapterNumber": 359,
+    "title": "Chapter 359: Fish - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter358.html"
+  },
+  {
+    "chapterNumber": 360,
+    "title": "Chapter 360: Fishing",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter359.html"
+  },
+  {
+    "chapterNumber": 361,
+    "title": "Chapter 361: Crystal Fish",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter360.html"
+  },
+  {
+    "chapterNumber": 362,
+    "title": "Chapter 362: Aquarium Sphere",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter361.html"
+  },
+  {
+    "chapterNumber": 363,
+    "title": "Chapter 363: House In Making",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter362.html"
+  },
+  {
+    "chapterNumber": 364,
+    "title": "Chapter 364: This Is Not Normal [Bonus 1/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter363.html"
+  },
+  {
+    "chapterNumber": 365,
+    "title": "Chapter 365: Territory Expansion",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter364.html"
+  },
+  {
+    "chapterNumber": 366,
+    "title": "Chapter 366: Tavian",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter365.html"
+  },
+  {
+    "chapterNumber": 367,
+    "title": "Chapter 367: Alliance?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter366.html"
+  },
+  {
+    "chapterNumber": 368,
+    "title": "Chapter 368: Extra Layer Of Defence",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter367.html"
+  },
+  {
+    "chapterNumber": 369,
+    "title": "Chapter 369: What?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter368.html"
+  },
+  {
+    "chapterNumber": 370,
+    "title": "Chapter 370: King Tier Spirit Beast - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter369.html"
+  },
+  {
+    "chapterNumber": 371,
+    "title": "Chapter 371: King Tier Spirit Beast - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter370.html"
+  },
+  {
+    "chapterNumber": 372,
+    "title": "Chapter 372: Uncertain Opportunities",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter371.html"
+  },
+  {
+    "chapterNumber": 373,
+    "title": "Chapter 373: Opportunity Seeker - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter372.html"
+  },
+  {
+    "chapterNumber": 374,
+    "title": "Chapter 374: Opportunity Seeker - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter373.html"
+  },
+  {
+    "chapterNumber": 375,
+    "title": "Chapter 375: What Crashed?! [Bonus 2/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter374.html"
+  },
+  {
+    "chapterNumber": 376,
+    "title": "Chapter 376: Is It A Bird? Or A Plane?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter375.html"
+  },
+  {
+    "chapterNumber": 377,
+    "title": "Chapter 377: Biological Immortality and Absolute Immortality",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter376.html"
+  },
+  {
+    "chapterNumber": 378,
+    "title": "Chapter 378: Cannot Hear It?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter377.html"
+  },
+  {
+    "chapterNumber": 379,
+    "title": "Chapter 379: Opportunity To Strike Rich - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter378.html"
+  },
+  {
+    "chapterNumber": 380,
+    "title": "Chapter 380: Opportunity To Strike Rich - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter379.html"
+  },
+  {
+    "chapterNumber": 381,
+    "title": "Chapter 381: It\u2019s Not That Easy",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter380.html"
+  },
+  {
+    "chapterNumber": 382,
+    "title": "Chapter 382: Tough Nut",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter381.html"
+  },
+  {
+    "chapterNumber": 383,
+    "title": "Chapter 383: Pulling A Hand For A Finger",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter382.html"
+  },
+  {
+    "chapterNumber": 384,
+    "title": "Chapter 384: Offers",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter383.html"
+  },
+  {
+    "chapterNumber": 385,
+    "title": "Chapter 385: Power Up",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter384.html"
+  },
+  {
+    "chapterNumber": 386,
+    "title": "Chapter 386: A Better Flying Ride",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter385.html"
+  },
+  {
+    "chapterNumber": 387,
+    "title": "Chapter 387: Sold Information?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter386.html"
+  },
+  {
+    "chapterNumber": 388,
+    "title": "Chapter 388: Muddy Ground",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter387.html"
+  },
+  {
+    "chapterNumber": 389,
+    "title": "Chapter 389: Blushing Butcheress",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter388.html"
+  },
+  {
+    "chapterNumber": 390,
+    "title": "Chapter 390: Thunder-Crest Elk Antler",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter389.html"
+  },
+  {
+    "chapterNumber": 391,
+    "title": "Chapter 391: Trouble After The Rain",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter390.html"
+  },
+  {
+    "chapterNumber": 392,
+    "title": "Chapter 392: Centipede",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter391.html"
+  },
+  {
+    "chapterNumber": 393,
+    "title": "Chapter 393: Verdant Blaze",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter392.html"
+  },
+  {
+    "chapterNumber": 394,
+    "title": "Chapter 394: Territory Bounty - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter393.html"
+  },
+  {
+    "chapterNumber": 395,
+    "title": "Chapter 395: Companion",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter394.html"
+  },
+  {
+    "chapterNumber": 396,
+    "title": "Chapter 396: Proper Reward",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter395.html"
+  },
+  {
+    "chapterNumber": 397,
+    "title": "Chapter 397: Territory Bounty - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter396.html"
+  },
+  {
+    "chapterNumber": 398,
+    "title": "Chapter 398: Territory Bounty - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter397.html"
+  },
+  {
+    "chapterNumber": 399,
+    "title": "Chapter 399: Territory Bounty - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter398.html"
+  },
+  {
+    "chapterNumber": 400,
+    "title": "Chapter 400: Preparations - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter399.html"
+  },
+  {
+    "chapterNumber": 401,
+    "title": "Chapter 401: Preparations - 2 (Slight R18)",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter400.html"
+  },
+  {
+    "chapterNumber": 402,
+    "title": "Chapter 402: Looks Improvement? (Slight R18) [Bonus 1/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter401.html"
+  },
+  {
+    "chapterNumber": 403,
+    "title": "Chapter 403: Treasure Advancement",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter402.html"
+  },
+  {
+    "chapterNumber": 404,
+    "title": "Chapter 404: Bounty Begins",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter403.html"
+  },
+  {
+    "chapterNumber": 405,
+    "title": "Chapter 405: Blooming Lotus [Bonus 2/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter404.html"
+  },
+  {
+    "chapterNumber": 406,
+    "title": "Chapter 406: Carnage",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter405.html"
+  },
+  {
+    "chapterNumber": 407,
+    "title": "Chapter 407: Beast Tide? Just This? - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter406.html"
+  },
+  {
+    "chapterNumber": 408,
+    "title": "Chapter 408: Low-Danger Zone",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter407.html"
+  },
+  {
+    "chapterNumber": 409,
+    "title": "Chapter 409: Milk",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter408.html"
+  },
+  {
+    "chapterNumber": 410,
+    "title": "Chapter 410: Ravaging Army",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter409.html"
+  },
+  {
+    "chapterNumber": 411,
+    "title": "Chapter 411: Breeze",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter410.html"
+  },
+  {
+    "chapterNumber": 412,
+    "title": "Chapter 412: Picking off A Bullet",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter411.html"
+  },
+  {
+    "chapterNumber": 413,
+    "title": "Chapter 413: Lifting A Mammoth",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter412.html"
+  },
+  {
+    "chapterNumber": 414,
+    "title": "Chapter 414: Natural Treasure On Beasts",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter413.html"
+  },
+  {
+    "chapterNumber": 415,
+    "title": "Chapter 415: Demolishing The Rest",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter414.html"
+  },
+  {
+    "chapterNumber": 416,
+    "title": "Chapter 416: Sudden Threat - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter415.html"
+  },
+  {
+    "chapterNumber": 417,
+    "title": "Chapter 417: Sudden Threat - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter416.html"
+  },
+  {
+    "chapterNumber": 418,
+    "title": "Chapter 418: Threat Neutralised",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter417.html"
+  },
+  {
+    "chapterNumber": 419,
+    "title": "Chapter 419: Prosperity Ranking - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter418.html"
+  },
+  {
+    "chapterNumber": 420,
+    "title": "Chapter 420: Prosperity Ranking - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter419.html"
+  },
+  {
+    "chapterNumber": 421,
+    "title": "Chapter 421: Contributing Members And Bisons",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter420.html"
+  },
+  {
+    "chapterNumber": 422,
+    "title": "Chapter 422: Capturing Bisons - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter421.html"
+  },
+  {
+    "chapterNumber": 423,
+    "title": "Chapter 423: Capturing Bisons - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter422.html"
+  },
+  {
+    "chapterNumber": 424,
+    "title": "Chapter 424: Bisons Captured",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter423.html"
+  },
+  {
+    "chapterNumber": 425,
+    "title": "Chapter 425: Frostwhisk Mice",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter424.html"
+  },
+  {
+    "chapterNumber": 426,
+    "title": "Chapter 426: Getting Back To The Territory - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter425.html"
+  },
+  {
+    "chapterNumber": 427,
+    "title": "Chapter 427: Getting Back To The Territory - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter426.html"
+  },
+  {
+    "chapterNumber": 428,
+    "title": "Chapter 428: Getting Back To The Territory - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter427.html"
+  },
+  {
+    "chapterNumber": 429,
+    "title": "Chapter 429: Back To The Territory And Miho\u2019s Beastcore Contract",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter428.html"
+  },
+  {
+    "chapterNumber": 430,
+    "title": "Chapter 430: Miho\u2019s Contract And Farms",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter429.html"
+  },
+  {
+    "chapterNumber": 431,
+    "title": "Chapter 431: Mana Generator",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter430.html"
+  },
+  {
+    "chapterNumber": 432,
+    "title": "Chapter 432: Working Of Mana Generator",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter431.html"
+  },
+  {
+    "chapterNumber": 433,
+    "title": "Chapter 433: Talent Rank Up",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter432.html"
+  },
+  {
+    "chapterNumber": 434,
+    "title": "Chapter 434: Normal Slaves",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter433.html"
+  },
+  {
+    "chapterNumber": 435,
+    "title": "Chapter 435: Titanbreath Lotus",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter434.html"
+  },
+  {
+    "chapterNumber": 436,
+    "title": "Chapter 436: Low Energy And Low Strength",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter435.html"
+  },
+  {
+    "chapterNumber": 437,
+    "title": "Chapter 437: Farms - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter436.html"
+  },
+  {
+    "chapterNumber": 438,
+    "title": "Chapter 438: Farms - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter437.html"
+  },
+  {
+    "chapterNumber": 439,
+    "title": "Chapter 439: Farms - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter438.html"
+  },
+  {
+    "chapterNumber": 440,
+    "title": "Chapter 440: Farms - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter439.html"
+  },
+  {
+    "chapterNumber": 441,
+    "title": "Chapter 441: Intuition Talents",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter440.html"
+  },
+  {
+    "chapterNumber": 442,
+    "title": "Chapter 442: Racial Benefits",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter441.html"
+  },
+  {
+    "chapterNumber": 443,
+    "title": "Chapter 443: Untainted Race",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter442.html"
+  },
+  {
+    "chapterNumber": 444,
+    "title": "Chapter 444: Training",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter443.html"
+  },
+  {
+    "chapterNumber": 445,
+    "title": "Chapter 445: Durable Body",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter444.html"
+  },
+  {
+    "chapterNumber": 446,
+    "title": "Chapter 446: Sunborn Empire, Compulsory Mission and Fused Talents",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter445.html"
+  },
+  {
+    "chapterNumber": 447,
+    "title": "Chapter 447: Crocodile - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter446.html"
+  },
+  {
+    "chapterNumber": 448,
+    "title": "Chapter 448: Crocodile - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter447.html"
+  },
+  {
+    "chapterNumber": 449,
+    "title": "Chapter 449: Corroding Poison",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter448.html"
+  },
+  {
+    "chapterNumber": 450,
+    "title": "Chapter 450: Spirit Clothes",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter449.html"
+  },
+  {
+    "chapterNumber": 451,
+    "title": "Chapter 451: Flourishing Territory",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter450.html"
+  },
+  {
+    "chapterNumber": 452,
+    "title": "Chapter 452: Flourishing Territory And Unexpected Event",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter451.html"
+  },
+  {
+    "chapterNumber": 453,
+    "title": "Chapter 453: Selling The Crocodile And Gathering Information - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter452.html"
+  },
+  {
+    "chapterNumber": 454,
+    "title": "Chapter 454: Selling The Crocodile And Gathering Information - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter453.html"
+  },
+  {
+    "chapterNumber": 455,
+    "title": "Chapter 455: Compulsory Mission",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter454.html"
+  },
+  {
+    "chapterNumber": 456,
+    "title": "Chapter 456: Wyvern Egg",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter455.html"
+  },
+  {
+    "chapterNumber": 457,
+    "title": "Chapter 457: Nyxa In Pain",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter456.html"
+  },
+  {
+    "chapterNumber": 458,
+    "title": "Chapter 458: Ancester\u2019s Call",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter457.html"
+  },
+  {
+    "chapterNumber": 459,
+    "title": "Chapter 459: Sleeping Through A Whole Aeon",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter458.html"
+  },
+  {
+    "chapterNumber": 460,
+    "title": "Chapter 460: A 4 Day Trip",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter459.html"
+  },
+  {
+    "chapterNumber": 461,
+    "title": "Chapter 461: My Fodders Are Enough To Eat Your Best",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter460.html"
+  },
+  {
+    "chapterNumber": 462,
+    "title": "Chapter 462: Spirit Paradise",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter461.html"
+  },
+  {
+    "chapterNumber": 463,
+    "title": "Chapter 463: Benefits Of Soul Bond",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter462.html"
+  },
+  {
+    "chapterNumber": 464,
+    "title": "Chapter 464: Latent Potential",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter463.html"
+  },
+  {
+    "chapterNumber": 465,
+    "title": "Chapter 465: Pseudo 5-star?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter464.html"
+  },
+  {
+    "chapterNumber": 466,
+    "title": "Chapter 466: Punishment",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter465.html"
+  },
+  {
+    "chapterNumber": 467,
+    "title": "Chapter 467: Headed To The Ember City - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter466.html"
+  },
+  {
+    "chapterNumber": 468,
+    "title": "Chapter 468: Headed To The Ember City - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter467.html"
+  },
+  {
+    "chapterNumber": 469,
+    "title": "Chapter 469: Groups",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter468.html"
+  },
+  {
+    "chapterNumber": 470,
+    "title": "Chapter 470: Backup",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter469.html"
+  },
+  {
+    "chapterNumber": 471,
+    "title": "Chapter 471: Arriving At Ember City - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter470.html"
+  },
+  {
+    "chapterNumber": 472,
+    "title": "Chapter 472: Arriving At Ember City - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter471.html"
+  },
+  {
+    "chapterNumber": 473,
+    "title": "Chapter 473: Higher Ups Scandal",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter472.html"
+  },
+  {
+    "chapterNumber": 474,
+    "title": "Chapter 474: Accommodations - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter473.html"
+  },
+  {
+    "chapterNumber": 475,
+    "title": "Chapter 475: Accommodations - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter474.html"
+  },
+  {
+    "chapterNumber": 476,
+    "title": "Chapter 476: Meeting A Familiar Face",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter475.html"
+  },
+  {
+    "chapterNumber": 477,
+    "title": "Chapter 477: Compensations",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter476.html"
+  },
+  {
+    "chapterNumber": 478,
+    "title": "Chapter 478: Useless Backing [Bonus 1/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter477.html"
+  },
+  {
+    "chapterNumber": 479,
+    "title": "Chapter 479: Woman [Bonus 2/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter478.html"
+  },
+  {
+    "chapterNumber": 480,
+    "title": "Chapter 480: Hilda [Bonus]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter479.html"
+  },
+  {
+    "chapterNumber": 481,
+    "title": "Chapter 481: Shut [Bonus]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter480.html"
+  },
+  {
+    "chapterNumber": 482,
+    "title": "Chapter 482: Bon As Of Bonwire",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter481.html"
+  },
+  {
+    "chapterNumber": 483,
+    "title": "Chapter 483: De-escalation By Surprise Individual [Bonus]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter482.html"
+  },
+  {
+    "chapterNumber": 484,
+    "title": "Chapter 484: Settling Things In Castle",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter483.html"
+  },
+  {
+    "chapterNumber": 485,
+    "title": "Chapter 485: City Lord - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter484.html"
+  },
+  {
+    "chapterNumber": 486,
+    "title": "Chapter 486: City Lord - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter485.html"
+  },
+  {
+    "chapterNumber": 487,
+    "title": "Chapter 487: Unexpected Visitors",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter486.html"
+  },
+  {
+    "chapterNumber": 488,
+    "title": "Chapter 488: Entering The Wyvern\u2019s Realm - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter487.html"
+  },
+  {
+    "chapterNumber": 489,
+    "title": "Chapter 489: Entering The Wyvern\u2019s Realm - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter488.html"
+  },
+  {
+    "chapterNumber": 490,
+    "title": "Chapter 490: Relationship",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter489.html"
+  },
+  {
+    "chapterNumber": 491,
+    "title": "Chapter 491: - 1st Day Inside The Secret Realm",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter490.html"
+  },
+  {
+    "chapterNumber": 492,
+    "title": "Chapter 492: Coming Across The First Inhabitant - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter491.html"
+  },
+  {
+    "chapterNumber": 493,
+    "title": "Chapter 493: Coming Across The First Inhabitant - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter492.html"
+  },
+  {
+    "chapterNumber": 494,
+    "title": "Chapter 494: First Natural Treasure",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter493.html"
+  },
+  {
+    "chapterNumber": 495,
+    "title": "Chapter 495: Tunnel Captain",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter494.html"
+  },
+  {
+    "chapterNumber": 496,
+    "title": "Chapter 496: Talent Extraction - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter495.html"
+  },
+  {
+    "chapterNumber": 497,
+    "title": "Chapter 497: Talent Extraction - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter496.html"
+  },
+  {
+    "chapterNumber": 498,
+    "title": "Chapter 498: Talent Extraction And Skill Synthesis",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter497.html"
+  },
+  {
+    "chapterNumber": 499,
+    "title": "Chapter 499: Chance For More Natural Treasure",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter498.html"
+  },
+  {
+    "chapterNumber": 500,
+    "title": "Chapter 500: Were They Really Such A Threat? [Bonus 1/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter499.html"
+  },
+  {
+    "chapterNumber": 501,
+    "title": "Chapter 501: I Will Pay You 10 Silver!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter500.html"
+  },
+  {
+    "chapterNumber": 502,
+    "title": "Chapter 502: Oh Shoot, I Disrupted The Balance, Let Me Fix It",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter501.html"
+  },
+  {
+    "chapterNumber": 503,
+    "title": "Chapter 503: Treasure Hunt",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter502.html"
+  },
+  {
+    "chapterNumber": 504,
+    "title": "Chapter 504: Exceptionally Talented",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter503.html"
+  },
+  {
+    "chapterNumber": 505,
+    "title": "Chapter 505: Sacrifice To Great Dragons",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter504.html"
+  },
+  {
+    "chapterNumber": 506,
+    "title": "Chapter 506: Proper Subordinate And New Opportunity?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter505.html"
+  },
+  {
+    "chapterNumber": 507,
+    "title": "Chapter 507: Ransom - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter506.html"
+  },
+  {
+    "chapterNumber": 508,
+    "title": "Chapter 508: Ransom - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter507.html"
+  },
+  {
+    "chapterNumber": 509,
+    "title": "Chapter 509: Prospective Recruits For The Territory",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter508.html"
+  },
+  {
+    "chapterNumber": 510,
+    "title": "Chapter 510: Drake",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter509.html"
+  },
+  {
+    "chapterNumber": 511,
+    "title": "Chapter 511: Water And Fire",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter510.html"
+  },
+  {
+    "chapterNumber": 512,
+    "title": "Chapter 512: Location Reveal",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter511.html"
+  },
+  {
+    "chapterNumber": 513,
+    "title": "Chapter 513: Young Master So Cool And Reliable",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter512.html"
+  },
+  {
+    "chapterNumber": 514,
+    "title": "Chapter 514: Tsk, I Guess Another Time",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter513.html"
+  },
+  {
+    "chapterNumber": 515,
+    "title": "Chapter 515: Dragons",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter514.html"
+  },
+  {
+    "chapterNumber": 516,
+    "title": "Chapter 516: Dra-goons",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter515.html"
+  },
+  {
+    "chapterNumber": 517,
+    "title": "Chapter 517: Full Name",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter516.html"
+  },
+  {
+    "chapterNumber": 518,
+    "title": "Chapter 518: Heading Towards The Main Course",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter517.html"
+  },
+  {
+    "chapterNumber": 519,
+    "title": "Chapter 519: Behemoth",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter518.html"
+  },
+  {
+    "chapterNumber": 520,
+    "title": "Chapter 520: Adjusting The Spiritual Realm",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter519.html"
+  },
+  {
+    "chapterNumber": 521,
+    "title": "Chapter 521: Naelith Rank Up",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter520.html"
+  },
+  {
+    "chapterNumber": 522,
+    "title": "Chapter 522: Last Day In The Secret Realm",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter521.html"
+  },
+  {
+    "chapterNumber": 523,
+    "title": "Chapter 523: Gorilla Or Simply Monkeys?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter522.html"
+  },
+  {
+    "chapterNumber": 524,
+    "title": "Chapter 524: What If I Jump?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter523.html"
+  },
+  {
+    "chapterNumber": 525,
+    "title": "Chapter 525: Lava Serpent",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter524.html"
+  },
+  {
+    "chapterNumber": 526,
+    "title": "Chapter 526: He Still Has His Balls",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter525.html"
+  },
+  {
+    "chapterNumber": 527,
+    "title": "Chapter 527: Problem Behind The Scenes - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter526.html"
+  },
+  {
+    "chapterNumber": 528,
+    "title": "Chapter 528: Problems Behind The Scenes - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter527.html"
+  },
+  {
+    "chapterNumber": 529,
+    "title": "Chapter 529: Cost Of True Freedom",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter528.html"
+  },
+  {
+    "chapterNumber": 530,
+    "title": "Chapter 530: Taboo Relationships",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter529.html"
+  },
+  {
+    "chapterNumber": 531,
+    "title": "Chapter 531: Massacre",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter530.html"
+  },
+  {
+    "chapterNumber": 532,
+    "title": "Chapter 532: Thank You? Interesting...",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter531.html"
+  },
+  {
+    "chapterNumber": 533,
+    "title": "Chapter 533: Dilemma Or Opportunity",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter532.html"
+  },
+  {
+    "chapterNumber": 534,
+    "title": "Chapter 534: Draconic Traits",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter533.html"
+  },
+  {
+    "chapterNumber": 535,
+    "title": "Chapter 535: Is This For Real?!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter534.html"
+  },
+  {
+    "chapterNumber": 536,
+    "title": "Chapter 536: Broken Luck Meter",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter535.html"
+  },
+  {
+    "chapterNumber": 537,
+    "title": "Chapter 537: Where\u2019s My Reward?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter536.html"
+  },
+  {
+    "chapterNumber": 538,
+    "title": "Chapter 538: Secret Stash",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter537.html"
+  },
+  {
+    "chapterNumber": 539,
+    "title": "Chapter 539: Infernal Serpent - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter538.html"
+  },
+  {
+    "chapterNumber": 540,
+    "title": "Chapter 540: Infernal Serpent - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter539.html"
+  },
+  {
+    "chapterNumber": 541,
+    "title": "Chapter 541: Infernal Serpent - Flame Crowned Devourer",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter540.html"
+  },
+  {
+    "chapterNumber": 542,
+    "title": "Chapter 542: Infernal Serpent - Last",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter541.html"
+  },
+  {
+    "chapterNumber": 543,
+    "title": "Chapter 543: Acquiring A Physique - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter542.html"
+  },
+  {
+    "chapterNumber": 544,
+    "title": "Chapter 544: Acquiring A Physique - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter543.html"
+  },
+  {
+    "chapterNumber": 545,
+    "title": "Chapter 545: Tons Of Meat - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter544.html"
+  },
+  {
+    "chapterNumber": 546,
+    "title": "Chapter 546: Tons Of Meat - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter545.html"
+  },
+  {
+    "chapterNumber": 547,
+    "title": "Chapter 547: Red-Scaled Lizardman - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter546.html"
+  },
+  {
+    "chapterNumber": 548,
+    "title": "Chapter 548: Red-Scaled Lizardman - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter547.html"
+  },
+  {
+    "chapterNumber": 549,
+    "title": "Chapter 549: Red-Scaled Lizardman - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter548.html"
+  },
+  {
+    "chapterNumber": 550,
+    "title": "Chapter 550: Getting Out Of Secret Realm - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter549.html"
+  },
+  {
+    "chapterNumber": 551,
+    "title": "Chapter 551: Getting Out Of Secret Realm - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter550.html"
+  },
+  {
+    "chapterNumber": 552,
+    "title": "Chapter 552: Is He A Dragon Or A Wyvern? [Bonus 2/2]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter551.html"
+  },
+  {
+    "chapterNumber": 553,
+    "title": "Chapter 553: Finally, Out Of The Realm",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter552.html"
+  },
+  {
+    "chapterNumber": 554,
+    "title": "Chapter 554: Gift",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter553.html"
+  },
+  {
+    "chapterNumber": 555,
+    "title": "Chapter 555: Dragonnewts?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter554.html"
+  },
+  {
+    "chapterNumber": 556,
+    "title": "Chapter 556: Effect Of Soulmate Bond",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter555.html"
+  },
+  {
+    "chapterNumber": 557,
+    "title": "Chapter 557: Getting Prepared",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter556.html"
+  },
+  {
+    "chapterNumber": 558,
+    "title": "Chapter 558: The Real Reason",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter557.html"
+  },
+  {
+    "chapterNumber": 559,
+    "title": "Chapter 559: Another Invitation",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter558.html"
+  },
+  {
+    "chapterNumber": 560,
+    "title": "Chapter 560: Proceeding Towards Banquet",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter559.html"
+  },
+  {
+    "chapterNumber": 561,
+    "title": "Chapter 561: At The Banquet - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter560.html"
+  },
+  {
+    "chapterNumber": 562,
+    "title": "Chapter 562: At The Banquet - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter561.html"
+  },
+  {
+    "chapterNumber": 563,
+    "title": "Chapter 563: I Have Already Protected You Enough",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter562.html"
+  },
+  {
+    "chapterNumber": 564,
+    "title": "Chapter 564: Arrest Him!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter563.html"
+  },
+  {
+    "chapterNumber": 565,
+    "title": "Chapter 565: As The Lord Wishes",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter564.html"
+  },
+  {
+    "chapterNumber": 566,
+    "title": "Chapter 566: WHAT ARE YOU DOING?!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter565.html"
+  },
+  {
+    "chapterNumber": 567,
+    "title": "Chapter 567: WAIT!!!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter566.html"
+  },
+  {
+    "chapterNumber": 568,
+    "title": "Chapter 568: Things Settled",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter567.html"
+  },
+  {
+    "chapterNumber": 569,
+    "title": "Chapter 569: The Mind\u2019s Mirror",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter568.html"
+  },
+  {
+    "chapterNumber": 570,
+    "title": "Chapter 570: Museum Treasure",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter569.html"
+  },
+  {
+    "chapterNumber": 571,
+    "title": "Chapter 571: What Others Cannot Use, I Will Use",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter570.html"
+  },
+  {
+    "chapterNumber": 572,
+    "title": "Chapter 572: Such Treasures Exist?!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter571.html"
+  },
+  {
+    "chapterNumber": 573,
+    "title": "Chapter 573: Grand... Auction?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter572.html"
+  },
+  {
+    "chapterNumber": 574,
+    "title": "Chapter 574: Going Back - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter573.html"
+  },
+  {
+    "chapterNumber": 575,
+    "title": "Chapter 575: Going Back - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter574.html"
+  },
+  {
+    "chapterNumber": 576,
+    "title": "Chapter 576: Solving The Problem - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter575.html"
+  },
+  {
+    "chapterNumber": 577,
+    "title": "Chapter 577: Solving The Problem - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter576.html"
+  },
+  {
+    "chapterNumber": 578,
+    "title": "Chapter 578: Problem Solved",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter577.html"
+  },
+  {
+    "chapterNumber": 579,
+    "title": "Chapter 579: Calling The Infernal Sunblood Physique",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter578.html"
+  },
+  {
+    "chapterNumber": 580,
+    "title": "Chapter 580: Mandatory Class [Bonus 1/6]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter579.html"
+  },
+  {
+    "chapterNumber": 581,
+    "title": "Chapter 581: Introducing New Beasts",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter580.html"
+  },
+  {
+    "chapterNumber": 582,
+    "title": "Chapter 582: Progress In Territory - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter581.html"
+  },
+  {
+    "chapterNumber": 583,
+    "title": "Chapter 583: Progress In Territory - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter582.html"
+  },
+  {
+    "chapterNumber": 584,
+    "title": "Chapter 584: Progress In Territory - Final",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter583.html"
+  },
+  {
+    "chapterNumber": 585,
+    "title": "Chapter 585: Metal-Enhanced Golem [Bonus 2/6]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter584.html"
+  },
+  {
+    "chapterNumber": 586,
+    "title": "Chapter 586: Class - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter585.html"
+  },
+  {
+    "chapterNumber": 587,
+    "title": "Chapter 587: Class - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter586.html"
+  },
+  {
+    "chapterNumber": 588,
+    "title": "Chapter 588: - 4-4-2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter587.html"
+  },
+  {
+    "chapterNumber": 589,
+    "title": "Chapter 589: A Very... Unique Proposal...",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter588.html"
+  },
+  {
+    "chapterNumber": 590,
+    "title": "Chapter 590: Niri",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter589.html"
+  },
+  {
+    "chapterNumber": 591,
+    "title": "Chapter 591: Bundle Of Joy",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter590.html"
+  },
+  {
+    "chapterNumber": 592,
+    "title": "Chapter 592: Backstory",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter591.html"
+  },
+  {
+    "chapterNumber": 593,
+    "title": "Chapter 593: Compulsory Mission\u2019s Compulsion Preparations",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter592.html"
+  },
+  {
+    "chapterNumber": 594,
+    "title": "Chapter 594: Huh?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter593.html"
+  },
+  {
+    "chapterNumber": 595,
+    "title": "Chapter 595: Varthi",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter594.html"
+  },
+  {
+    "chapterNumber": 596,
+    "title": "Chapter 596: So This Is What We Have Become",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter595.html"
+  },
+  {
+    "chapterNumber": 597,
+    "title": "Chapter 597: Days In Varthi",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter596.html"
+  },
+  {
+    "chapterNumber": 598,
+    "title": "Chapter 598: First Step",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter597.html"
+  },
+  {
+    "chapterNumber": 599,
+    "title": "Chapter 599: Headed Towards Tilgarth",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter598.html"
+  },
+  {
+    "chapterNumber": 600,
+    "title": "Chapter 600: Travel - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter599.html"
+  },
+  {
+    "chapterNumber": 601,
+    "title": "Chapter 601: Travel - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter600.html"
+  },
+  {
+    "chapterNumber": 602,
+    "title": "Chapter 602: Towards Tilgarth",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter601.html"
+  },
+  {
+    "chapterNumber": 603,
+    "title": "Chapter 603: It\u2019s Not That Easy!!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter602.html"
+  },
+  {
+    "chapterNumber": 604,
+    "title": "Chapter 604: Delay",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter603.html"
+  },
+  {
+    "chapterNumber": 605,
+    "title": "Chapter 605: Tilgarth",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter604.html"
+  },
+  {
+    "chapterNumber": 606,
+    "title": "Chapter 606: An Act Of Kindness?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter605.html"
+  },
+  {
+    "chapterNumber": 607,
+    "title": "Chapter 607: Inside The Secret Realm - 1 (Slight R18)",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter606.html"
+  },
+  {
+    "chapterNumber": 608,
+    "title": "Chapter 608: Inside The Secret Realm - 2 [Bonus 3/6]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter607.html"
+  },
+  {
+    "chapterNumber": 609,
+    "title": "Chapter 609: - 2 Way Benefits",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter608.html"
+  },
+  {
+    "chapterNumber": 610,
+    "title": "Chapter 610: Suspicion - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter609.html"
+  },
+  {
+    "chapterNumber": 611,
+    "title": "Chapter 611: Suspicion - 2 [Bonus 4/8]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter610.html"
+  },
+  {
+    "chapterNumber": 612,
+    "title": "Chapter 612: Suspicion - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter611.html"
+  },
+  {
+    "chapterNumber": 613,
+    "title": "Chapter 613: Suspicion - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter612.html"
+  },
+  {
+    "chapterNumber": 614,
+    "title": "Chapter 614: What Is Happening?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter613.html"
+  },
+  {
+    "chapterNumber": 615,
+    "title": "Chapter 615: Taste Of Your Own Tongue",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter614.html"
+  },
+  {
+    "chapterNumber": 616,
+    "title": "Chapter 616: Rescue And Destruction - 1 (R18 Gore)",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter615.html"
+  },
+  {
+    "chapterNumber": 617,
+    "title": "Chapter 617: Rescue And Destruction - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter616.html"
+  },
+  {
+    "chapterNumber": 618,
+    "title": "Chapter 618: Rescue And Destruction - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter617.html"
+  },
+  {
+    "chapterNumber": 619,
+    "title": "Chapter 619: Rescue And Destruction - 4",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter618.html"
+  },
+  {
+    "chapterNumber": 620,
+    "title": "Chapter 620: Destruction",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter619.html"
+  },
+  {
+    "chapterNumber": 621,
+    "title": "Chapter 621: Total Destruction",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter620.html"
+  },
+  {
+    "chapterNumber": 622,
+    "title": "Chapter 622: Mission Over",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter621.html"
+  },
+  {
+    "chapterNumber": 623,
+    "title": "Chapter 623: Compensation And Offer",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter622.html"
+  },
+  {
+    "chapterNumber": 624,
+    "title": "Chapter 624: Back To Academy [Bonus 5/8]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter623.html"
+  },
+  {
+    "chapterNumber": 625,
+    "title": "Chapter 625: Letter",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter624.html"
+  },
+  {
+    "chapterNumber": 626,
+    "title": "Chapter 626: Acting Dead",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter625.html"
+  },
+  {
+    "chapterNumber": 627,
+    "title": "Chapter 627: An Application Of Talent?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter626.html"
+  },
+  {
+    "chapterNumber": 628,
+    "title": "Chapter 628: Spirit Isn\u2019t Right",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter627.html"
+  },
+  {
+    "chapterNumber": 629,
+    "title": "Chapter 629: Tiresome Procedures",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter628.html"
+  },
+  {
+    "chapterNumber": 630,
+    "title": "Chapter 630: Journey",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter629.html"
+  },
+  {
+    "chapterNumber": 631,
+    "title": "Chapter 631: Familiar Place",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter630.html"
+  },
+  {
+    "chapterNumber": 632,
+    "title": "Chapter 632: Surprise",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter631.html"
+  },
+  {
+    "chapterNumber": 633,
+    "title": "Chapter 633: Reason",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter632.html"
+  },
+  {
+    "chapterNumber": 634,
+    "title": "Chapter 634: Unexpected Guest",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter633.html"
+  },
+  {
+    "chapterNumber": 635,
+    "title": "Chapter 635: Once In A Life Stroke Of Luck [Bonus 6/10]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter634.html"
+  },
+  {
+    "chapterNumber": 636,
+    "title": "Chapter 636: When The Problem Arrived...",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter635.html"
+  },
+  {
+    "chapterNumber": 637,
+    "title": "Chapter 637: Turns Out, It Was No Problem At All",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter636.html"
+  },
+  {
+    "chapterNumber": 638,
+    "title": "Chapter 638: Empire Summon",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter637.html"
+  },
+  {
+    "chapterNumber": 639,
+    "title": "Chapter 639: Spineless Arrogance - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter638.html"
+  },
+  {
+    "chapterNumber": 640,
+    "title": "Chapter 640: Spineless Arrogance - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter639.html"
+  },
+  {
+    "chapterNumber": 641,
+    "title": "Chapter 641: Cost",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter640.html"
+  },
+  {
+    "chapterNumber": 642,
+    "title": "Chapter 642: Court",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter641.html"
+  },
+  {
+    "chapterNumber": 643,
+    "title": "Chapter 643: Justice Kick - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter642.html"
+  },
+  {
+    "chapterNumber": 644,
+    "title": "Chapter 644: Justice Kick - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter643.html"
+  },
+  {
+    "chapterNumber": 645,
+    "title": "Chapter 645: Justice Kick - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter644.html"
+  },
+  {
+    "chapterNumber": 646,
+    "title": "Chapter 646: Compensations",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter645.html"
+  },
+  {
+    "chapterNumber": 647,
+    "title": "Chapter 647: - 10 Spots",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter646.html"
+  },
+  {
+    "chapterNumber": 648,
+    "title": "Chapter 648: Rewards That Were Needed - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter647.html"
+  },
+  {
+    "chapterNumber": 649,
+    "title": "Chapter 649: Rewards That Were Needed - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter648.html"
+  },
+  {
+    "chapterNumber": 650,
+    "title": "Chapter 650: Ancient Savage Beast [Bonus 7/10]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter649.html"
+  },
+  {
+    "chapterNumber": 651,
+    "title": "Chapter 651: Howl\u2019s Rank Up - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter650.html"
+  },
+  {
+    "chapterNumber": 652,
+    "title": "Chapter 652: Howl\u2019s Rank Up - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter651.html"
+  },
+  {
+    "chapterNumber": 653,
+    "title": "Chapter 653: Restaurant And Hot Spring",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter652.html"
+  },
+  {
+    "chapterNumber": 654,
+    "title": "Chapter 654: Automated Golems - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter653.html"
+  },
+  {
+    "chapterNumber": 655,
+    "title": "Chapter 655: Automated Golems - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter654.html"
+  },
+  {
+    "chapterNumber": 656,
+    "title": "Chapter 656: Confirmed Supports",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter655.html"
+  },
+  {
+    "chapterNumber": 657,
+    "title": "Chapter 657: Change The Way You Address Me (Slight R18)",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter656.html"
+  },
+  {
+    "chapterNumber": 658,
+    "title": "Chapter 658: Sorry, We Are Short On Space",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter657.html"
+  },
+  {
+    "chapterNumber": 659,
+    "title": "Chapter 659: Selecting The People For 5 Slots",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter658.html"
+  },
+  {
+    "chapterNumber": 660,
+    "title": "Chapter 660: Bad People! Papa, Let Me Beat Them Up! - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter659.html"
+  },
+  {
+    "chapterNumber": 661,
+    "title": "Chapter 661: Bad People! Papa, Let Me Beat Them Up! - 2 [Bonus 8/10]",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter660.html"
+  },
+  {
+    "chapterNumber": 662,
+    "title": "Chapter 662: Introductions",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter661.html"
+  },
+  {
+    "chapterNumber": 663,
+    "title": "Chapter 663: Importance Of Healers",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter662.html"
+  },
+  {
+    "chapterNumber": 664,
+    "title": "Chapter 664: Will Aeila Be Necessary?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter663.html"
+  },
+  {
+    "chapterNumber": 665,
+    "title": "Chapter 665: The 10 Slots Of Capable Students",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter664.html"
+  },
+  {
+    "chapterNumber": 666,
+    "title": "Chapter 666: Surprise",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter665.html"
+  },
+  {
+    "chapterNumber": 667,
+    "title": "Chapter 667: Intel",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter666.html"
+  },
+  {
+    "chapterNumber": 668,
+    "title": "Chapter 668: Weapons",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter667.html"
+  },
+  {
+    "chapterNumber": 669,
+    "title": "Chapter 669: Amphithere - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter668.html"
+  },
+  {
+    "chapterNumber": 670,
+    "title": "Chapter 670: Amphithere - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter669.html"
+  },
+  {
+    "chapterNumber": 671,
+    "title": "Chapter 671: Amphithere - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter670.html"
+  },
+  {
+    "chapterNumber": 672,
+    "title": "Chapter 672: Spirit Amphithere",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter671.html"
+  },
+  {
+    "chapterNumber": 673,
+    "title": "Chapter 673: Fusion - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter672.html"
+  },
+  {
+    "chapterNumber": 674,
+    "title": "Chapter 674: Fusion - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter673.html"
+  },
+  {
+    "chapterNumber": 675,
+    "title": "Chapter 675: Fusion - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter674.html"
+  },
+  {
+    "chapterNumber": 676,
+    "title": "Chapter 676: Not Getting Tired Anytime Soon",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter675.html"
+  },
+  {
+    "chapterNumber": 677,
+    "title": "Chapter 677: - 1st May",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter676.html"
+  },
+  {
+    "chapterNumber": 678,
+    "title": "Chapter 678: - 5 Units",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter677.html"
+  },
+  {
+    "chapterNumber": 679,
+    "title": "Chapter 679: SOAP!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter678.html"
+  },
+  {
+    "chapterNumber": 680,
+    "title": "Chapter 680: - 21 Academies",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter679.html"
+  },
+  {
+    "chapterNumber": 681,
+    "title": "Chapter 681: Stronghold",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter680.html"
+  },
+  {
+    "chapterNumber": 682,
+    "title": "Chapter 682: They Look Familiar",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter681.html"
+  },
+  {
+    "chapterNumber": 683,
+    "title": "Chapter 683: Siblings",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter682.html"
+  },
+  {
+    "chapterNumber": 684,
+    "title": "Chapter 684: Ironclad Rule",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter683.html"
+  },
+  {
+    "chapterNumber": 685,
+    "title": "Chapter 685: Phase 1 Begins",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter684.html"
+  },
+  {
+    "chapterNumber": 686,
+    "title": "Chapter 686: Meat To Eat",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter685.html"
+  },
+  {
+    "chapterNumber": 687,
+    "title": "Chapter 687: Wasn\u2019t He Supposed To Be The Main Wind-Element Player On The Team?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter686.html"
+  },
+  {
+    "chapterNumber": 688,
+    "title": "Chapter 688: Deciding A Location - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter687.html"
+  },
+  {
+    "chapterNumber": 689,
+    "title": "Chapter 689: Deciding A Location - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter688.html"
+  },
+  {
+    "chapterNumber": 690,
+    "title": "Chapter 690: First Encounter, Annihilation - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter689.html"
+  },
+  {
+    "chapterNumber": 691,
+    "title": "Chapter 691: First Encounter, Annihilation - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter690.html"
+  },
+  {
+    "chapterNumber": 692,
+    "title": "Chapter 692: Loot!",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter691.html"
+  },
+  {
+    "chapterNumber": 693,
+    "title": "Chapter 693: A Good Place",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter692.html"
+  },
+  {
+    "chapterNumber": 694,
+    "title": "Chapter 694: Building The Stronghold - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter693.html"
+  },
+  {
+    "chapterNumber": 695,
+    "title": "Chapter 695: Building The Stronghold - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter694.html"
+  },
+  {
+    "chapterNumber": 696,
+    "title": "Chapter 696: Shocking Discovery",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter695.html"
+  },
+  {
+    "chapterNumber": 697,
+    "title": "Chapter 697: - 1st Phase Ends - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter696.html"
+  },
+  {
+    "chapterNumber": 698,
+    "title": "Chapter 698: - 1st Phase Ends - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter697.html"
+  },
+  {
+    "chapterNumber": 699,
+    "title": "Chapter 699: Surprise Screens",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter698.html"
+  },
+  {
+    "chapterNumber": 700,
+    "title": "Chapter 700: Attack Or Attack",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter699.html"
+  },
+  {
+    "chapterNumber": 701,
+    "title": "Chapter 701: Soul Astra",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter700.html"
+  },
+  {
+    "chapterNumber": 702,
+    "title": "Chapter 702: Flawless Defence - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter701.html"
+  },
+  {
+    "chapterNumber": 703,
+    "title": "Chapter 703: Flawless Defence - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter702.html"
+  },
+  {
+    "chapterNumber": 704,
+    "title": "Chapter 704: The First Crippled Dragon Academy - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter703.html"
+  },
+  {
+    "chapterNumber": 705,
+    "title": "Chapter 705: The First Crippled Dragon Academy - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter704.html"
+  },
+  {
+    "chapterNumber": 706,
+    "title": "Chapter 706: World\u2019s Representative",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter705.html"
+  },
+  {
+    "chapterNumber": 707,
+    "title": "Chapter 707: - 2nd Phase",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter706.html"
+  },
+  {
+    "chapterNumber": 708,
+    "title": "Chapter 708: Flag Capture",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter707.html"
+  },
+  {
+    "chapterNumber": 709,
+    "title": "Chapter 709: Nine Tailed Ice-Viper",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter708.html"
+  },
+  {
+    "chapterNumber": 710,
+    "title": "Chapter 710: Damn, Am I Really This Lucky? - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter709.html"
+  },
+  {
+    "chapterNumber": 711,
+    "title": "Chapter 711: Damn, Am I Really This Lucky? - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter710.html"
+  },
+  {
+    "chapterNumber": 712,
+    "title": "Chapter 712: Is This Really Luck?",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter711.html"
+  },
+  {
+    "chapterNumber": 713,
+    "title": "Chapter 713: Unexpected Power Up - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter712.html"
+  },
+  {
+    "chapterNumber": 714,
+    "title": "Chapter 714: Unexpected Power Up - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter713.html"
+  },
+  {
+    "chapterNumber": 715,
+    "title": "Chapter 715: Great Strategic Rewards",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter714.html"
+  },
+  {
+    "chapterNumber": 716,
+    "title": "Chapter 716: Another Academy Down And The First Loss",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter715.html"
+  },
+  {
+    "chapterNumber": 717,
+    "title": "Chapter 717: Accurate Guesses",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter716.html"
+  },
+  {
+    "chapterNumber": 718,
+    "title": "Chapter 718: Plan",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter717.html"
+  },
+  {
+    "chapterNumber": 719,
+    "title": "Chapter 719: - 3 Flags And Lily\u2019s Lost Opportunity - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter718.html"
+  },
+  {
+    "chapterNumber": 720,
+    "title": "Chapter 720: - 3 Flags And Lily\u2019s Lost Opportunity - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter719.html"
+  },
+  {
+    "chapterNumber": 721,
+    "title": "Chapter 721: - 3 Flags And Lily\u2019s Lost Opportunity - 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter720.html"
+  },
+  {
+    "chapterNumber": 722,
+    "title": "Chapter 722: Becoming The First Ranked Academy And An Attack - 1",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter721.html"
+  },
+  {
+    "chapterNumber": 723,
+    "title": "Chapter 723: Becoming The First Ranked Academy And An Attack - 2",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter722.html"
+  },
+  {
+    "chapterNumber": 724,
+    "title": "Chapter 724: Cautious Leader",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter723.html"
+  },
+  {
+    "chapterNumber": 725,
+    "title": "Chapter 725: A Smart Decision? Or...",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter724.html"
+  },
+  {
+    "chapterNumber": 726,
+    "title": "Chapter 726: Nearly Crippled",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter725.html"
+  },
+  {
+    "chapterNumber": 727,
+    "title": "Chapter 727: Phase 3",
+    "arcId": "arc_5_sovereign",
+    "arcName": "Phase V: Sovereign Realm & Dimensional Wars",
+    "file": "OEBPS/chapter726.html"
+  }
+]

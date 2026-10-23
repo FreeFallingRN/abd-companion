@@ -1,0 +1,56 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "krik",
+  "name": "Krik",
+  "species": "Mutated Kobolt Raider (Faint Draconic Lineage)",
+  "contractChapter": 18,
+  "elementAffinity": [
+    "earth",
+    "draconic"
+  ],
+  "milestones": [
+    {
+      "minChapter": 18,
+      "maxChapter": 80,
+      "starRank": 1,
+      "subRank": "middle",
+      "bloodlineTier": "ordinary",
+      "bloodlinePurity": 35,
+      "cognitionStage": "juvenile",
+      "iq": 60,
+      "bondStage": "chain",
+      "bondPercentage": 40,
+      "unlockedSkillIds": [
+        "pack_instinct",
+        "tunnelling"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "darkvision",
+          "name": "Darkvision",
+          "effect": "Clear sight in total non-magical darkness",
+          "transferredToTamer": false,
+          "unlockedChapter": 18
+        }
+      ]
+    },
+    {
+      "minChapter": 81,
+      "maxChapter": null,
+      "starRank": 2,
+      "subRank": "low",
+      "bloodlineTier": "mortal",
+      "bloodlinePurity": 55,
+      "cognitionStage": "juvenile",
+      "iq": 75,
+      "bondStage": "chain",
+      "bondPercentage": 60,
+      "unlockedSkillIds": [
+        "pack_instinct",
+        "tunnelling",
+        "draconic_scale_reinforce"
+      ],
+      "sharedTraits": []
+    }
+  ]
+}

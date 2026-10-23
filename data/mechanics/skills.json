@@ -1,0 +1,258 @@
+[
+  {
+    "id": "stealth",
+    "name": "Stealth",
+    "type": "active",
+    "element": "shadow",
+    "starRank": 1,
+    "description": "Suppresses sound, scent, and visual profile in natural shadows."
+  },
+  {
+    "id": "shadow_pounce",
+    "name": "Shadow Pounce",
+    "type": "active",
+    "element": "shadow",
+    "starRank": 1,
+    "description": "Sudden burst acceleration from blind spots dealing critical kinetic impact."
+  },
+  {
+    "id": "feline_agility",
+    "name": "Feline Agility",
+    "type": "passive",
+    "element": "neutral",
+    "starRank": 1,
+    "description": "Enhances dynamic balance, reflex reaction time, and fall recovery."
+  },
+  {
+    "id": "obsidian_armor",
+    "name": "Obsidian Armor",
+    "type": "active",
+    "element": "shadow",
+    "starRank": 2,
+    "description": "Encases body in hardened black crystal shards deflecting physical and elemental strikes."
+  },
+  {
+    "id": "abyssal_roar",
+    "name": "Abyssal Roar",
+    "type": "active",
+    "element": "darkness",
+    "starRank": 2,
+    "description": "Sonic shockwave causing fear, disorientation, and disruption of mana casting."
+  },
+  {
+    "id": "shadow_domain",
+    "name": "Shadow Domain",
+    "type": "active",
+    "element": "darkness",
+    "starRank": 3,
+    "description": "Expands a dark territory where ally agility is amplified and enemy vision is blinded."
+  },
+  {
+    "id": "fusion_resonance",
+    "name": "Fusion Resonance",
+    "type": "active",
+    "element": "neutral",
+    "starRank": 3,
+    "description": "Temporarily fuses tamer and soul-bonded beast with +200% stat amplification."
+  },
+  {
+    "id": "natures_heal",
+    "name": "Nature's Heal",
+    "type": "active",
+    "element": "nature",
+    "starRank": 2,
+    "description": "Channels ambient life energy to mend lacerations, fractures, and internal bleeding."
+  },
+  {
+    "id": "vine_estranglement",
+    "name": "Vine Estranglement",
+    "type": "active",
+    "element": "nature",
+    "starRank": 2,
+    "description": "Sprouts grasping thorny vines that constrict foes and drain vitality."
+  },
+  {
+    "id": "spike_pores",
+    "name": "Spike Pores",
+    "type": "active",
+    "element": "nature",
+    "starRank": 2,
+    "description": "Releases microscopic airborne spores that germinate into wooden barbs upon inhalation."
+  },
+  {
+    "id": "chlorophyll_barrier",
+    "name": "Chlorophyll Barrier",
+    "type": "active",
+    "element": "nature",
+    "starRank": 3,
+    "description": "Forms a dense shield of woven vitality that absorbs physical blows and converts kinetic force to health."
+  },
+  {
+    "id": "solar_beam",
+    "name": "Solar Beam",
+    "type": "active",
+    "element": "light",
+    "starRank": 3,
+    "description": "Gathers condensed sunlight into a focused thermal laser of destructive heat."
+  },
+  {
+    "id": "pack_instinct",
+    "name": "Pack Instinct",
+    "type": "passive",
+    "element": "neutral",
+    "starRank": 1,
+    "description": "Increases damage and defensive coordination when fighting alongside allies."
+  },
+  {
+    "id": "tunnelling",
+    "name": "Tunnelling",
+    "type": "active",
+    "element": "earth",
+    "starRank": 1,
+    "description": "Rapid subterranean excavation through soil and loose bedrock."
+  },
+  {
+    "id": "draconic_scale_reinforce",
+    "name": "Draconic Scale Reinforce",
+    "type": "active",
+    "element": "draconic",
+    "starRank": 2,
+    "description": "Hardens dermal scales with faint draconic mana, increasing physical armor by 40%."
+  },
+  {
+    "id": "infernal_breath",
+    "name": "Infernal Breath",
+    "type": "active",
+    "element": "fire",
+    "starRank": 2,
+    "description": "Cone of continuous dragonflame that melts armor and scorches terrain."
+  },
+  {
+    "id": "wyvern_dive",
+    "name": "Wyvern Dive",
+    "type": "active",
+    "element": "wind",
+    "starRank": 2,
+    "description": "High-altitude diving strike with massive kinetic shockwave on impact."
+  },
+  {
+    "id": "treasure_sense",
+    "name": "Treasure Sense",
+    "type": "passive",
+    "element": "neutral",
+    "starRank": 2,
+    "description": "Innate draconic intuition for detecting high-density mana crystals, rare ores, and hidden cores."
+  },
+  {
+    "id": "astral_aura_weave",
+    "name": "Astral Aura Weave",
+    "type": "active",
+    "element": "light",
+    "starRank": 2,
+    "description": "Weaves celestial sunlight and lunar shadows into protective armor and hyper-accelerated body movement."
+  },
+  {
+    "id": "lunar_blink",
+    "name": "Lunar Blink",
+    "type": "active",
+    "element": "shadow",
+    "starRank": 2,
+    "description": "Short-range spatial displacement leaving behind silvery afterimages."
+  },
+  {
+    "id": "celestial_polarity_surge",
+    "name": "Celestial Polarity Surge",
+    "type": "active",
+    "element": "light",
+    "starRank": 3,
+    "description": "Releases twin bursts of solar heat and lunar frost causing elemental destabilization in enemies."
+  },
+  {
+    "id": "controlled_weight_flow",
+    "name": "Controlled Weight Flow",
+    "type": "passive",
+    "element": "earth",
+    "starRank": 3,
+    "description": "Redistributes massive biological weight through spiritual resonance, softening kinetic impacts."
+  },
+  {
+    "id": "geo_resonance_sense",
+    "name": "Geo-Resonance Sense",
+    "type": "passive",
+    "element": "earth",
+    "starRank": 3,
+    "description": "Detects vibrations, subterranean movements, and mana conduits through geological strata over vast distances."
+  },
+  {
+    "id": "titanic_endurance",
+    "name": "Titanic Endurance",
+    "type": "passive",
+    "element": "earth",
+    "starRank": 3,
+    "description": "Stone-like organic tissue that naturally disperses heat, pressure, and kinetic strikes."
+  },
+  {
+    "id": "critical_strike",
+    "name": "Critical Strike",
+    "type": "active",
+    "element": "neutral",
+    "starRank": 1,
+    "description": "Focuses mana into a single piercing point to target anatomical weak spots."
+  },
+  {
+    "id": "mana_sense",
+    "name": "Mana Sense",
+    "type": "passive",
+    "element": "neutral",
+    "starRank": 1,
+    "description": "Perceives ambient mana fluctuations, hidden spell circles, and beast spiritual signatures."
+  },
+  {
+    "id": "blade_mastery",
+    "name": "Blade Mastery",
+    "type": "passive",
+    "element": "neutral",
+    "starRank": 2,
+    "description": "Refined martial dagger and sword technique granting fluid attack combos and parry efficiency."
+  },
+  {
+    "id": "spatial_blink",
+    "name": "Spatial Blink",
+    "type": "active",
+    "element": "space",
+    "starRank": 3,
+    "description": "Instantaneous spatial step across 20 meters bypassing physical obstacles."
+  },
+  {
+    "id": "spirit_shield",
+    "name": "Spirit Shield",
+    "type": "active",
+    "element": "nature",
+    "starRank": 1,
+    "description": "Conjures a translucent barrier of condensed spirit mana that repels incoming spells."
+  },
+  {
+    "id": "mana_dart",
+    "name": "Mana Dart",
+    "type": "active",
+    "element": "neutral",
+    "starRank": 1,
+    "description": "Fires high-velocity condensed mana bolts at distant targets."
+  },
+  {
+    "id": "spirit_reinforce",
+    "name": "Spirit Reinforce",
+    "type": "active",
+    "element": "neutral",
+    "starRank": 2,
+    "description": "Channels spiritual essence into an ally's physique, temporarily increasing all physical attributes."
+  },
+  {
+    "id": "core_resonance",
+    "name": "Core Resonance",
+    "type": "passive",
+    "element": "neutral",
+    "starRank": 2,
+    "description": "Amplifies elemental power released from contracted beast cores by 100%."
+  }
+]

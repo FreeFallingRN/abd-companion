@@ -1,0 +1,47 @@
+{
+  "$schema": "../schemas/character.schema.json",
+  "id": "miho",
+  "name": "Miho",
+  "title": "Spirit Reinforcer & Core Channeler",
+  "role": "ally",
+  "talents": [
+    {
+      "id": "spirit_reinforcer",
+      "name": "Spirit Reinforcer",
+      "starRank": 6,
+      "description": "Contracts beast cores directly into spirit space, releasing twice the standard elemental output without holding the physical core.",
+      "unlockedChapter": 211
+    }
+  ],
+  "milestones": [
+    {
+      "minChapter": 200,
+      "maxChapter": null,
+      "level": 20,
+      "attributes": {
+        "vitality": 22.0,
+        "strength": 16.0,
+        "agility": 32.0,
+        "stamina": 25.0,
+        "intelligence": 38.0,
+        "maxMana": 1140.0,
+        "unassignedPoints": 4
+      },
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 0,
+        "combinedMultiplier": 3,
+        "statSoftCapPercent": 30,
+        "maxContractSlots": 3,
+        "skillCapacity": 11
+      },
+      "contractedBeastIds": [],
+      "personalSkillIds": [
+        "spirit_reinforce",
+        "core_resonance"
+      ],
+      "copiedSkillIds": []
+    }
+  ]
+}

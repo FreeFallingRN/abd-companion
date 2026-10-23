@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Character",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "role",
+    "milestones"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "protagonist",
+        "partner",
+        "ally",
+        "mentor",
+        "rival",
+        "antagonist"
+      ]
+    },
+    "talents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "starRank",
+          "description",
+          "unlockedChapter"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "starRank": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "description": {
+            "type": "string"
+          },
+          "unlockedChapter": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "minChapter",
+          "level",
+          "attributes",
+          "soulProfile",
+          "contractedBeastIds"
+        ],
+        "properties": {
+          "minChapter": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "maxChapter": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "attributes": {
+            "type": "object",
+            "required": [
+              "vitality",
+              "strength",
+              "agility",
+              "stamina",
+              "intelligence",
+              "maxMana",
+              "unassignedPoints"
+            ],
+            "properties": {
+              "vitality": {
+                "type": "number"
+              },
+              "strength": {
+                "type": "number"
+              },
+              "agility": {
+                "type": "number"
+              },
+              "stamina": {
+                "type": "number"
+              },
+              "intelligence": {
+                "type": "number"
+              },
+              "maxMana": {
+                "type": "number"
+              },
+              "unassignedPoints": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "soulProfile": {
+            "type": "object",
+            "required": [
+              "mortalSoulRank",
+              "mortalSoulValue",
+              "primordialSoulValue",
+              "combinedMultiplier",
+              "statSoftCapPercent",
+              "maxContractSlots",
+              "skillCapacity"
+            ],
+            "properties": {
+              "mortalSoulRank": {
+                "type": "string",
+                "enum": [
+                  "common",
+                  "uncommon",
+                  "rare",
+                  "super_rare",
+                  "epic",
+                  "legendary",
+                  "mythical",
+                  "divine"
+                ]
+              },
+              "mortalSoulValue": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 10
+              },
+              "primordialSoulValue": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 10
+              },
+              "combinedMultiplier": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "statSoftCapPercent": {
+                "type": "integer",
+                "minimum": 10,
+                "maximum": 100
+              },
+              "maxContractSlots": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "skillCapacity": {
+                "type": "integer",
+                "minimum": 7
+              }
+            }
+          },
+          "contractedBeastIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "personalSkillIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "copiedSkillIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

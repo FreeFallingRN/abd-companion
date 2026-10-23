@@ -1,0 +1,113 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "shyra",
+  "name": "Shyra",
+  "species": "Shadow Obsidian Panther / Primordial Lineage",
+  "contractChapter": 1,
+  "elementAffinity": [
+    "darkness",
+    "shadow"
+  ],
+  "milestones": [
+    {
+      "minChapter": 1,
+      "maxChapter": 25,
+      "starRank": 1,
+      "subRank": "low",
+      "bloodlineTier": "noble",
+      "bloodlinePurity": 12,
+      "cognitionStage": "feral",
+      "iq": 45,
+      "bondStage": "chain",
+      "bondPercentage": 35,
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce"
+      ],
+      "sharedTraits": []
+    },
+    {
+      "minChapter": 26,
+      "maxChapter": 70,
+      "starRank": 1,
+      "subRank": "high",
+      "bloodlineTier": "noble",
+      "bloodlinePurity": 35,
+      "cognitionStage": "juvenile",
+      "iq": 85,
+      "bondStage": "chain",
+      "bondPercentage": 55,
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility"
+      ],
+      "sharedTraits": []
+    },
+    {
+      "minChapter": 71,
+      "maxChapter": 120,
+      "starRank": 2,
+      "subRank": "high",
+      "bloodlineTier": "noble",
+      "bloodlinePurity": 64,
+      "cognitionStage": "adolescent",
+      "iq": 115,
+      "bondStage": "blood",
+      "bondPercentage": 78,
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "obsidian_hide",
+          "name": "Obsidian Hide",
+          "effect": "+100% physical defense and sharp kinetic resistance when shadow-infused",
+          "transferredToTamer": true,
+          "unlockedChapter": 76
+        }
+      ]
+    },
+    {
+      "minChapter": 121,
+      "maxChapter": null,
+      "starRank": 3,
+      "subRank": "peak",
+      "bloodlineTier": "royal",
+      "bloodlinePurity": 95,
+      "cognitionStage": "mature",
+      "iq": 140,
+      "bondStage": "soul",
+      "bondPercentage": 100,
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain",
+        "fusion_resonance"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "obsidian_hide",
+          "name": "Obsidian Hide",
+          "effect": "+100% physical defense when shadow-infused",
+          "transferredToTamer": true,
+          "unlockedChapter": 76
+        },
+        {
+          "traitId": "primordial_shadow_step",
+          "name": "Primordial Shadow Step",
+          "effect": "Instantaneous teleportation between shadows within 50 meters",
+          "transferredToTamer": true,
+          "unlockedChapter": 135
+        }
+      ]
+    }
+  ]
+}

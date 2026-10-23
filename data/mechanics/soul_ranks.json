@@ -1,0 +1,74 @@
+[
+  {
+    "rank": "common",
+    "calculationValue": 1,
+    "maxContractSlots": 1,
+    "talentStarCap": 5,
+    "statSoftCapPercent": 10,
+    "skillCapacity": 7,
+    "rarity": "Commoners"
+  },
+  {
+    "rank": "uncommon",
+    "calculationValue": 2,
+    "maxContractSlots": 2,
+    "talentStarCap": 6,
+    "statSoftCapPercent": 20,
+    "skillCapacity": 9,
+    "rarity": "Apprentices / Minor Nobles"
+  },
+  {
+    "rank": "rare",
+    "calculationValue": 3,
+    "maxContractSlots": 3,
+    "talentStarCap": 7,
+    "statSoftCapPercent": 30,
+    "skillCapacity": 11,
+    "rarity": "Academy Elite"
+  },
+  {
+    "rank": "super_rare",
+    "calculationValue": 4,
+    "maxContractSlots": 4,
+    "talentStarCap": 8,
+    "statSoftCapPercent": 40,
+    "skillCapacity": 13,
+    "rarity": "High Nobles / Prodigies"
+  },
+  {
+    "rank": "epic",
+    "calculationValue": 5,
+    "maxContractSlots": 5,
+    "talentStarCap": 9,
+    "statSoftCapPercent": 50,
+    "skillCapacity": 15,
+    "rarity": "Renowned Masters"
+  },
+  {
+    "rank": "legendary",
+    "calculationValue": 6,
+    "maxContractSlots": 6,
+    "talentStarCap": 10,
+    "statSoftCapPercent": 60,
+    "skillCapacity": 17,
+    "rarity": "Continental Legends"
+  },
+  {
+    "rank": "mythical",
+    "calculationValue": 7,
+    "maxContractSlots": 7,
+    "talentStarCap": 10,
+    "statSoftCapPercent": 70,
+    "skillCapacity": 19,
+    "rarity": "Primordial Entities"
+  },
+  {
+    "rank": "divine",
+    "calculationValue": 8,
+    "maxContractSlots": 99,
+    "talentStarCap": 10,
+    "statSoftCapPercent": 100,
+    "skillCapacity": 21,
+    "rarity": "Gods / True Primordials"
+  }
+]

@@ -1,0 +1,174 @@
+{
+  "$schema": "../schemas/character.schema.json",
+  "id": "leo",
+  "name": "Leonel (Leo)",
+  "title": "Dual-Soul Pact Master / Fief Sovereign",
+  "role": "protagonist",
+  "talents": [
+    {
+      "id": "bestiary_of_souls",
+      "name": "Bestiary of Souls (Primordial Talent)",
+      "starRank": 10,
+      "description": "Allows instant core synthesis, hidden evolution recipe diagnostics, skill extraction and soul-bond resonance.",
+      "unlockedChapter": 1
+    },
+    {
+      "id": "beast_space_dominion",
+      "name": "Beast Space Dominion",
+      "starRank": 8,
+      "description": "Expansive pocket dimension that accelerates recovery, bloodline absorption, and resting beast mana regeneration.",
+      "unlockedChapter": 28
+    }
+  ],
+  "milestones": [
+    {
+      "minChapter": 1,
+      "maxChapter": 25,
+      "level": 3,
+      "attributes": {
+        "vitality": 3.2,
+        "strength": 2.8,
+        "agility": 3.0,
+        "stamina": 3.5,
+        "intelligence": 1.2,
+        "maxMana": 96.0,
+        "unassignedPoints": 0
+      },
+      "soulProfile": {
+        "mortalSoulRank": "common",
+        "mortalSoulValue": 1,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 8,
+        "statSoftCapPercent": 10,
+        "maxContractSlots": 1,
+        "skillCapacity": 7
+      },
+      "contractedBeastIds": [
+        "shyra"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike"
+      ],
+      "copiedSkillIds": []
+    },
+    {
+      "minChapter": 26,
+      "maxChapter": 70,
+      "level": 12,
+      "attributes": {
+        "vitality": 14.5,
+        "strength": 12.0,
+        "agility": 15.0,
+        "stamina": 16.0,
+        "intelligence": 8.5,
+        "maxMana": 765.0,
+        "unassignedPoints": 4
+      },
+      "soulProfile": {
+        "mortalSoulRank": "uncommon",
+        "mortalSoulValue": 2,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 9,
+        "statSoftCapPercent": 20,
+        "maxContractSlots": 2,
+        "skillCapacity": 9
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "krik",
+        "dryad"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce"
+      ]
+    },
+    {
+      "minChapter": 71,
+      "maxChapter": 120,
+      "level": 24,
+      "attributes": {
+        "vitality": 38.0,
+        "strength": 34.0,
+        "agility": 42.0,
+        "stamina": 40.0,
+        "intelligence": 25.0,
+        "maxMana": 2500.0,
+        "unassignedPoints": 8
+      },
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "statSoftCapPercent": 30,
+        "maxContractSlots": 3,
+        "skillCapacity": 11
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "krik",
+        "dryad",
+        "agnivar"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "natures_heal",
+        "obsidian_armor"
+      ]
+    },
+    {
+      "minChapter": 121,
+      "maxChapter": null,
+      "level": 45,
+      "attributes": {
+        "vitality": 95.0,
+        "strength": 88.0,
+        "agility": 105.0,
+        "stamina": 98.0,
+        "intelligence": 72.0,
+        "maxMana": 7920.0,
+        "unassignedPoints": 16
+      },
+      "soulProfile": {
+        "mortalSoulRank": "super_rare",
+        "mortalSoulValue": 4,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 11,
+        "statSoftCapPercent": 40,
+        "maxContractSlots": 4,
+        "skillCapacity": 13
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "agnivar"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery",
+        "spatial_blink"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "natures_heal",
+        "obsidian_armor",
+        "infernal_breath",
+        "shadow_domain"
+      ]
+    }
+  ]
+}

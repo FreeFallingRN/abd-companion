@@ -1,0 +1,30 @@
+[
+  {
+    "id": "kendru",
+    "name": "Kendru Outskirts",
+    "dangerTier": "green",
+    "recommendedRank": "1\u2605 Low",
+    "description": "Border region with minor monster incursions and low-tier foraging grounds."
+  },
+  {
+    "id": "forest_of_shadows",
+    "name": "Forest of Shadows",
+    "dangerTier": "blue",
+    "recommendedRank": "1\u2605 Peak to 2\u2605 Mid",
+    "description": "Dense ancient canopy inhabited by Obsidian Panthers, direwolves, and treants."
+  },
+  {
+    "id": "wyvern_crags",
+    "name": "Wyvern Crags & Magma Caldera",
+    "dangerTier": "purple",
+    "recommendedRank": "2\u2605 Peak to 3\u2605 High",
+    "description": "Volcanic peaks where Hoarding Wyverns nest and guard rare ore deposits."
+  },
+  {
+    "id": "abyssal_rift",
+    "name": "Extradimensional Abyssal Rift",
+    "dangerTier": "calamity",
+    "recommendedRank": "4\u2605+ Sovereign",
+    "description": "Dimensional fracture where foreign demon entities and planar anomalies emerge."
+  }
+]

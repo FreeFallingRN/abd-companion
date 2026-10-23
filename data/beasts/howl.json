@@ -1,0 +1,45 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "howl",
+  "name": "Howl",
+  "species": "Cragveil Colossus",
+  "contractChapter": 120,
+  "elementAffinity": [
+    "earth"
+  ],
+  "milestones": [
+    {
+      "minChapter": 120,
+      "maxChapter": null,
+      "starRank": 3,
+      "subRank": "low",
+      "bloodlineTier": "mortal",
+      "bloodlinePurity": 50,
+      "cognitionStage": "juvenile",
+      "iq": 70,
+      "bondStage": "chain",
+      "bondPercentage": 52,
+      "unlockedSkillIds": [
+        "controlled_weight_flow",
+        "geo_resonance_sense",
+        "titanic_endurance"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "endless_growth",
+          "name": "Endless Growth",
+          "effect": "Continuous physical mass and mineral density accumulation over time",
+          "transferredToTamer": false,
+          "unlockedChapter": 120
+        },
+        {
+          "traitId": "titanic_endurance",
+          "name": "Titanic Endurance",
+          "effect": "Massive stamina capacity and kinetic shock absorption",
+          "transferredToTamer": true,
+          "unlockedChapter": 130
+        }
+      ]
+    }
+  ]
+}
