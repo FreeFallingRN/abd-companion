@@ -8,18 +8,39 @@ import {
   LOCAL_ACADEMIES,
   LOCAL_DANGER_ZONES,
   LOCAL_SKILLS,
+  LOCAL_CHAPTERS,
   getBeastSnapshotAtChapter,
   BeastRecord,
+  CharacterRecord,
+  fetchAllBeasts,
+  fetchAllCharacters,
 } from '@/sanity/lib/dataService';
+import { urlForImage } from '@/sanity/lib/image';
 
 export default function HomePage() {
-  const [currentChapter, setCurrentChapter] = useState<number>(109);
+  // Start strictly from Chapter 1 as requested
+  const [currentChapter, setCurrentChapter] = useState<number>(1);
   const [activeTab, setActiveTab] = useState<'sanctuary' | 'codex' | 'dossier' | 'realm'>('sanctuary');
   const [selectedProtagonist, setSelectedProtagonist] = useState<'leo' | 'lily'>('leo');
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedAffinity, setSelectedAffinity] = useState<string>('all');
   const [selectedBeast, setSelectedBeast] = useState<BeastRecord | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{ url: string; title: string; subtitle?: string } | null>(null);
+
+  // Live Sanity datasets (with local fallback)
+  const [beastsList, setBeastsList] = useState<BeastRecord[]>(LOCAL_BEASTS);
+  const [charactersList, setCharactersList] = useState<CharacterRecord[]>(LOCAL_CHARACTERS);
+
+  // Sync live Sanity dataset (enables Sanity Studio image uploads & edits to appear live)
+  useEffect(() => {
+    fetchAllBeasts().then((data) => {
+      if (data && data.length > 0) setBeastsList(data);
+    });
+    fetchAllCharacters().then((data) => {
+      if (data && data.length > 0) setCharactersList(data);
+    });
+  }, []);
 
   // Toggle Dark/Light Mode
   useEffect(() => {
@@ -32,29 +53,63 @@ export default function HomePage() {
     }
   }, [isDarkMode]);
 
-  // Dynamic parameters calculated by chapter progression
-  const getPhaseNumber = (ch: number) => {
-    if (ch <= 25) return 1;
-    if (ch <= 70) return 2;
-    if (ch <= 120) return 3;
-    return 4;
+  // Chapter title lookup and cleaning
+  const currentChapterTitle =
+    (LOCAL_CHAPTERS as Record<string, string>)[currentChapter] || `Chapter ${currentChapter}`;
+  const cleanChapterTitle = (raw: string) => {
+    return raw.replace(/^CH\.\d+\s*[-:]?\s*/i, '').trim();
   };
 
-  const phase = getPhaseNumber(currentChapter);
+  // Canonical Mortal Soul rank progression
+  const getMortalSoulInfo = (ch: number) => {
+    if (ch < 40) return { name: 'Common', rank: 1 };
+    if (ch < 105) return { name: 'Uncommon', rank: 2 };
+    if (ch < 385) return { name: 'Rare', rank: 3 };
+    return { name: 'Super Rare', rank: 4 };
+  };
 
-  // Dynamic multiplier and attributes for Leo
-  const multiplier = phase === 1 ? 8 : phase === 2 ? 9 : phase === 3 ? 10 : 11;
-  const mortalSoulRank = phase === 1 ? 'Common 1' : phase === 2 ? 'Uncommon 2' : phase === 3 ? 'Rare 3' : 'Super Rare 4';
-  const softCap = phase === 1 ? '10%' : phase === 2 ? '20%' : phase === 3 ? '30%' : '40%';
-  const vit = phase === 1 ? 3 : phase === 2 ? 15 : phase === 3 ? 38 : 65;
-  const str = phase === 1 ? 3 : phase === 2 ? 18 : phase === 3 ? 42 : 72;
-  const agi = phase === 1 ? 3 : phase === 2 ? 22 : phase === 3 ? 45 : 80;
-  const sta = phase === 1 ? 4 : phase === 2 ? 16 : phase === 3 ? 40 : 70;
-  const intVal = phase === 1 ? 1 : phase === 2 ? 10 : phase === 3 ? 25 : 45;
-  const maxMana = intVal * 10 * multiplier;
+  const mortalSoul = getMortalSoulInfo(currentChapter);
+  const primordialSoul = { name: 'Mythical', rank: 7 };
+  const totalSoulRank = mortalSoul.rank + primordialSoul.rank;
+
+  // Dynamic attributes for Leo according to novel canon
+  const getLeoStats = (ch: number) => {
+    if (ch < 8) {
+      // Kendru Awakening (before contracting Shyra)
+      return { vit: 2.5, str: 3.0, agi: 3.0, sta: 4.0, intVal: 1.0 };
+    }
+    if (ch < 40) {
+      // Kendru Frontline with Shyra (100% stat sharing)
+      return { vit: 3.0, str: 5.1, agi: 10.6, sta: 4.0, intVal: 1.0 };
+    }
+    if (ch < 105) {
+      // Academy Trials & Spiritual Island (Uncommon Soul 2)
+      return { vit: 15, str: 18, agi: 22, sta: 16, intVal: 10 };
+    }
+    if (ch < 385) {
+      // Storm Advancement to Rare Soul (Ch 105: Int ~191) through Fief War
+      return { vit: 38, str: 42, agi: 45, sta: 40, intVal: 25 };
+    }
+    if (ch < 535) {
+      // Elasian Bloom Mastery (Ch 167/385 updates)
+      return { vit: 758, str: 758, agi: 623, sta: 759, intVal: 1086 };
+    }
+    // Secret Realm Wyvern & Beyond
+    return { vit: 1170, str: 1170, agi: 960, sta: 1150, intVal: 1850 };
+  };
+
+  const { vit, str, agi, sta, intVal } = getLeoStats(currentChapter);
+  // Canonical Mana Formula: INT × Total Soul Rank × 10
+  const maxMana = Math.round(intVal * totalSoulRank * 10);
+
+  // Character portraits from Sanity (with fallback artwork)
+  const leoChar = charactersList.find((c) => c.id === 'leo');
+  const lilyChar = charactersList.find((c) => c.id === 'lily');
+  const leoAvatarUrl = (leoChar?.portrait && urlForImage(leoChar.portrait)) || "https://lh3.googleusercontent.com/aida-public/AB6AXuBhbJyCncrv7U9rwD_bzdBowfebOUEEVhtRlkVJs6XnJzHABIcsiotVj-74mpu8PQGMdvIVUpH-x25us6ClONL7hFLMihMvJ8l4NX7-lX3yHQ41F-9BEQrsDFqA-G05GSnqknRYY5pqf623mj8HzIIiMhs9f6QRqP74XMhqTbZbESpzjGpx2ROakrEvOBYIN1gH3d_3lNITriFEh8XEgqM6XHygBcaYPeMKB8m3RXzapRkRELZ_Jhc9";
+  const lilyAvatarUrl = (lilyChar?.portrait && urlForImage(lilyChar.portrait)) || null;
 
   // Filter beasts for Codex view
-  const filteredBeasts = LOCAL_BEASTS.filter((b) => {
+  const filteredBeasts = beastsList.filter((b) => {
     const matchesQuery =
       searchQuery === '' ||
       b.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -68,22 +123,27 @@ export default function HomePage() {
     return matchesQuery && matchesAffinity;
   });
 
+  const activeContractedBeasts = beastsList.filter((b) => b.contractChapter <= currentChapter);
+
   return (
     <div className="app-shell">
       {/* 1. FIXED TOP APP HEADER */}
       <header className="app-header pt-safe">
         <div className="header-container">
           <div className="header-brand">
-            <div className="brand-icon-box">
-              <span className="material-symbols-outlined">all_inclusive</span>
+            <div className="brand-logo-frame">
+              <img
+                src="/shyra-logo.png"
+                alt="Shyra - Beast Dominion"
+                className="brand-logo-img"
+              />
             </div>
             <div className="brand-text-col">
               <div className="brand-title-row">
                 <span className="brand-title">BEAST DOMINION</span>
-                <span className="multiplier-pill">Multiplier ×{multiplier}</span>
               </div>
               <span className="brand-subtitle">
-                {activeTab === 'sanctuary' && `Sanctuary Codex • Ch. ${currentChapter}`}
+                {activeTab === 'sanctuary' && `Dominion Sanctuary • Ch. ${currentChapter}`}
                 {activeTab === 'codex' && 'Field Bestiary & Soul Lore'}
                 {activeTab === 'dossier' && 'Pact Master Dossier'}
                 {activeTab === 'realm' && 'Velerath Cartography • Sector 09'}
@@ -120,31 +180,72 @@ export default function HomePage() {
       {/* 2. MAIN SCROLLABLE CONTENT */}
       <main className="main-content">
         
-        {/* STORY PROGRESS SYNCHRONIZATION HUD */}
-        <section className="hud-card" aria-label="Story Progress Synchronization">
-          <div className="hud-top-row">
-            <div className="hud-left">
-              <span className="material-symbols-outlined hud-icon">auto_stories</span>
-              <div>
-                <div className="hud-title-group">
-                  <span className="hud-title">Story Progress Sync</span>
-                  <span className="spoiler-badge">Anti-Spoiler Mode</span>
-                </div>
-                <div className="hud-status-text">
-                  Viewing: <strong>Chapter {currentChapter}</strong> [
-                  {phase === 1
-                    ? 'Kendru Awakening'
-                    : phase === 2
-                    ? 'Academy Trials'
-                    : phase === 3
-                    ? 'Blood Bond & Fief Defense'
-                    : 'Apex Sovereign'}
-                  ]
-                </div>
-              </div>
+        {/* CHAPTER NAVIGATOR */}
+        <section className="chapter-nav-card" aria-label="Chapter Navigator">
+          <div className="chapter-nav-top">
+            <div className="chapter-info-col">
+              <span className="chapter-badge">Current Chapter</span>
+              <h2 className="chapter-title-display">
+                Chapter {currentChapter}:{' '}
+                <span className="chapter-subtitle-text">
+                  {cleanChapterTitle(currentChapterTitle)}
+                </span>
+              </h2>
             </div>
-            <div className="phase-pill">
-              Phase {phase} Active (×{multiplier})
+
+            <div className="chapter-quick-inputs">
+              <button
+                type="button"
+                className="chapter-step-btn"
+                onClick={() => setCurrentChapter((prev) => Math.max(1, prev - 10))}
+                title="Jump back 10 chapters"
+              >
+                -10
+              </button>
+              <button
+                type="button"
+                className="chapter-step-btn"
+                onClick={() => setCurrentChapter((prev) => Math.max(1, prev - 1))}
+                title="Previous chapter"
+              >
+                <span className="material-symbols-outlined">chevron_left</span>
+              </button>
+
+              <div className="chapter-input-wrap">
+                <input
+                  id="chapter-direct-input"
+                  type="number"
+                  min={1}
+                  max={727}
+                  value={currentChapter}
+                  onChange={(e) => {
+                    const val = parseInt(e.target.value, 10);
+                    if (!isNaN(val)) {
+                      setCurrentChapter(Math.min(727, Math.max(1, val)));
+                    }
+                  }}
+                  className="chapter-number-input"
+                  aria-label="Chapter number input"
+                />
+                <span className="chapter-total-label">/ 727</span>
+              </div>
+
+              <button
+                type="button"
+                className="chapter-step-btn"
+                onClick={() => setCurrentChapter((prev) => Math.min(727, prev + 1))}
+                title="Next chapter"
+              >
+                <span className="material-symbols-outlined">chevron_right</span>
+              </button>
+              <button
+                type="button"
+                className="chapter-step-btn"
+                onClick={() => setCurrentChapter((prev) => Math.min(727, prev + 10))}
+                title="Jump forward 10 chapters"
+              >
+                +10
+              </button>
             </div>
           </div>
 
@@ -153,53 +254,13 @@ export default function HomePage() {
             <input
               type="range"
               min={1}
-              max={150}
+              max={727}
               value={currentChapter}
               onChange={(e) => setCurrentChapter(Number(e.target.value))}
               id="chapter-scrubber"
               aria-label="Chapter Scrubber"
+              className="chapter-range-slider"
             />
-            <div className="chapter-ticks-row">
-              <span>Ch. 1 (Awakening)</span>
-              <span>Ch. 26 (Academy)</span>
-              <span>Ch. 71 (Blood Bond)</span>
-              <span>Ch. 120 (Sovereign)</span>
-            </div>
-          </div>
-
-          {/* Phase Milestone Selector Grid */}
-          <div className="phase-grid">
-            <button
-              onClick={() => setCurrentChapter(15)}
-              className={`phase-btn ${phase === 1 ? 'active' : ''}`}
-            >
-              <div className="phase-btn-header">Phase I • Ch 1–25</div>
-              <div className="phase-btn-sub">Kendru (×8)</div>
-            </button>
-
-            <button
-              onClick={() => setCurrentChapter(50)}
-              className={`phase-btn ${phase === 2 ? 'active' : ''}`}
-            >
-              <div className="phase-btn-header">Phase II • Ch 26–70</div>
-              <div className="phase-btn-sub">Academy (×9)</div>
-            </button>
-
-            <button
-              onClick={() => setCurrentChapter(109)}
-              className={`phase-btn ${phase === 3 ? 'active' : ''}`}
-            >
-              <div className="phase-btn-header">Phase III • Ch 71–120</div>
-              <div className="phase-btn-sub">Fief War (×10)</div>
-            </button>
-
-            <button
-              onClick={() => setCurrentChapter(135)}
-              className={`phase-btn ${phase === 4 ? 'active' : ''}`}
-            >
-              <div className="phase-btn-header">Phase IV • Ch 121+</div>
-              <div className="phase-btn-sub">Sovereign (×11+)</div>
-            </button>
           </div>
         </section>
 
@@ -209,13 +270,26 @@ export default function HomePage() {
             {/* Sovereign Dominion Identity Card (Leo) */}
             <section className="sovereign-card">
               <div className="sovereign-profile-row">
-                {/* Sovereign Avatar */}
-                <div className="sovereign-avatar-wrap">
+                {/* Sovereign Avatar with Full-View Lightbox Click */}
+                <div
+                  className="sovereign-avatar-wrap"
+                  onClick={() =>
+                    setSelectedImage({
+                      url: leoAvatarUrl,
+                      title: 'Leonel (Leo)',
+                      subtitle: `${currentChapter < 26 ? 'Kendru Frontline' : 'Aurelius Beast Academy'} • Commoner Prodigy`,
+                    })
+                  }
+                  title="Click to view full image"
+                  role="button"
+                  tabIndex={0}
+                >
                   <img
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhbJyCncrv7U9rwD_bzdBowfebOUEEVhtRlkVJs6XnJzHABIcsiotVj-74mpu8PQGMdvIVUpH-x25us6ClONL7hFLMihMvJ8l4NX7-lX3yHQ41F-9BEQrsDFqA-G05GSnqknRYY5pqf623mj8HzIIiMhs9f6QRqP74XMhqTbZbESpzjGpx2ROakrEvOBYIN1gH3d_3lNITriFEh8XEgqM6XHygBcaYPeMKB8m3RXzapRkRELZ_Jhc9"
+                    src={leoAvatarUrl}
                     alt="Leo - Commoner Prodigy"
                     className="sovereign-avatar-img"
                   />
+                  <span className="avatar-zoom-hint material-symbols-outlined">zoom_in</span>
                   <div className="avatar-badge-bottom">1st-Ranker</div>
                 </div>
 
@@ -225,10 +299,12 @@ export default function HomePage() {
                     <span className="prodigy-badge">Commoner Prodigy</span>
                   </div>
                   <div className="sovereign-academy">
-                    Aurelius Beast Academy • Outer Sector 09 Bastion
+                    {currentChapter < 26
+                      ? 'Kendru Outskirts Frontline • Soldier Transmigration'
+                      : 'Aurelius Beast Academy • Outer Sector 09 Bastion'}
                   </div>
                   <div className="anomaly-pill">
-                    Dual Soul Anomaly: Mortal [{mortalSoulRank}] + Primordial [Mythical 7]
+                    Dual Soul Anomaly: Mortal [{mortalSoul.name} {mortalSoul.rank}] + Primordial [Mythical 7] • Combined Soul Rank {totalSoulRank}
                   </div>
                 </div>
               </div>
@@ -237,7 +313,9 @@ export default function HomePage() {
               <div className="parameters-section">
                 <div className="parameters-header">
                   <span>Canonical Parameters (Ch. {currentChapter})</span>
-                  <span className="highlight">100% Stat Sharing (0 Mana Upkeep)</span>
+                  <span className="highlight">
+                    {currentChapter < 8 ? 'Base Awakening' : '100% Stat Sharing (0 Mana Upkeep)'}
+                  </span>
                 </div>
                 <div className="params-grid-5">
                   <div className="param-card">
@@ -263,29 +341,20 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Mana Gauge & Soft Cap Limiter */}
+              {/* Canonical Mana Capacity Gauge */}
               <div className="gauges-grid">
-                <div className="gauge-item">
+                <div className="gauge-item" style={{ gridColumn: '1 / -1' }}>
                   <div className="gauge-label-row">
                     <span className="label">MAX MANA</span>
                     <span className="val-mana">
                       {maxMana.toLocaleString()}{' '}
-                      <span className="gauge-sub">(INT {intVal}×10×{multiplier})</span>
+                      <span className="gauge-sub">
+                        (INT {intVal} × Soul Rank {totalSoulRank} × 10)
+                      </span>
                     </span>
                   </div>
                   <div className="gauge-track">
-                    <div className="gauge-fill-mana" />
-                  </div>
-                </div>
-                <div className="gauge-item">
-                  <div className="gauge-label-row">
-                    <span className="label">SOFT CAP LIMITER</span>
-                    <span className="val-softcap">
-                      {softCap} <span className="gauge-sub">(Mortal Soul Cap)</span>
-                    </span>
-                  </div>
-                  <div className="gauge-track">
-                    <div className="gauge-fill-softcap" style={{ width: softCap }} />
+                    <div className="gauge-fill-mana" style={{ width: '100%' }} />
                   </div>
                 </div>
               </div>
@@ -296,7 +365,7 @@ export default function HomePage() {
               <div className="companions-title-group">
                 <span className="material-symbols-outlined companions-icon">pets</span>
                 <h3 className="companions-title">
-                  Active Contracted Companions ({LOCAL_BEASTS.filter((b) => b.contractChapter <= currentChapter).length})
+                  Active Contracted Companions ({activeContractedBeasts.length})
                 </h3>
               </div>
               <span className="companions-hint">
@@ -304,11 +373,26 @@ export default function HomePage() {
               </span>
             </div>
 
+            {/* Chapter 1 Awakening State: When 0 beasts are contracted yet */}
+            {activeContractedBeasts.length === 0 && (
+              <div style={{ background: 'var(--surface-container-low)', border: '1px dashed var(--outline-variant)', borderRadius: '14px', padding: '1.5rem', textAlign: 'center' }}>
+                <span className="material-symbols-outlined" style={{ fontSize: '36px', color: 'var(--primary)', marginBottom: '8px' }}>explore</span>
+                <h4 className="font-cinzel" style={{ fontSize: '18px', color: 'var(--primary)', fontWeight: 800 }}>Kendru Outskirts — Chapter 1 Awakening</h4>
+                <p style={{ fontSize: '14px', color: 'var(--on-surface-variant)', marginTop: '4px', maxWidth: '520px', margin: '4px auto 0 auto', lineHeight: 1.6 }}>
+                  Leonel has just awakened in the frontline trench after transmigrating from Earth. He has received Beast God Sanguor's Primordial Soul, but has not yet contracted any beasts.
+                </p>
+                <div style={{ marginTop: '12px', fontSize: '13px', color: 'var(--secondary)', fontWeight: 700 }}>
+                  ⏩ Advance the chapter scrubber to Chapter 8 to discover and contract his first companion, Shyra the Obsidian Panther!
+                </div>
+              </div>
+            )}
+
             <div className="companions-grid">
-              {LOCAL_BEASTS.map((beast) => {
+              {beastsList.map((beast) => {
                 const snapshot = getBeastSnapshotAtChapter(beast, currentChapter);
                 const isUnlocked = snapshot.isUnlocked;
                 const m = snapshot.currentMilestone;
+                const beastImg = (beast.portrait && urlForImage(beast.portrait)) || beast.imageUrl;
 
                 if (!isUnlocked) {
                   return (
@@ -321,7 +405,7 @@ export default function HomePage() {
                         <span className="badge-tag">Locked</span>
                       </div>
                       <p className="codex-lore">
-                        Advance chapter scrubber to Ch. {beast.contractChapter}+ to unlock this companion without spoilers.
+                        Contracted in Chapter {beast.contractChapter}. Advance chapter to {beast.contractChapter} to reveal details.
                       </p>
                     </article>
                   );
@@ -334,9 +418,40 @@ export default function HomePage() {
                     className="companion-card"
                   >
                     <div className="companion-top-row">
-                      <div>
-                        <h4 className="companion-name">{beast.name}</h4>
-                        <span className="companion-species">{beast.species}</span>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        {beastImg && (
+                          <div
+                            style={{
+                              width: '52px',
+                              height: '52px',
+                              borderRadius: '12px',
+                              overflow: 'hidden',
+                              border: '1.5px solid var(--primary)',
+                              flexShrink: 0,
+                              cursor: 'pointer',
+                              boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+                            }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedImage({
+                                url: beastImg,
+                                title: beast.name,
+                                subtitle: `${beast.species} • Contract Ch. ${beast.contractChapter}`,
+                              });
+                            }}
+                            title="Click to view full image"
+                          >
+                            <img
+                              src={beastImg}
+                              alt={beast.name}
+                              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                          </div>
+                        )}
+                        <div>
+                          <h4 className="companion-name">{beast.name}</h4>
+                          <span className="companion-species">{beast.species}</span>
+                        </div>
                       </div>
                       <span className="rank-badge">
                         ★ {m?.starRank} ({m?.subRank})
@@ -417,7 +532,7 @@ export default function HomePage() {
 
             {/* Affinity Filter Chips */}
             <div className="chips-slider no-scrollbar">
-              {['all', 'shadow', 'fire', 'water', 'earth', 'nature', 'wind', 'draconic'].map((aff) => (
+              {['all', 'shadow', 'darkness', 'fire', 'water', 'earth', 'nature', 'life', 'draconic'].map((aff) => (
                 <button
                   key={aff}
                   onClick={() => setSelectedAffinity(aff)}
@@ -465,33 +580,33 @@ export default function HomePage() {
               </div>
             </section>
 
-            {/* Cognition & Soul Bond Stages Indicator */}
+            {/* Cognition & Soul Bond Stages Reference Banner */}
             <section className="cognition-card">
               <div className="ref-top-row">
                 <div className="ref-title-group">
                   <span className="material-symbols-outlined" style={{ color: 'var(--tertiary)' }}>psychology</span>
-                  <span className="ref-title" style={{ color: 'var(--tertiary)' }}>Cognition & Soul Bond Stages</span>
+                  <span className="ref-title" style={{ color: 'var(--tertiary)' }}>Cognition & Intelligence Hierarchy</span>
                 </div>
-                <span className="ref-sub" style={{ color: 'var(--tertiary)' }}>Stage {phase} Active</span>
+                <span className="ref-sub" style={{ color: 'var(--tertiary)' }}>Canon Progression</span>
               </div>
               <div className="cognition-grid-5">
-                <div className={`cognition-step ${phase === 1 ? 'active' : ''}`} style={{ opacity: phase >= 1 ? 1 : 0.4 }}>
+                <div className="cognition-step active">
                   <div className="cognition-step-title">1. Feral</div>
                   <div className="cognition-step-desc">Instinct</div>
                 </div>
-                <div className={`cognition-step ${phase === 2 ? 'active' : ''}`} style={{ opacity: phase >= 2 ? 1 : 0.4 }}>
+                <div className="cognition-step active">
                   <div className="cognition-step-title">2. Juvenile</div>
                   <div className="cognition-step-desc">No Skill Copy</div>
                 </div>
-                <div className={`cognition-step ${phase === 3 ? 'active' : ''}`} style={{ opacity: phase >= 3 ? 1 : 0.4 }}>
+                <div className="cognition-step active">
                   <div className="cognition-step-title" style={{ color: 'var(--primary)' }}>3. Adolescent</div>
                   <div className="cognition-step-desc" style={{ color: 'var(--primary)' }}>IQ 100+ Extract</div>
                 </div>
-                <div className={`cognition-step ${phase === 4 ? 'active' : ''}`} style={{ opacity: phase >= 4 ? 1 : 0.4 }}>
+                <div className="cognition-step active">
                   <div className="cognition-step-title">4. Mature</div>
                   <div className="cognition-step-desc">Language</div>
                 </div>
-                <div className="cognition-step" style={{ opacity: 0.4 }}>
+                <div className="cognition-step active">
                   <div className="cognition-step-title">5. Transcendent</div>
                   <div className="cognition-step-desc">Resonance</div>
                 </div>
@@ -503,6 +618,7 @@ export default function HomePage() {
               {filteredBeasts.map((beast) => {
                 const snapshot = getBeastSnapshotAtChapter(beast, currentChapter);
                 const m = snapshot.currentMilestone;
+                const beastImg = (beast.portrait && urlForImage(beast.portrait)) || beast.imageUrl;
                 return (
                   <article
                     key={beast.id}
@@ -510,9 +626,40 @@ export default function HomePage() {
                     className="companion-card"
                   >
                     <div className="companion-top-row">
-                      <div>
-                        <h4 className="companion-name">{beast.name}</h4>
-                        <span className="companion-species">{beast.species}</span>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        {beastImg && (
+                          <div
+                            style={{
+                              width: '52px',
+                              height: '52px',
+                              borderRadius: '12px',
+                              overflow: 'hidden',
+                              border: '1.5px solid var(--primary)',
+                              flexShrink: 0,
+                              cursor: 'pointer',
+                              boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+                            }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedImage({
+                                url: beastImg,
+                                title: beast.name,
+                                subtitle: `${beast.species} • Contract Ch. ${beast.contractChapter}`,
+                              });
+                            }}
+                            title="Click to view full image"
+                          >
+                            <img
+                              src={beastImg}
+                              alt={beast.name}
+                              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                          </div>
+                        )}
+                        <div>
+                          <h4 className="companion-name">{beast.name}</h4>
+                          <span className="companion-species">{beast.species}</span>
+                        </div>
                       </div>
                       <span className="rank-badge">
                         ★ {m?.starRank || 1} ({m?.subRank || 'low'})
@@ -561,10 +708,21 @@ export default function HomePage() {
 
             {selectedProtagonist === 'leo' ? (
               <section className="dossier-hero-card">
-                {/* Hero Backdrop Portrait */}
-                <div className="dossier-banner-wrap">
+                {/* Hero Backdrop Portrait (Supports Sanity Studio uploaded image) */}
+                <div
+                  className="dossier-banner-wrap"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() =>
+                    setSelectedImage({
+                      url: leoAvatarUrl,
+                      title: 'Leonel (Leo)',
+                      subtitle: 'Dual Soul Tamer • Aurelius 1st-Ranker',
+                    })
+                  }
+                  title="Click to view full image"
+                >
                   <img
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhbJyCncrv7U9rwD_bzdBowfebOUEEVhtRlkVJs6XnJzHABIcsiotVj-74mpu8PQGMdvIVUpH-x25us6ClONL7hFLMihMvJ8l4NX7-lX3yHQ41F-9BEQrsDFqA-G05GSnqknRYY5pqf623mj8HzIIiMhs9f6QRqP74XMhqTbZbESpzjGpx2ROakrEvOBYIN1gH3d_3lNITriFEh8XEgqM6XHygBcaYPeMKB8m3RXzapRkRELZ_Jhc9"
+                    src={leoAvatarUrl}
                     alt="Leo Portrait"
                     className="dossier-banner-img"
                   />
@@ -577,7 +735,7 @@ export default function HomePage() {
                       </span>
                     </div>
                     <div>
-                      <div className="dossier-hero-mult">Multiplier ×{multiplier}</div>
+                      <div className="dossier-hero-mult">Total Soul Rank {totalSoulRank}</div>
                       <div className="sovereign-academy" style={{ color: 'var(--secondary)' }}>
                         Dual Soul Anomaly
                       </div>
@@ -592,9 +750,9 @@ export default function HomePage() {
                     <div className="anomaly-box">
                       <div className="anomaly-box-top">
                         <span style={{ color: 'var(--on-surface-variant)' }}>Mortal Soul</span>
-                        <span style={{ color: 'var(--secondary)' }}>[{mortalSoulRank}]</span>
+                        <span style={{ color: 'var(--secondary)' }}>[{mortalSoul.name} {mortalSoul.rank}]</span>
                       </div>
-                      <div className="anomaly-box-val">Value {phase}</div>
+                      <div className="anomaly-box-val">Value {mortalSoul.rank}</div>
                       <div className="anomaly-box-desc">Innate Core</div>
                     </div>
                     <div className="anomaly-box primordial">
@@ -603,7 +761,7 @@ export default function HomePage() {
                         <span style={{ color: 'var(--primary)' }}>[Mythical]</span>
                       </div>
                       <div className="anomaly-box-val" style={{ color: 'var(--primary)' }}>Value 7</div>
-                      <div className="anomaly-box-desc">Ancient Fusion</div>
+                      <div className="anomaly-box-desc">Ancient Fusion (Sanguor)</div>
                     </div>
                   </div>
 
@@ -622,7 +780,15 @@ export default function HomePage() {
                         <span className="material-symbols-outlined" style={{ color: 'var(--secondary)' }}>menu_book</span>
                         <span className="talent-title">Bestiary of Souls</span>
                       </div>
-                      <span className="talent-rating">6★ Unique</span>
+                      <span className="talent-rating">
+                        {currentChapter >= 385
+                          ? '8★ Unique'
+                          : currentChapter >= 105
+                          ? '7★ Unique'
+                          : currentChapter >= 40
+                          ? '6★ Unique'
+                          : '5★ Unique'}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -630,9 +796,37 @@ export default function HomePage() {
             ) : (
               /* Lily Dossier */
               <section className="sovereign-card">
-                <h2 className="sovereign-name" style={{ color: 'var(--secondary)' }}>LILY AURELIUS</h2>
-                <div className="sovereign-academy" style={{ marginBottom: '1rem' }}>
-                  Scion of House Aurelius • Soulmate Bond Partner
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '1rem' }}>
+                  {lilyAvatarUrl && (
+                    <div
+                      style={{
+                        width: '72px',
+                        height: '72px',
+                        borderRadius: '14px',
+                        overflow: 'hidden',
+                        border: '2px solid var(--secondary)',
+                        flexShrink: 0,
+                        cursor: 'pointer',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+                      }}
+                      onClick={() =>
+                        setSelectedImage({
+                          url: lilyAvatarUrl,
+                          title: 'Lily Aurelius',
+                          subtitle: 'Soulmate Bond Partner • Spirit Caller',
+                        })
+                      }
+                      title="Click to view full image"
+                    >
+                      <img src={lilyAvatarUrl} alt="Lily Aurelius" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    </div>
+                  )}
+                  <div>
+                    <h2 className="sovereign-name" style={{ color: 'var(--secondary)' }}>LILY AURELIUS</h2>
+                    <div className="sovereign-academy">
+                      Scion of House Aurelius • Soulmate Bond Partner
+                    </div>
+                  </div>
                 </div>
                 <p className="codex-lore" style={{ color: 'var(--on-surface)' }}>
                   Possesses bidirectional soulmate mana transfer with Leo. Endowed with the Super Rare soul core and Radiant Light affinity.
@@ -822,6 +1016,41 @@ export default function HomePage() {
               </button>
             </div>
 
+            {/* Beast Artwork in Modal (Supports Sanity Studio uploaded images) */}
+            {((selectedBeast.portrait && urlForImage(selectedBeast.portrait)) || selectedBeast.imageUrl) && (
+              <div
+                style={{
+                  width: '100%',
+                  height: '240px',
+                  borderRadius: '14px',
+                  overflow: 'hidden',
+                  marginBottom: '1.25rem',
+                  border: '1.5px solid var(--primary)',
+                  cursor: 'pointer',
+                  position: 'relative',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+                }}
+                onClick={() => {
+                  const imgUrl = (selectedBeast.portrait && urlForImage(selectedBeast.portrait)) || selectedBeast.imageUrl;
+                  if (imgUrl) {
+                    setSelectedImage({
+                      url: imgUrl,
+                      title: selectedBeast.name,
+                      subtitle: `${selectedBeast.species} • Contract Chapter ${selectedBeast.contractChapter}`,
+                    });
+                  }
+                }}
+                title="Click to view full image"
+              >
+                <img
+                  src={(selectedBeast.portrait && urlForImage(selectedBeast.portrait)) || selectedBeast.imageUrl}
+                  alt={selectedBeast.name}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+                <span className="avatar-zoom-hint material-symbols-outlined">zoom_in</span>
+              </div>
+            )}
+
             <div className="modal-meta-row">
               Contract Chapter: <strong>Chapter {selectedBeast.contractChapter}</strong> • Element:{' '}
               <strong>{selectedBeast.elementAffinity.join(', ')}</strong>
@@ -864,6 +1093,45 @@ export default function HomePage() {
                 className="modal-primary-btn"
               >
                 Close Codex Entry
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Lightbox Modal for Full Image Viewing */}
+      {selectedImage && (
+        <div
+          className="lightbox-backdrop"
+          onClick={() => setSelectedImage(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="lightbox-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="lightbox-img-wrap">
+              <img
+                src={selectedImage.url}
+                alt={selectedImage.title}
+                className="lightbox-img"
+              />
+            </div>
+            <div className="lightbox-footer">
+              <div className="lightbox-title-wrap">
+                <h3 className="lightbox-title">{selectedImage.title}</h3>
+                {selectedImage.subtitle && (
+                  <span className="lightbox-sub">{selectedImage.subtitle}</span>
+                )}
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelectedImage(null)}
+                className="lightbox-close-btn"
+                aria-label="Close image preview"
+              >
+                <span className="material-symbols-outlined">close</span>
               </button>
             </div>
           </div>

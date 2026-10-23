@@ -35,4 +35,5 @@ next-env.d.ts
 
 # Local Extraction Archive & Raw Book Data
 /_archive/
+/chapters/
 *.epub

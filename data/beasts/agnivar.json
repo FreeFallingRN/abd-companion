@@ -2,16 +2,16 @@
   "$schema": "../schemas/beast.schema.json",
   "id": "agnivar",
   "name": "Agnivar",
-  "species": "Hoarding Wyvern",
-  "contractChapter": 98,
+  "species": "Flame Wyvern (Draconic Lineage)",
+  "contractChapter": 535,
   "elementAffinity": [
     "fire",
     "draconic"
   ],
   "milestones": [
     {
-      "minChapter": 98,
-      "maxChapter": 160,
+      "minChapter": 535,
+      "maxChapter": null,
       "starRank": 2,
       "subRank": "peak",
       "bloodlineTier": "super",

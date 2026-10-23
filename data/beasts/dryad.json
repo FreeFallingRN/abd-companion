@@ -2,8 +2,8 @@
   "$schema": "../schemas/beast.schema.json",
   "id": "dryad",
   "name": "Niri",
-  "species": "Primordial Grove Dryad",
-  "contractChapter": 42,
+  "species": "Royal Dryad",
+  "contractChapter": 77,
   "elementAffinity": [
     "nature",
     "life",
@@ -11,7 +11,7 @@
   ],
   "milestones": [
     {
-      "minChapter": 42,
+      "minChapter": 77,
       "maxChapter": 90,
       "starRank": 2,
       "subRank": "high",

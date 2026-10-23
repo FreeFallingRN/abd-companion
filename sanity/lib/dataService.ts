@@ -6,8 +6,10 @@ import shyraData from '@/data/beasts/shyra.json';
 import krikData from '@/data/beasts/krik.json';
 import dryadData from '@/data/beasts/dryad.json';
 import agnivarData from '@/data/beasts/agnivar.json';
+import ashiraData from '@/data/beasts/ashira.json';
 import nyxaData from '@/data/beasts/nyxa.json';
 import howlData from '@/data/beasts/howl.json';
+import zelutData from '@/data/beasts/zelut.json';
 
 import leoData from '@/data/characters/leo.json';
 import lilyData from '@/data/characters/lily.json';
@@ -50,6 +52,7 @@ export interface BeastRecord {
   contractChapter: number;
   elementAffinity: string[];
   lore?: string;
+  portrait?: any;
   imageUrl?: string;
   milestones: Milestone[];
 }
@@ -88,6 +91,7 @@ export interface CharacterRecord {
   name: string;
   title: string;
   role: string;
+  portrait?: any;
   talents?: Array<{
     id: string;
     name: string;
@@ -100,11 +104,13 @@ export interface CharacterRecord {
 
 export const LOCAL_BEASTS: BeastRecord[] = [
   shyraData as unknown as BeastRecord,
-  krikData as unknown as BeastRecord,
   dryadData as unknown as BeastRecord,
-  agnivarData as unknown as BeastRecord,
   nyxaData as unknown as BeastRecord,
   howlData as unknown as BeastRecord,
+  zelutData as unknown as BeastRecord,
+  agnivarData as unknown as BeastRecord,
+  ashiraData as unknown as BeastRecord,
+  krikData as unknown as BeastRecord,
 ];
 
 export const LOCAL_CHARACTERS: CharacterRecord[] = [
@@ -175,9 +181,14 @@ export function getCharacterSnapshotAtChapter(character: CharacterRecord, chapte
 export async function fetchAllBeasts(): Promise<BeastRecord[]> {
   if (!isDemoMode && client) {
     try {
-      const sanityBeasts = await client.fetch<BeastRecord[]>(`*[_type == "beast"] | order(contractChapter asc)`);
+      const sanityBeasts = await client.fetch<any[]>(`*[_type == "beast"] | order(contractChapter asc)`);
       if (sanityBeasts && sanityBeasts.length > 0) {
-        return sanityBeasts;
+        return sanityBeasts.map((b) => ({
+          ...b,
+          id: b.id?.current || b.id || b._id,
+          milestones: b.milestones || [],
+          elementAffinity: b.elementAffinity || [],
+        }));
       }
     } catch (err) {
       console.warn('Falling back to local beasts due to Sanity fetch issue:', err);
@@ -189,9 +200,13 @@ export async function fetchAllBeasts(): Promise<BeastRecord[]> {
 export async function fetchAllCharacters(): Promise<CharacterRecord[]> {
   if (!isDemoMode && client) {
     try {
-      const sanityChars = await client.fetch<CharacterRecord[]>(`*[_type == "character"]`);
+      const sanityChars = await client.fetch<any[]>(`*[_type == "character"]`);
       if (sanityChars && sanityChars.length > 0) {
-        return sanityChars;
+        return sanityChars.map((c) => ({
+          ...c,
+          id: c.slug?.current || c.id || c._id,
+          milestones: c.milestones || [],
+        }));
       }
     } catch (err) {
       console.warn('Falling back to local characters due to Sanity fetch issue:', err);

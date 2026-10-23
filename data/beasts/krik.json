@@ -1,16 +1,16 @@
 {
   "$schema": "../schemas/beast.schema.json",
-  "id": "krik",
-  "name": "Krik",
-  "species": "Mutated Kobolt Raider (Faint Draconic Lineage)",
-  "contractChapter": 18,
+  "id": "kazz",
+  "name": "Kazz",
+  "species": "Kobolt (Faint Draconic Lineage)",
+  "contractChapter": 553,
   "elementAffinity": [
     "earth",
     "draconic"
   ],
   "milestones": [
     {
-      "minChapter": 18,
+      "minChapter": 553,
       "maxChapter": 80,
       "starRank": 1,
       "subRank": "middle",

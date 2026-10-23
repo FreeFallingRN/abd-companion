@@ -2,15 +2,15 @@
   "$schema": "../schemas/beast.schema.json",
   "id": "shyra",
   "name": "Shyra",
-  "species": "Shadow Obsidian Panther / Primordial Lineage",
-  "contractChapter": 1,
+  "species": "Obsidian Panther Cub (Noble Bloodline)",
+  "contractChapter": 8,
   "elementAffinity": [
     "darkness",
     "shadow"
   ],
   "milestones": [
     {
-      "minChapter": 1,
+      "minChapter": 8,
       "maxChapter": 25,
       "starRank": 1,
       "subRank": "low",

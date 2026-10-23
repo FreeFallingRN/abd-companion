@@ -1,0 +1,46 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "ashira",
+  "name": "Ashira",
+  "species": "Flame Wyvern",
+  "contractChapter": 536,
+  "elementAffinity": [
+    "fire",
+    "draconic"
+  ],
+  "milestones": [
+    {
+      "minChapter": 536,
+      "maxChapter": null,
+      "starRank": 2,
+      "subRank": "high",
+      "bloodlineTier": "super",
+      "bloodlinePurity": 74,
+      "cognitionStage": "juvenile",
+      "iq": 95,
+      "bondStage": "blood",
+      "bondPercentage": 70,
+      "unlockedSkillIds": [
+        "pyro_shielding",
+        "flame_sovereignty",
+        "wyvern_dive"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "flame_ward_marking",
+          "name": "Flame Ward Marking",
+          "effect": "Allies marked by Ashira are immune to damage from fire and flames under her sphere of control.",
+          "transferredToTamer": true,
+          "unlockedChapter": 536
+        },
+        {
+          "traitId": "hoard_resonance",
+          "name": "Hoard Resonance",
+          "effect": "Passive combat empowerment and vitality recovery fueled by hoarded gems and mineral treasures.",
+          "transferredToTamer": true,
+          "unlockedChapter": 537
+        }
+      ]
+    }
+  ]
+}

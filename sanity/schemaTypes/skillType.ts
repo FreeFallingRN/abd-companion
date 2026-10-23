@@ -56,6 +56,14 @@ export const skillType = defineType({
       type: 'number',
       validation: (Rule) => Rule.required().min(1),
     }),
+    defineField({
+      name: 'icon',
+      title: 'Skill Icon / Artwork',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
   ],
   preview: {
     select: {

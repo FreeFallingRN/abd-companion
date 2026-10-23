@@ -42,6 +42,14 @@ export const realmType = defineType({
       type: 'text',
       rows: 4,
     }),
+    defineField({
+      name: 'coverImage',
+      title: 'Location Cover Image / Map Artwork',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
   ],
   preview: {
     select: {

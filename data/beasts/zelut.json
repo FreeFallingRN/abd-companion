@@ -1,0 +1,45 @@
+{
+  "$schema": "../schemas/beast.schema.json",
+  "id": "zelut",
+  "name": "Zelut Whisk",
+  "species": "Frostwhisk Mouse",
+  "contractChapter": 426,
+  "elementAffinity": [
+    "ice"
+  ],
+  "milestones": [
+    {
+      "minChapter": 426,
+      "maxChapter": null,
+      "starRank": 2,
+      "subRank": "peak",
+      "bloodlineTier": "super",
+      "bloodlinePurity": 82,
+      "cognitionStage": "adolescent",
+      "iq": 105,
+      "bondStage": "blood",
+      "bondPercentage": 88,
+      "unlockedSkillIds": [
+        "swarm_bond",
+        "iceveil_hide",
+        "essence_harvesting"
+      ],
+      "sharedTraits": [
+        {
+          "traitId": "swarm_command",
+          "name": "Swarm Command",
+          "effect": "Commands and coordinates rodent swarms for scouting, reconnaissance, and battlefield corpse harvesting.",
+          "transferredToTamer": true,
+          "unlockedChapter": 426
+        },
+        {
+          "traitId": "iceveil_chill",
+          "name": "Iceveil Chill",
+          "effect": "Sub-zero body temperature control that masks heat signatures and cools the tamer in extreme thermal conditions.",
+          "transferredToTamer": true,
+          "unlockedChapter": 426
+        }
+      ]
+    }
+  ]
+}
