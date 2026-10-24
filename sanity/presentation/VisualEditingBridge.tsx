@@ -16,5 +16,5 @@ export function VisualEditingBridge() {
     return null;
   }
 
-  return <VisualEditing />;
+  return <VisualEditing zIndex={99999} />;
 }

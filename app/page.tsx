@@ -19,6 +19,7 @@ import {
   fetchAllCharacters,
 } from '@/sanity/lib/dataService';
 import { urlForImage } from '@/sanity/lib/image';
+import { getSanityAttr } from '@/sanity/lib/visualEditing';
 
 export default function HomePage() {
   // Start strictly from Chapter 1 as requested
@@ -186,7 +187,11 @@ export default function HomePage() {
       <main className="main-content">
         
         {/* CHAPTER NAVIGATOR */}
-        <section className="chapter-nav-card" aria-label="Chapter Navigator">
+        <section
+          className="chapter-nav-card"
+          aria-label="Chapter Navigator"
+          data-sanity={getSanityAttr(`chapter-${currentChapter}`, 'chapterTimeline', 'title')}
+        >
           <div className="chapter-nav-top">
             <div className="chapter-info-col">
               <span className="chapter-badge">Current Chapter</span>
@@ -273,7 +278,10 @@ export default function HomePage() {
         {activeTab === 'sanctuary' && (
           <div className="tab-container">
             {/* Sovereign Dominion Identity Card (Leo) */}
-            <section className="sovereign-card">
+            <section
+              className="sovereign-card"
+              data-sanity={getSanityAttr('character-leo', 'character', 'name')}
+            >
               <div className="sovereign-profile-row">
                 {/* Sovereign Avatar with Full-View Lightbox Click */}
                 <div
@@ -423,6 +431,7 @@ export default function HomePage() {
                     key={beast.id}
                     onClick={() => setSelectedBeast(beast)}
                     className="companion-card"
+                    data-sanity={getSanityAttr(beast._id || `beast-${beast.id}`, 'beast', 'name')}
                   >
                     <div className="companion-top-row">
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -679,6 +688,7 @@ export default function HomePage() {
                     key={beast.id}
                     onClick={() => setSelectedBeast(beast)}
                     className="companion-card"
+                    data-sanity={getSanityAttr(beast._id || `beast-${beast.id}`, 'beast', 'name')}
                   >
                     <div className="companion-top-row">
                       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -791,7 +801,10 @@ export default function HomePage() {
             </div>
 
             {selectedProtagonist === 'leo' ? (
-              <section className="dossier-hero-card">
+              <section
+                className="dossier-hero-card"
+                data-sanity={getSanityAttr('character-leo', 'character', 'name')}
+              >
                 {/* Hero Backdrop Portrait (Supports Sanity Studio uploaded image) */}
                 <div
                   className="dossier-banner-wrap"
@@ -950,7 +963,10 @@ export default function HomePage() {
               </section>
             ) : (
               /* Lily Dossier */
-              <section className="sovereign-card">
+              <section
+                className="sovereign-card"
+                data-sanity={getSanityAttr('character-lily', 'character', 'name')}
+              >
                 <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '1rem' }}>
                   {lilyAvatarUrl && (
                     <div
@@ -1203,7 +1219,10 @@ export default function HomePage() {
             onClick={(e) => e.stopPropagation()}
             className="modal-sheet"
           >
-            <div className="modal-header">
+            <div
+              className="modal-header"
+              data-sanity={getSanityAttr(selectedBeast._id || `beast-${selectedBeast.id}`, 'beast', 'name')}
+            >
               <div>
                 <h3 className="modal-title">{selectedBeast.name}</h3>
                 <span className="modal-species">{selectedBeast.species}</span>
@@ -1292,7 +1311,15 @@ export default function HomePage() {
                   const chapterRangeLabel = nextCh ? `Chapters ${startCh} – ${nextCh - 1}` : `Chapter ${startCh}+ (Current Peak)`;
 
                   return (
-                    <div key={m._key || idx} className={`milestone-item ${isCurrentStage ? 'current-stage' : ''}`}>
+                    <div
+                      key={m._key || idx}
+                      className={`milestone-item ${isCurrentStage ? 'current-stage' : ''}`}
+                      data-sanity={getSanityAttr(
+                        selectedBeast._id || `beast-${selectedBeast.id}`,
+                        'beast',
+                        m._key ? `milestones[_key=="${m._key}"]` : `milestones[${idx}]`
+                      )}
+                    >
                       <div className="milestone-card-layout">
                         {milestoneImg ? (
                           <div

@@ -7,7 +7,7 @@ export const dataset = assertValue(
 );
 
 export const projectId =
-  process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'demo';
+  process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'qrfgv7bt';
 
 export const isDemoMode = !projectId || projectId === 'demo';
 
