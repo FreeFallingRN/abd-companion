@@ -4,10 +4,12 @@
   "name": "Zelut Whisk",
   "species": "Frostwhisk Mouse",
   "contractChapter": 426,
+  "tamerId": "leo",
   "elementAffinity": [
     "ice"
   ],
   "lore": "Zelut Whisk is a Frostwhisk Mouse contracted in Chapter 426. Masters rodent swarm networking and cryogenic concealment.",
+  "portraitAssetId": "image-80f89e272ef0f50cfdd1556fc49ffe932b9c3dcd-1402x1122-png",
   "milestones": [
     {
       "species": "Frostwhisk Mouse",
@@ -19,12 +21,22 @@
       "iq": 105,
       "maxChapter": null,
       "minChapter": 426,
-      "traits": [
-        { "name": "Swarm Command", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Sensory feedback from coordinated rodent scouts" },
-        { "name": "Iceveil Chill", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Thermal signature masking and internal body heat suppression" }
-      ],
       "starRank": 2,
       "subRank": "peak",
+      "traits": [
+        {
+          "name": "Swarm Command",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "Sensory feedback from coordinated rodent scouts"
+        },
+        {
+          "name": "Iceveil Chill",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Thermal signature masking and internal body heat suppression"
+        }
+      ],
       "unlockedSkillIds": [
         "swarm_bond",
         "iceveil_hide",

@@ -2,11 +2,11 @@ import { defineConfig } from 'sanity';
 import { structureTool } from 'sanity/structure';
 import { presentationTool } from 'sanity/presentation';
 import { schemaTypes } from './sanity/schemaTypes';
-import { projectId, dataset } from './sanity/env';
+import { projectId, dataset, apiVersion } from './sanity/env';
 
 export default defineConfig({
   name: 'default',
-  title: 'Absolute Beast Dominion — Codex Studio',
+  title: 'Absolute Beast Dominion — Studio',
   basePath: '/studio',
 
   projectId: projectId || 'demo',
@@ -17,54 +17,60 @@ export default defineConfig({
       title: 'Data Editor',
       structure: (S) =>
         S.list()
-          .title('Dominion Codex Sections')
+          .title('Site')
           .items([
             S.listItem()
-              .title('📖 Chapter Timeline & Arcs')
+              .title('Chapters')
               .child(
                 S.documentList()
                   .title('Story Chapters')
+                  .apiVersion(apiVersion)
                   .filter('_type == "chapterTimeline"')
                   .defaultOrdering([{ field: 'chapterNumber', direction: 'asc' }])
               ),
             S.divider(),
             S.listItem()
-              .title('🐾 Dominion Beasts & Companions')
+              .title('Tamed Beasts')
               .child(
                 S.documentList()
-                  .title('Contracted & Wild Beasts')
+                  .title('Contracted Beasts')
+                  .apiVersion(apiVersion)
                   .filter('_type == "beast"')
                   .defaultOrdering([{ field: 'contractChapter', direction: 'asc' }])
               ),
             S.listItem()
-              .title('🛡️ Pact Masters & Tamers')
+              .title('Tamers')
               .child(
                 S.documentList()
-                  .title('Tamers (Leo, Lily, Miho)')
+                  .title('Tamers')
+                  .apiVersion(apiVersion)
                   .filter('_type == "character"')
               ),
             S.divider(),
             S.listItem()
-              .title('⚡ Grimoire Skills & Techniques')
+              .title('Skills')
               .child(
                 S.documentList()
-                  .title('Combat & Bond Skills')
+                  .title('Skills')
+                  .apiVersion(apiVersion)
                   .filter('_type == "skill"')
                   .defaultOrdering([{ field: 'tier', direction: 'asc' }])
               ),
             S.listItem()
-              .title('🧬 Beast Traits & Specialties')
+              .title('Traits')
               .child(
                 S.documentList()
-                  .title('Contracted & Shared Traits')
+                  .title('Traits')
+                  .apiVersion(apiVersion)
                   .filter('_type == "trait"')
                   .defaultOrdering([{ field: 'name', direction: 'asc' }])
               ),
             S.listItem()
-              .title('🗺️ Realm Geography & Danger Zones')
+              .title('Locations')
               .child(
                 S.documentList()
-                  .title('Academies & Calamity Loci')
+                  .title('Locations')
+                  .apiVersion(apiVersion)
                   .filter('_type == "realmLocation"')
               ),
           ]),

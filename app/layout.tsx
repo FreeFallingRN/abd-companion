@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { VisualEditingBridge } from '@/sanity/presentation/VisualEditingBridge';
 
 export const metadata: Metadata = {
   title: 'Absolute Beast Dominion — Codex & Sanctuary',
@@ -22,6 +23,9 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: 'black-translucent',
     title: 'ABD Codex',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
   },
 };
 
@@ -60,7 +64,9 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        <VisualEditingBridge />
       </body>
     </html>
   );
 }
+

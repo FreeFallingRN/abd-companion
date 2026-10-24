@@ -2,7 +2,7 @@
   "$schema": "../schemas/character.schema.json",
   "id": "lily",
   "name": "Lily",
-  "title": "Spirit Calling Prodigy / Soulmate Resonance Partner",
+  "title": "Soulmate Partner / Aurelius 3rd-Ranker",
   "soulRank": "rare",
   "primaryAffinity": "Dual Soul Anomaly",
   "biography": "Pact Master of the Bestiary of Souls.",

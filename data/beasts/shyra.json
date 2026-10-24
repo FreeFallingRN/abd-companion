@@ -3,32 +3,55 @@
   "id": "shyra",
   "name": "Shyra",
   "species": "Obsidian Panther Cub (Noble Bloodline)",
+  "size": "Dynamic Void-Titan (Natural: 10m shoulder height, 18m length; variable from sub-meter to apex colossus)",
   "contractChapter": 8,
+  "tamerId": "leo",
   "elementAffinity": [
     "darkness",
     "shadow"
   ],
-  "lore": "Shyra is Leo's first contracted companion, contracted in the Kendru frontline trenches. Bound by the Obsidian Panther Noble Bloodline.",
+  "lore": "Shyra is Leo's first contracted companion, bound in the Kendru. Born of a Noble Bloodline of Obsidian Panthers, she starts as a small malnourished cub and rapidly evolves into a colossal 9-meter apex predator, eventually assimilating Voidfang Panther beast cores to become a Void-Obsidian Panther with inter-dimensional shadow traversal.",
   "portraitAssetId": "image-02d4f6c945673604b825f99db9da4daf63c8754b-1312x1199-png",
   "milestones": [
     {
       "species": "Obsidian Panther Cub",
+      "size": "0.3m – 0.4m cub (kitten-sized)",
       "bloodlinePurity": 12,
       "bloodlineTier": "noble",
       "bondPercentage": 35,
       "bondStage": "chain",
       "cognitionStage": "feral",
       "iq": 45,
-      "maxChapter": 25,
       "minChapter": 8,
-      "traits": [
-        { "name": "Silent Predator", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" },
-        { "name": "Explosive Power", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" },
-        { "name": "Obsidian Hide", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" },
-        { "name": "Feline Agility", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" }
-      ],
+      "maxChapter": 13,
       "starRank": 1,
       "subRank": "low",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        }
+      ],
       "unlockedSkillIds": [
         "stealth",
         "shadow_pounce"
@@ -37,48 +60,229 @@
     },
     {
       "species": "Obsidian Panther Cub",
-      "bloodlinePurity": 35,
+      "size": "0.6m cub",
+      "bloodlinePurity": 20,
       "bloodlineTier": "noble",
-      "bondPercentage": 55,
+      "bondPercentage": 45,
       "bondStage": "chain",
-      "cognitionStage": "juvenile",
-      "iq": 85,
-      "maxChapter": 70,
-      "minChapter": 26,
+      "cognitionStage": "feral",
+      "iq": 55,
+      "minChapter": 14,
+      "maxChapter": 31,
+      "starRank": 1,
+      "subRank": "middle",
       "traits": [
-        { "name": "Silent Predator", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant under Chain Bond" },
-        { "name": "Explosive Power", "sharingStatus": "partial", "sharedPercent": 25, "tamerEffect": "Initial kinetic burst feedback to Leo" },
-        { "name": "Obsidian Hide", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Locked until Blood Bond breakthrough" },
-        { "name": "Feline Agility", "sharingStatus": "partial", "sharedPercent": 30, "tamerEffect": "+30% reflex and balance speed" }
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        }
       ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce"
+      ],
+      "_key": "m_14_shyra"
+    },
+    {
+      "species": "Obsidian Panther Cub",
+      "size": "Waist-height (~1.0m tall, 1.5m length)",
+      "bloodlinePurity": 28,
+      "bloodlineTier": "noble",
+      "bondPercentage": 50,
+      "bondStage": "blood",
+      "cognitionStage": "juvenile",
+      "iq": 70,
+      "minChapter": 32,
+      "maxChapter": 39,
       "starRank": 1,
       "subRank": "high",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant under initial Blood Bond"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 25,
+          "sharingStatus": "partial",
+          "tamerEffect": "Initial kinetic burst feedback to Leo"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked until defensive resonance"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 30,
+          "sharingStatus": "partial",
+          "tamerEffect": "+30% reflex and balance speed"
+        }
+      ],
       "unlockedSkillIds": [
         "stealth",
         "shadow_pounce",
         "feline_agility"
       ],
-      "_key": "m_26_shyra"
+      "_key": "m_32_shyra"
     },
     {
       "species": "Obsidian Panther Cub",
-      "bloodlinePurity": 64,
+      "size": "1.2m shoulder height (2.0m length)",
+      "bloodlinePurity": 32,
       "bloodlineTier": "noble",
-      "bondPercentage": 78,
+      "bondPercentage": 55,
+      "bondStage": "blood",
+      "cognitionStage": "juvenile",
+      "iq": 80,
+      "minChapter": 40,
+      "maxChapter": 42,
+      "starRank": 1,
+      "subRank": "peak",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant under initial Blood Bond"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 30,
+          "sharingStatus": "partial",
+          "tamerEffect": "Burst damage scaling"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked until major breakthrough"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 30,
+          "sharingStatus": "partial",
+          "tamerEffect": "+30% reflex speed"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "critical_strike"
+      ],
+      "_key": "m_40_shyra"
+    },
+    {
+      "species": "Obsidian Panther Cub",
+      "size": "Almost 3.0m shoulder height (~4.5m length)",
+      "bloodlinePurity": 35,
+      "bloodlineTier": "noble",
+      "bondPercentage": 58,
+      "bondStage": "blood",
+      "cognitionStage": "juvenile",
+      "iq": 90,
+      "minChapter": 43,
+      "maxChapter": 66,
+      "starRank": 2,
+      "subRank": "low",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 35,
+          "sharingStatus": "partial",
+          "tamerEffect": "+35% sudden kinetic strike force"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 35,
+          "sharingStatus": "partial",
+          "tamerEffect": "+35% reflex speed"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "critical_strike",
+        "obsidian_armor"
+      ],
+      "_key": "m_43_shyra"
+    },
+    {
+      "species": "Obsidian Panther Cub",
+      "size": "4.5m shoulder height (~7.0m length)",
+      "bloodlinePurity": 45,
+      "bloodlineTier": "noble",
+      "bondPercentage": 60,
       "bondStage": "blood",
       "cognitionStage": "adolescent",
-      "iq": 115,
-      "maxChapter": 120,
-      "minChapter": 71,
-      "traits": [
-        { "name": "Silent Predator", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Soundless stalk and zero footprint in dark terrain" },
-        { "name": "Explosive Power", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Sudden explosive physical strike multiplier" },
-        { "name": "Feline Agility", "sharingStatus": "partial", "sharedPercent": 80, "tamerEffect": "+80% evading agility and reflex enhancement" },
-        { "name": "Obsidian Hide", "sharingStatus": "partial", "sharedPercent": 20, "tamerEffect": "+20% physical defense when shadow-infused" },
-        { "name": "Body Size Adjustment", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Mid 3★ requirement)" }
-      ],
+      "iq": 100,
+      "minChapter": 67,
+      "maxChapter": 76,
       "starRank": 2,
       "subRank": "high",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "+50% burst kinetic strike force"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "+50% reflex and balance speed"
+        }
+      ],
       "unlockedSkillIds": [
         "stealth",
         "shadow_pounce",
@@ -86,28 +290,375 @@
         "obsidian_armor",
         "abyssal_roar"
       ],
-      "_key": "m_71_shyra"
+      "_key": "m_67_shyra"
+    },
+    {
+      "species": "Obsidian Panther Cub",
+      "size": "6–7m shoulder height, 10m+ length (20cm canines, 30cm claws)",
+      "bloodlinePurity": 55,
+      "bloodlineTier": "noble",
+      "bondPercentage": 65,
+      "bondStage": "blood",
+      "cognitionStage": "adolescent",
+      "iq": 110,
+      "minChapter": 77,
+      "maxChapter": 80,
+      "starRank": 2,
+      "subRank": "peak",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Full explosive physical strike multiplier"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 60,
+          "sharingStatus": "partial",
+          "tamerEffect": "+60% evading agility and reflex enhancement"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar"
+      ],
+      "_key": "m_77_shyra"
+    },
+    {
+      "species": "Obsidian Panther Cub",
+      "size": "Colossal Cub (7–8m shoulder height, 12m length)",
+      "bloodlinePurity": 26,
+      "bloodlineTier": "noble",
+      "bondPercentage": 62,
+      "bondStage": "blood",
+      "cognitionStage": "adolescent",
+      "iq": 120,
+      "minChapter": 81,
+      "maxChapter": 217,
+      "starRank": 3,
+      "subRank": "pseudo",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Soundless stalk and zero footprint in dark terrain"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Sudden explosive physical strike multiplier"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 70,
+          "sharingStatus": "partial",
+          "tamerEffect": "+70% evading agility and reflex enhancement"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked until adult breakthrough"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Evolution requirement)"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar"
+      ],
+      "_key": "m_81_shyra"
     },
     {
       "species": "Obsidian Panther",
-      "bloodlinePurity": 95,
-      "bloodlineTier": "royal",
-      "bondPercentage": 95,
-      "bondStage": "soul",
+      "size": "Dynamic (Natural: 8–9m shoulder height; variable via Body Size Adjustment)",
+      "bloodlinePurity": 30,
+      "bloodlineTier": "noble",
+      "bondPercentage": 67,
+      "bondStage": "blood",
+      "cognitionStage": "mature",
+      "iq": 130,
+      "minChapter": 218,
+      "maxChapter": 298,
+      "starRank": 3,
+      "subRank": "low",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Soundless stalk and zero footprint in dark terrain"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 93,
+          "sharingStatus": "partial",
+          "tamerEffect": "+93% explosive kinetic burst"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant after form recalibration"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Active on Shyra; locked for Leo transfer"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain"
+      ],
+      "_key": "m_218_shyra"
+    },
+    {
+      "species": "Obsidian Panther",
+      "size": "Dynamic (Natural: 9m shoulder height, 14m length)",
+      "bloodlinePurity": 30,
+      "bloodlineTier": "noble",
+      "bondPercentage": 69,
+      "bondStage": "blood",
+      "cognitionStage": "mature",
+      "iq": 135,
+      "minChapter": 299,
+      "maxChapter": 340,
+      "starRank": 3,
+      "subRank": "middle",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Full soundless predator stalk"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 93,
+          "sharingStatus": "partial",
+          "tamerEffect": "+93% explosive kinetic burst"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked for Leo"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain"
+      ],
+      "_key": "m_299_shyra"
+    },
+    {
+      "species": "Obsidian Panther",
+      "size": "Dynamic (Natural: 9m shoulder height, 15m length)",
+      "bloodlinePurity": 30,
+      "bloodlineTier": "noble",
+      "bondPercentage": 70,
+      "bondStage": "blood",
+      "cognitionStage": "mature",
+      "iq": 138,
+      "minChapter": 341,
+      "maxChapter": 380,
+      "starRank": 3,
+      "subRank": "high",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Full soundless predator stalk"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Lethal sudden kinetic strike multiplier"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 1,
+          "sharingStatus": "partial",
+          "tamerEffect": "+1% reflex speed boost to Leo"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked for Leo"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain"
+      ],
+      "_key": "m_341_shyra"
+    },
+    {
+      "species": "Obsidian Panther",
+      "size": "Dynamic (Natural: 9m shoulder height, 15m length)",
+      "bloodlinePurity": 32,
+      "bloodlineTier": "noble",
+      "bondPercentage": 74,
+      "bondStage": "blood",
       "cognitionStage": "mature",
       "iq": 140,
-      "maxChapter": 713,
-      "minChapter": 121,
-      "traits": [
-        { "name": "Silent Predator", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Full soundless predator stalk" },
-        { "name": "Explosive Power", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Lethal sudden kinetic strike multiplier" },
-        { "name": "Feline Agility", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Maximized feline evasive agility" },
-        { "name": "Obsidian Hide", "sharingStatus": "partial", "sharedPercent": 70, "tamerEffect": "+70% dense hide kinetic absorption (Ch. 716)" },
-        { "name": "Body Size Adjustment", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Full mass compression & expansion control" },
-        { "name": "Primordial Shadow Step", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Instantaneous teleportation between shadows" }
-      ],
+      "minChapter": 381,
+      "maxChapter": 384,
       "starRank": 3,
       "subRank": "peak",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Full soundless predator stalk"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Lethal sudden kinetic strike multiplier"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 40,
+          "sharingStatus": "partial",
+          "tamerEffect": "+40% evasive reflex speed boost to Leo"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked for Leo"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain"
+      ],
+      "_key": "m_381_shyra"
+    },
+    {
+      "species": "Obsidian Panther",
+      "size": "Dynamic (Natural: 9m shoulder height, 15m length)",
+      "bloodlinePurity": 35,
+      "bloodlineTier": "noble",
+      "bondPercentage": 76,
+      "bondStage": "blood",
+      "cognitionStage": "mature",
+      "iq": 142,
+      "minChapter": 385,
+      "maxChapter": 456,
+      "starRank": 4,
+      "subRank": "pseudo",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Full soundless predator stalk"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Lethal sudden kinetic strike multiplier"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 60,
+          "sharingStatus": "partial",
+          "tamerEffect": "+60% evasive reflex speed boost to Leo"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Locked for Leo"
+        }
+      ],
       "unlockedSkillIds": [
         "stealth",
         "shadow_pounce",
@@ -117,28 +668,115 @@
         "shadow_domain",
         "fusion_resonance"
       ],
-      "_key": "m_121_shyra"
+      "_key": "m_385_shyra"
+    },
+    {
+      "species": "Obsidian Panther",
+      "size": "Dynamic (Natural: 9m shoulder height, 16m length; can compress or expand to 9m true titan)",
+      "bloodlinePurity": 38,
+      "bloodlineTier": "noble",
+      "bondPercentage": 81,
+      "bondStage": "blood",
+      "cognitionStage": "mature",
+      "iq": 145,
+      "minChapter": 457,
+      "maxChapter": 713,
+      "starRank": 4,
+      "subRank": "low",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Full soundless predator stalk"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Lethal sudden kinetic strike multiplier"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "+100% full feline agility and evasive reflex boost to Leo"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 10,
+          "sharingStatus": "partial",
+          "tamerEffect": "+10% physical defense when shadow-infused"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Active on Shyra"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain",
+        "fusion_resonance"
+      ],
+      "_key": "m_457_shyra"
     },
     {
       "species": "Void-Obsidian Panther",
-      "bloodlinePurity": 98,
-      "bloodlineTier": "royal",
-      "bondPercentage": 100,
-      "bondStage": "soul",
+      "size": "Dynamic Void-Titan (Natural: 10m shoulder height, 18m length; variable from shadow-stealth to colossus)",
+      "bloodlinePurity": 70,
+      "bloodlineTier": "noble",
+      "bondPercentage": 87,
+      "bondStage": "blood",
       "cognitionStage": "mature",
       "iq": 150,
-      "maxChapter": null,
       "minChapter": 714,
-      "traits": [
-        { "name": "Silent Predator", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Complete invisibility and noise cancellation" },
-        { "name": "Explosive Power", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Primordial burst kinetic destruction" },
-        { "name": "Feline Agility", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Transcendent void reflex speed" },
-        { "name": "Obsidian Hide", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Indestructible obsidian void body deflection" },
-        { "name": "Body Size Adjustment", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Sub-atomic to apex colossus size shifting" },
-        { "name": "Primordial Shadow Step", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Inter-dimensional shadow traversal" }
-      ],
+      "maxChapter": 717,
       "starRank": 4,
       "subRank": "middle",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Silent Void Predator: Complete shadow invisibility and sound suppression"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Primordial burst kinetic destruction"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Shadow-Feline Agility: +200% transcendent void agility boost"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 70,
+          "sharingStatus": "partial",
+          "tamerEffect": "+70% dense hide kinetic absorption and void body deflection"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Full mass compression & expansion control"
+        },
+        {
+          "name": "Primordial Shadow Step",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Instantaneous teleportation between shadows (Shadow Step & Shadow Veil)"
+        }
+      ],
       "unlockedSkillIds": [
         "stealth",
         "shadow_pounce",
@@ -146,9 +784,79 @@
         "obsidian_armor",
         "abyssal_roar",
         "shadow_domain",
-        "fusion_resonance"
+        "fusion_resonance",
+        "umbral_shadow_pounce",
+        "shadow_veil",
+        "shadow_step"
       ],
       "_key": "m_714_shyra"
+    },
+    {
+      "species": "Void-Obsidian Panther",
+      "size": "Dynamic Apex Void-Titan (10m+ true shoulder height; sub-atomic to apex colossus)",
+      "bloodlinePurity": 99,
+      "bloodlineTier": "noble",
+      "bondPercentage": 89,
+      "bondStage": "blood",
+      "cognitionStage": "mature",
+      "iq": 155,
+      "minChapter": 718,
+      "maxChapter": null,
+      "starRank": 4,
+      "subRank": "middle",
+      "traits": [
+        {
+          "name": "Silent Predator",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Silent Void Predator: Absolute silence and shadow presence erasure"
+        },
+        {
+          "name": "Explosive Power",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Primordial burst kinetic destruction"
+        },
+        {
+          "name": "Feline Agility",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Shadow-Feline Agility: +200% transcendent void reflex speed"
+        },
+        {
+          "name": "Obsidian Hide",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Indestructible obsidian void body deflection"
+        },
+        {
+          "name": "Body Size Adjustment",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Sub-atomic to apex colossus size shifting"
+        },
+        {
+          "name": "Primordial Shadow Step",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Inter-dimensional shadow traversal"
+        }
+      ],
+      "unlockedSkillIds": [
+        "stealth",
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain",
+        "fusion_resonance",
+        "umbral_shadow_pounce",
+        "shadow_veil",
+        "shadow_step",
+        "nightfall_roar",
+        "shadow_claws"
+      ],
+      "_key": "m_718_shyra"
     }
   ]
 }

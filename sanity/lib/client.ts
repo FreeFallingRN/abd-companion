@@ -7,5 +7,9 @@ export const client = isDemoMode
       projectId,
       dataset,
       apiVersion,
-      useCdn: true,
+      useCdn: false,
+      stega: {
+        studioUrl: '/studio',
+      },
     });
+

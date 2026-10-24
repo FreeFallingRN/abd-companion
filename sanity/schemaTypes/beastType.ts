@@ -35,6 +35,13 @@ export const beastType = defineType({
       validation: (Rule) => Rule.required().min(1),
     }),
     defineField({
+      name: 'tamer',
+      title: 'Contracted Tamer / Master',
+      type: 'reference',
+      to: [{ type: 'character' }],
+      description: 'The Tamer / Pact Master who contracted this beast (e.g. Leo Aurelius, Lily). If Leo contracts this beast, select Leo.',
+    }),
+    defineField({
       name: 'elementAffinity',
       title: 'Elemental Affinities',
       type: 'array',
@@ -58,6 +65,12 @@ export const beastType = defineType({
       rows: 4,
     }),
     defineField({
+      name: 'size',
+      title: 'Current / Baseline Size',
+      type: 'string',
+      description: 'Physical dimensions / size description of the beast.',
+    }),
+    defineField({
       name: 'milestones',
       title: 'Evolutionary Milestones & Progression',
       type: 'array',
@@ -73,6 +86,12 @@ export const beastType = defineType({
               title: 'Species / Evolutionary Form Name',
               type: 'string',
               description: 'The species name for this stage (e.g. Obsidian Panther Cub -> Obsidian Panther -> Void-Obsidian Panther).',
+            }),
+            defineField({
+              name: 'size',
+              title: 'Physical Size & Dimensions',
+              type: 'string',
+              description: 'Physical size and dimensions at this stage (e.g. "0.4m cub", "Waist-height (~1m)", "Height: 3m", "Length: 10m, Shoulder: 6-7m", "9m true height").',
             }),
             defineField({
               name: 'portrait',
@@ -277,8 +296,16 @@ export const beastType = defineType({
   preview: {
     select: {
       title: 'name',
-      subtitle: 'species',
+      species: 'species',
+      tamerName: 'tamer.name',
       media: 'portrait',
+    },
+    prepare({ title, species, tamerName, media }) {
+      return {
+        title: title || 'Unnamed Beast',
+        subtitle: `${species || 'Beast'} • Tamer: ${tamerName || 'Leo Aurelius'}`,
+        media,
+      };
     },
   },
 });

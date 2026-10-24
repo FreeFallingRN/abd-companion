@@ -125,7 +125,13 @@ export default function HomePage() {
     return matchesQuery && matchesAffinity;
   });
 
-  const activeContractedBeasts = beastsList.filter((b) => b.contractChapter <= currentChapter);
+  // Beasts contracted to the selected protagonist (defaults to Leo if unassigned)
+  const protagonistBeasts = beastsList.filter((b) => {
+    const tamer = (b.tamerId || b.tamer?.slug || (b.tamer as any)?._ref?.replace('character-', '') || 'leo').toLowerCase();
+    return tamer === selectedProtagonist || (selectedProtagonist === 'leo' && (!b.tamer && !b.tamerId));
+  });
+
+  const activeContractedBeasts = protagonistBeasts.filter((b) => b.contractChapter <= currentChapter);
 
   return (
     <div className="app-shell">
@@ -387,7 +393,7 @@ export default function HomePage() {
             )}
 
             <div className="companions-grid">
-              {beastsList.map((beast) => {
+              {protagonistBeasts.map((beast) => {
                 const snapshot = getBeastSnapshotAtChapter(beast, currentChapter);
                 const isUnlocked = snapshot.isUnlocked;
                 const m = snapshot.currentMilestone;
@@ -468,6 +474,11 @@ export default function HomePage() {
                       <span className="badge-tag secondary">
                         {m?.bondStage} bond ({m?.bondPercentage}%)
                       </span>
+                      {(m?.size || snapshot.size) && (
+                        <span className="badge-tag warning" title={`Physical Size: ${m?.size || snapshot.size}`}>
+                          📏 {m?.size || snapshot.size}
+                        </span>
+                      )}
                     </div>
 
                     {/* Progress Bars */}
@@ -713,6 +724,14 @@ export default function HomePage() {
                           {el}
                         </span>
                       ))}
+                      {(m?.size || snapshot.size) && (
+                        <span className="badge-tag warning">
+                          📏 {m?.size || snapshot.size}
+                        </span>
+                      )}
+                      <span className="badge-tag" style={{ background: 'rgba(217,119,6,0.15)', color: '#fbbf24', border: '1px solid rgba(217,119,6,0.3)' }}>
+                        🛡️ Pact: {beast.tamer?.name || (beast.tamerId === 'lily' ? 'Lily' : 'Leo Aurelius')}
+                      </span>
                     </div>
                     {/* Trait Strip */}
                     {(() => {
@@ -1214,7 +1233,10 @@ export default function HomePage() {
 
             <div className="modal-meta-row">
               Contract Chapter: <strong>Chapter {selectedBeast.contractChapter}</strong> • Element:{' '}
-              <strong>{selectedBeast.elementAffinity.join(', ')}</strong>
+              <strong>{selectedBeast.elementAffinity.join(', ')}</strong> • Pact Master:{' '}
+              <strong style={{ color: 'var(--primary)' }}>
+                {selectedBeast.tamer?.name || (selectedBeast.tamerId === 'lily' ? 'Lily' : 'Leo Aurelius')}
+              </strong>
             </div>
 
             <h4 className="modal-section-title">
@@ -1279,6 +1301,11 @@ export default function HomePage() {
                         <div className="milestone-details">
                           Bloodline: <strong>{m.bloodlineTier} ({m.bloodlinePurity}%)</strong> • Cognition:{' '}
                           <strong>{m.cognitionStage}</strong> (IQ {m.iq ?? '—'})
+                          {m.size && (
+                            <>
+                              {' '}• Size: <strong>{m.size}</strong>
+                            </>
+                          )}
                         </div>
                         <div className="milestone-bond-text">
                           Bond: {m.bondStage.toUpperCase()} ({m.bondPercentage}%)

@@ -4,11 +4,13 @@
   "name": "Kazz",
   "species": "Kobolt (Faint Draconic Lineage)",
   "contractChapter": 53,
+  "tamerId": "leo",
   "elementAffinity": [
     "earth",
     "draconic"
   ],
   "lore": "Kazz is Leo's earth goblin/kobold companion contracted in Chapter 53. Endowed with faint draconic ancestry.",
+  "portraitAssetId": "image-fe6781f83e07cf0b0d23e0e663b1b6959891ae52-1122x1402-png",
   "milestones": [
     {
       "species": "Kobolt",
@@ -20,12 +22,22 @@
       "iq": 60,
       "maxChapter": 80,
       "minChapter": 53,
-      "traits": [
-        { "name": "Darkvision", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Clear vision through cave and tunnel darkness" },
-        { "name": "Pack Instinct", "sharingStatus": "partial", "sharedPercent": 35, "tamerEffect": "+35% spatial coordination when fighting alongside companions" }
-      ],
       "starRank": 1,
       "subRank": "middle",
+      "traits": [
+        {
+          "name": "Darkvision",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "Clear vision through cave and tunnel darkness"
+        },
+        {
+          "name": "Pack Instinct",
+          "sharedPercent": 35,
+          "sharingStatus": "partial",
+          "tamerEffect": "+35% spatial coordination when fighting alongside companions"
+        }
+      ],
       "unlockedSkillIds": [
         "pack_instinct",
         "tunnelling"
@@ -42,12 +54,22 @@
       "iq": 75,
       "maxChapter": null,
       "minChapter": 81,
-      "traits": [
-        { "name": "Darkvision", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Total non-magical and subterranean dark vision" },
-        { "name": "Pack Instinct", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Seamless battlefield synergy and ambush reflex multiplication" }
-      ],
       "starRank": 2,
       "subRank": "low",
+      "traits": [
+        {
+          "name": "Darkvision",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Total non-magical and subterranean dark vision"
+        },
+        {
+          "name": "Pack Instinct",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Seamless battlefield synergy and ambush reflex multiplication"
+        }
+      ],
       "unlockedSkillIds": [
         "pack_instinct",
         "tunnelling",

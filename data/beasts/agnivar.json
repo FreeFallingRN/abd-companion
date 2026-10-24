@@ -4,11 +4,13 @@
   "name": "Agnivar",
   "species": "Flame Wyvern (Draconic Lineage)",
   "contractChapter": 535,
+  "tamerId": "leo",
   "elementAffinity": [
     "fire",
     "draconic"
   ],
   "lore": "Agnivar is a Flame Wyvern contracted in Chapter 535. Endowed with ancient draconic majesty and hellfire breath.",
+  "portraitAssetId": "image-7f712bcf0ae4a030b8157bddb11a90d1f4b2d5d9-1123x1400-png",
   "milestones": [
     {
       "species": "Flame Wyvern",
@@ -20,12 +22,22 @@
       "iq": 110,
       "maxChapter": null,
       "minChapter": 535,
-      "traits": [
-        { "name": "Lesser Draconic Majesty", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Aura of draconic fear freezing lower-rank predators" },
-        { "name": "Hoard Resonance", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "+50% vitality recovery scaled to nearby precious minerals" }
-      ],
       "starRank": 2,
       "subRank": "peak",
+      "traits": [
+        {
+          "name": "Lesser Draconic Majesty",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Aura of draconic fear freezing lower-rank predators"
+        },
+        {
+          "name": "Hoard Resonance",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "+50% vitality recovery scaled to nearby precious minerals"
+        }
+      ],
       "unlockedSkillIds": [
         "infernal_breath",
         "wyvern_dive",

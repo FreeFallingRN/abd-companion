@@ -1,17 +1,38 @@
 [
   {
-    "id": "obsidian_hide",
-    "name": "Obsidian Hide",
+    "id": "body_size_adjustment",
+    "name": "Body Size Adjustment",
     "element": "shadow",
-    "description": "Natural resistance to physical blows and enhanced durability. Deflects blades and elemental strikes.",
-    "unlockedChapter": 9
+    "description": "Allows physical mass compression into a compact form for stealth or expansion into apex battle size.",
+    "unlockedChapter": 299
   },
   {
-    "id": "feline_agility",
-    "name": "Feline Agility",
+    "id": "celestial_polarity_surge",
+    "name": "Celestial Polarity Surge",
     "element": "shadow",
-    "description": "Blessed with extreme flexibility, speed, balance, and lightning reaction time outclassing standard beasts.",
-    "unlockedChapter": 9
+    "description": "Alternates polar radiant light and abyssal void energy, preventing elemental attunement by enemies.",
+    "unlockedChapter": 161
+  },
+  {
+    "id": "controlled_weight_flow",
+    "name": "Controlled Weight Flow",
+    "element": "earth",
+    "description": "Redistributes massive weight through spiritual resonance to tread feather-light or strike with mountain weight.",
+    "unlockedChapter": 121
+  },
+  {
+    "id": "darkvision",
+    "name": "Darkvision",
+    "element": "neutral",
+    "description": "Clear sight in total non-magical and cave darkness without distortion.",
+    "unlockedChapter": 18
+  },
+  {
+    "id": "endless_growth",
+    "name": "Endless Growth",
+    "element": "earth",
+    "description": "Grows continuously in mass and height across its lifespan through layered absorption of stone and minerals.",
+    "unlockedChapter": 121
   },
   {
     "id": "explosive_power",
@@ -21,27 +42,6 @@
     "unlockedChapter": 9
   },
   {
-    "id": "silent_predator",
-    "name": "Silent Predator",
-    "element": "shadow",
-    "description": "Fluid stealth movement allowing seamless, soundless stalking in natural and dark environments.",
-    "unlockedChapter": 9
-  },
-  {
-    "id": "body_size_adjustment",
-    "name": "Body Size Adjustment",
-    "element": "shadow",
-    "description": "Allows physical mass compression into a compact form for stealth or expansion into apex battle size.",
-    "unlockedChapter": 299
-  },
-  {
-    "id": "primordial_shadow_step",
-    "name": "Primordial Shadow Step",
-    "element": "shadow",
-    "description": "Instantaneous teleportation between shadows across distances through spatial-shadow tethering.",
-    "unlockedChapter": 121
-  },
-  {
     "id": "fast_regeneration",
     "name": "Fast Regeneration",
     "element": "nature",
@@ -49,11 +49,25 @@
     "unlockedChapter": 39
   },
   {
-    "id": "tough_body",
-    "name": "Tough Body",
+    "id": "feline_agility",
+    "name": "Feline Agility",
+    "element": "shadow",
+    "description": "Blessed with extreme flexibility, speed, balance, and lightning reaction time outclassing standard beasts.",
+    "unlockedChapter": 9
+  },
+  {
+    "id": "flame_ward_marking",
+    "name": "Flame Ward Marking",
+    "element": "fire",
+    "description": "Allies marked by beast are granted absolute immunity to ambient flame damage under its sphere of control.",
+    "unlockedChapter": 536
+  },
+  {
+    "id": "geo_resonance_sense",
+    "name": "Geo-Resonance Sense",
     "element": "earth",
-    "description": "Bark-textured skin granting monstrous physical strike resistance, elemental deflection, and erosion immunity.",
-    "unlockedChapter": 39
+    "description": "Detects vibrations, subterranean movement, and mana flow through stone and soil over vast distances.",
+    "unlockedChapter": 121
   },
   {
     "id": "half_spirit_body",
@@ -70,81 +84,18 @@
     "unlockedChapter": 39
   },
   {
-    "id": "sun_blessed_physique",
-    "name": "Sun-Blessed Physique",
-    "element": "light",
-    "description": "Day Phase: Solar empowerment enhancing kinetic force, daylight strike speed, and radiant vitality.",
-    "unlockedChapter": 118
+    "id": "hoard_resonance",
+    "name": "Hoard Resonance",
+    "element": "draconic",
+    "description": "Passive combat empowerment and vitality recovery fueled by hoarded gems and mineral treasures.",
+    "unlockedChapter": 536
   },
   {
-    "id": "moon_shadow_instincts",
-    "name": "Moon-Shadow Instincts",
-    "element": "shadow",
-    "description": "Night Phase: Passive evasion amplification, lunar reflex sharpening, and dim-light invisibility.",
-    "unlockedChapter": 118
-  },
-  {
-    "id": "triple_aura_ferocity",
-    "name": "Triple-Aura Ferocity",
-    "element": "light",
-    "description": "Projects simultaneous tripartite aura pulses that suppress enemy mana flow and cause panic in prey.",
-    "unlockedChapter": 118
-  },
-  {
-    "id": "celestial_polarity_surge",
-    "name": "Celestial Polarity Surge",
-    "element": "shadow",
-    "description": "Alternates polar radiant light and abyssal void energy, preventing elemental attunement by enemies.",
-    "unlockedChapter": 161
-  },
-  {
-    "id": "endless_growth",
-    "name": "Endless Growth",
-    "element": "earth",
-    "description": "Grows continuously in mass and height across its lifespan through layered absorption of stone and minerals.",
-    "unlockedChapter": 121
-  },
-  {
-    "id": "controlled_weight_flow",
-    "name": "Controlled Weight Flow",
-    "element": "earth",
-    "description": "Redistributes massive weight through spiritual resonance to tread feather-light or strike with mountain weight.",
-    "unlockedChapter": 121
-  },
-  {
-    "id": "titanic_endurance",
-    "name": "Titanic Endurance",
-    "element": "earth",
-    "description": "Massive stamina capacity and stone tissues that disperse kinetic shocks and heat harmlessly across mass.",
-    "unlockedChapter": 121
-  },
-  {
-    "id": "geo_resonance_sense",
-    "name": "Geo-Resonance Sense",
-    "element": "earth",
-    "description": "Detects vibrations, subterranean movement, and mana flow through stone and soil over vast distances.",
-    "unlockedChapter": 121
-  },
-  {
-    "id": "natural_habitat_harmonisation",
-    "name": "Natural Habitat Harmonisation",
-    "element": "nature",
-    "description": "Body mineral leakage forms thriving micro-ecosystems of moss, flora, and mineral crystals wherever it rests.",
-    "unlockedChapter": 121
-  },
-  {
-    "id": "darkvision",
-    "name": "Darkvision",
-    "element": "neutral",
-    "description": "Clear sight in total non-magical and cave darkness without distortion.",
-    "unlockedChapter": 18
-  },
-  {
-    "id": "pack_instinct",
-    "name": "Pack Instinct",
-    "element": "earth",
-    "description": "Amplifies spatial coordination, ambush reflexes, and combat efficacy when near allies.",
-    "unlockedChapter": 53
+    "id": "iceveil_chill",
+    "name": "Iceveil Chill",
+    "element": "ice",
+    "description": "Sub-zero body temperature control that masks heat signatures and cools the tamer in thermal extremes.",
+    "unlockedChapter": 426
   },
   {
     "id": "lesser_draconic_majesty",
@@ -154,18 +105,53 @@
     "unlockedChapter": 535
   },
   {
-    "id": "flame_ward_marking",
-    "name": "Flame Ward Marking",
-    "element": "fire",
-    "description": "Allies marked by beast are granted absolute immunity to ambient flame damage under its sphere of control.",
-    "unlockedChapter": 536
+    "id": "moon_shadow_instincts",
+    "name": "Moon-Shadow Instincts",
+    "element": "shadow",
+    "description": "Night Phase: Passive evasion amplification, lunar reflex sharpening, and dim-light invisibility.",
+    "unlockedChapter": 118
   },
   {
-    "id": "hoard_resonance",
-    "name": "Hoard Resonance",
-    "element": "draconic",
-    "description": "Passive combat empowerment and vitality recovery fueled by hoarded gems and mineral treasures.",
-    "unlockedChapter": 536
+    "id": "natural_habitat_harmonisation",
+    "name": "Natural Habitat Harmonisation",
+    "element": "nature",
+    "description": "Body mineral leakage forms thriving micro-ecosystems of moss, flora, and mineral crystals wherever it rests.",
+    "unlockedChapter": 121
+  },
+  {
+    "id": "obsidian_hide",
+    "name": "Obsidian Hide",
+    "element": "shadow",
+    "description": "Natural resistance to physical blows and enhanced durability. Deflects blades and elemental strikes.",
+    "unlockedChapter": 9
+  },
+  {
+    "id": "pack_instinct",
+    "name": "Pack Instinct",
+    "element": "earth",
+    "description": "Amplifies spatial coordination, ambush reflexes, and combat efficacy when near allies.",
+    "unlockedChapter": 53
+  },
+  {
+    "id": "primordial_shadow_step",
+    "name": "Primordial Shadow Step",
+    "element": "shadow",
+    "description": "Instantaneous teleportation between shadows across distances through spatial-shadow tethering.",
+    "unlockedChapter": 121
+  },
+  {
+    "id": "silent_predator",
+    "name": "Silent Predator",
+    "element": "shadow",
+    "description": "Fluid stealth movement allowing seamless, soundless stalking in natural and dark environments.",
+    "unlockedChapter": 9
+  },
+  {
+    "id": "sun_blessed_physique",
+    "name": "Sun-Blessed Physique",
+    "element": "light",
+    "description": "Day Phase: Solar empowerment enhancing kinetic force, daylight strike speed, and radiant vitality.",
+    "unlockedChapter": 118
   },
   {
     "id": "swarm_command",
@@ -175,10 +161,24 @@
     "unlockedChapter": 426
   },
   {
-    "id": "iceveil_chill",
-    "name": "Iceveil Chill",
-    "element": "ice",
-    "description": "Sub-zero body temperature control that masks heat signatures and cools the tamer in thermal extremes.",
-    "unlockedChapter": 426
+    "id": "titanic_endurance",
+    "name": "Titanic Endurance",
+    "element": "earth",
+    "description": "Massive stamina capacity and stone tissues that disperse kinetic shocks and heat harmlessly across mass.",
+    "unlockedChapter": 121
+  },
+  {
+    "id": "tough_body",
+    "name": "Tough Body",
+    "element": "earth",
+    "description": "Bark-textured skin granting monstrous physical strike resistance, elemental deflection, and erosion immunity.",
+    "unlockedChapter": 39
+  },
+  {
+    "id": "triple_aura_ferocity",
+    "name": "Triple-Aura Ferocity",
+    "element": "light",
+    "description": "Projects simultaneous tripartite aura pulses that suppress enemy mana flow and cause panic in prey.",
+    "unlockedChapter": 118
   }
 ]

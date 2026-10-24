@@ -45,6 +45,7 @@ if (fs.existsSync(beastsDir)) {
       return {
         _key: m._key || `m_${m.minChapter || mIdx}_${beast.id}`,
         species: m.species || beast.species,
+        size: m.size || undefined,
         portrait: m.portraitAssetId
           ? { _type: 'image', asset: { _type: 'reference', _ref: m.portraitAssetId } }
           : undefined,
@@ -79,12 +80,17 @@ if (fs.existsSync(beastsDir)) {
       };
     });
 
+    const tamerSlug = beast.tamerId || (beast.tamer?.slug || (typeof beast.tamer === 'string' ? beast.tamer : 'leo'));
+    const tamerRef = { _type: 'reference', _ref: `character-${tamerSlug}` };
+
     documents.push({
       _id: `beast-${beast.id}`,
       _type: 'beast',
       name: beast.name,
       id: { _type: 'slug', current: beast.id },
       species: beast.species,
+      size: beast.size || undefined,
+      tamer: tamerRef,
       contractChapter: beast.contractChapter,
       elementAffinity: beast.elementAffinity || [],
       lore: beast.lore || `${beast.name} is a canonical companion of Leo.`,
@@ -127,6 +133,17 @@ if (fs.existsSync(charsDir)) {
       copiedSkillIds: m.copiedSkillIds || [],
     }));
 
+    const contractedBeastsRefs = char.id === 'leo' && fs.existsSync(beastsDir)
+      ? fs.readdirSync(beastsDir).filter((f) => f.endsWith('.json')).map((f) => {
+          const bId = f.replace('.json', '');
+          return {
+            _type: 'reference',
+            _ref: `beast-${bId}`,
+            _key: `ref_${bId}`,
+          };
+        })
+      : [];
+
     documents.push({
       _id: `character-${char.id}`,
       _type: 'character',
@@ -137,6 +154,7 @@ if (fs.existsSync(charsDir)) {
       soulRank: char.soulRank || char.milestones?.[0]?.soulProfile?.mortalSoulRank || 'rare',
       primaryAffinity: char.primaryAffinity || 'Dual Soul Anomaly',
       biography: char.biography || `Pact Master of the Bestiary of Souls.`,
+      contractedBeasts: contractedBeastsRefs.length > 0 ? contractedBeastsRefs : undefined,
       talents: char.talents || [],
       milestones,
     });

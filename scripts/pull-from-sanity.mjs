@@ -53,6 +53,8 @@ async function pullFromSanity() {
       id: beastId,
       name: b.name,
       species: b.species,
+      size: b.size || undefined,
+      tamerId: b.tamer?._ref?.replace('character-', '') || b.tamer?.slug?.current || b.tamerId || undefined,
       contractChapter: b.contractChapter,
       elementAffinity: b.elementAffinity || [],
       lore: b.lore || undefined,

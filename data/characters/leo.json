@@ -1,147 +1,477 @@
 {
   "$schema": "../schemas/character.schema.json",
   "id": "leo",
-  "name": "Leonel (Leo)",
-  "title": "Dual-Soul Pact Master / Fief Sovereign",
-  "soulRank": "rare",
+  "name": "Leo",
+  "title": "Aurelius Academy 1st-Ranker • Pact Master",
+  "role": "protagonist",
+  "soulRank": "super_rare",
   "primaryAffinity": "Dual Soul Anomaly",
-  "biography": "Pact Master of the Bestiary of Souls.",
+  "contractedBeastIds": [
+    "shyra",
+    "dryad",
+    "nyxa",
+    "howl",
+    "zelut",
+    "agnivar",
+    "ashira",
+    "kazz"
+  ],
+  "biography": "Pact Master of the Bestiary of Souls, possessing both a Mortal Soul and a Primordial Soul Matrix. With each advancement and physical expansion of his contracted beasts—especially his first companion Shyra—Leo receives massive stat feedback and unlocks shared traits.",
   "milestones": [
     {
+      "minChapter": 1,
+      "maxChapter": 13,
+      "level": 3,
       "attributes": {
-        "agility": 3,
+        "vitality": 3.2,
+        "strength": 2.8,
+        "agility": 3.0,
+        "stamina": 3.5,
         "intelligence": 1.2,
         "maxMana": 96,
-        "stamina": 3.5,
-        "strength": 2.8,
-        "unassignedPoints": 0,
-        "vitality": 3.2
+        "unassignedPoints": 0
       },
       "contractedBeastIds": [
         "shyra"
       ],
-      "copiedSkillIds": [],
-      "level": 3,
-      "maxChapter": 25,
-      "minChapter": 1,
       "personalSkillIds": [
         "stealth",
         "critical_strike"
       ],
+      "copiedSkillIds": [],
       "soulProfile": {
-        "combinedMultiplier": 8,
-        "maxContractSlots": 1,
         "mortalSoulRank": "common",
         "mortalSoulValue": 1,
         "primordialSoulValue": 7,
+        "combinedMultiplier": 8,
+        "maxContractSlots": 1,
         "skillCapacity": 7,
         "statSoftCapPercent": 10
       },
       "_key": "char_m_1_leo"
     },
     {
+      "minChapter": 14,
+      "maxChapter": 31,
+      "level": 12,
       "attributes": {
-        "agility": 15,
+        "vitality": 14.5,
+        "strength": 12.0,
+        "agility": 15.0,
+        "stamina": 16.0,
         "intelligence": 8.5,
         "maxMana": 765,
-        "stamina": 16,
-        "strength": 12,
-        "unassignedPoints": 4,
-        "vitality": 14.5
+        "unassignedPoints": 4
       },
       "contractedBeastIds": [
-        "shyra",
-        "kazz",
-        "dryad"
+        "shyra"
       ],
-      "copiedSkillIds": [
-        "shadow_pounce"
-      ],
-      "level": 12,
-      "maxChapter": 70,
-      "minChapter": 26,
       "personalSkillIds": [
         "stealth",
         "critical_strike",
         "mana_sense"
       ],
+      "copiedSkillIds": [
+        "shadow_pounce"
+      ],
       "soulProfile": {
-        "combinedMultiplier": 9,
-        "maxContractSlots": 2,
         "mortalSoulRank": "uncommon",
         "mortalSoulValue": 2,
         "primordialSoulValue": 7,
+        "combinedMultiplier": 9,
+        "maxContractSlots": 2,
         "skillCapacity": 9,
         "statSoftCapPercent": 20
       },
-      "_key": "char_m_26_leo"
+      "_key": "char_m_14_leo"
     },
     {
+      "minChapter": 32,
+      "maxChapter": 42,
+      "level": 16,
       "attributes": {
-        "agility": 42,
-        "intelligence": 25,
-        "maxMana": 2500,
-        "stamina": 40,
-        "strength": 34,
-        "unassignedPoints": 8,
-        "vitality": 38
+        "vitality": 24.0,
+        "strength": 22.0,
+        "agility": 25.0,
+        "stamina": 24.0,
+        "intelligence": 14.0,
+        "maxMana": 1400,
+        "unassignedPoints": 6
       },
       "contractedBeastIds": [
         "shyra",
-        "kazz",
-        "dryad",
-        "agnivar"
+        "dryad"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense"
       ],
       "copiedSkillIds": [
         "shadow_pounce",
-        "natures_heal",
-        "obsidian_armor"
+        "feline_agility"
       ],
-      "level": 24,
-      "maxChapter": 120,
-      "minChapter": 71,
+      "soulProfile": {
+        "mortalSoulRank": "uncommon",
+        "mortalSoulValue": 2,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 9,
+        "maxContractSlots": 2,
+        "skillCapacity": 9,
+        "statSoftCapPercent": 20
+      },
+      "_key": "char_m_32_leo"
+    },
+    {
+      "minChapter": 43,
+      "maxChapter": 76,
+      "level": 20,
+      "attributes": {
+        "vitality": 32.0,
+        "strength": 30.0,
+        "agility": 34.0,
+        "stamina": 32.0,
+        "intelligence": 20.0,
+        "maxMana": 2000,
+        "unassignedPoints": 8
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad"
+      ],
       "personalSkillIds": [
         "stealth",
         "critical_strike",
         "mana_sense",
         "blade_mastery"
       ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor"
+      ],
       "soulProfile": {
-        "combinedMultiplier": 10,
-        "maxContractSlots": 3,
         "mortalSoulRank": "rare",
         "mortalSoulValue": 3,
         "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
+        "skillCapacity": 10,
+        "statSoftCapPercent": 25
+      },
+      "_key": "char_m_43_leo"
+    },
+    {
+      "minChapter": 77,
+      "maxChapter": 80,
+      "level": 21,
+      "attributes": {
+        "vitality": 86.4,
+        "strength": 89.3,
+        "agility": 88.5,
+        "stamina": 88.7,
+        "intelligence": 106.1,
+        "maxMana": 9099,
+        "unassignedPoints": 0
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
         "skillCapacity": 11,
         "statSoftCapPercent": 30
       },
-      "_key": "char_m_71_leo"
+      "_key": "char_m_77_leo"
     },
     {
+      "minChapter": 81,
+      "maxChapter": 217,
+      "level": 22,
       "attributes": {
-        "agility": 105,
-        "intelligence": 72,
-        "maxMana": 7920,
-        "stamina": 98,
-        "strength": 88,
-        "unassignedPoints": 16,
-        "vitality": 95
+        "vitality": 136.4,
+        "strength": 139.3,
+        "agility": 138.5,
+        "stamina": 138.7,
+        "intelligence": 172.8,
+        "maxMana": 15552,
+        "unassignedPoints": 4
       },
       "contractedBeastIds": [
         "shyra",
         "dryad",
-        "agnivar"
+        "nyxa"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
       ],
       "copiedSkillIds": [
         "shadow_pounce",
-        "natures_heal",
+        "feline_agility",
         "obsidian_armor",
-        "infernal_breath",
+        "abyssal_roar",
+        "solar_beam"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
+        "skillCapacity": 11,
+        "statSoftCapPercent": 30
+      },
+      "_key": "char_m_81_leo"
+    },
+    {
+      "minChapter": 218,
+      "maxChapter": 298,
+      "level": 24,
+      "attributes": {
+        "vitality": 1020,
+        "strength": 1020,
+        "agility": 860,
+        "stamina": 1005,
+        "intelligence": 1329,
+        "maxMana": 132900,
+        "unassignedPoints": 10
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
         "shadow_domain"
       ],
-      "level": 45,
-      "maxChapter": null,
-      "minChapter": 121,
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
+        "skillCapacity": 12,
+        "statSoftCapPercent": 35
+      },
+      "_key": "char_m_218_leo"
+    },
+    {
+      "minChapter": 299,
+      "maxChapter": 340,
+      "level": 25,
+      "attributes": {
+        "vitality": 1230,
+        "strength": 1230,
+        "agility": 1070,
+        "stamina": 1205,
+        "intelligence": 1529,
+        "maxMana": 152900,
+        "unassignedPoints": 12
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
+        "skillCapacity": 12,
+        "statSoftCapPercent": 35
+      },
+      "_key": "char_m_299_leo"
+    },
+    {
+      "minChapter": 341,
+      "maxChapter": 380,
+      "level": 26,
+      "attributes": {
+        "vitality": 1770,
+        "strength": 1770,
+        "agility": 1560,
+        "stamina": 1750,
+        "intelligence": 2450,
+        "maxMana": 245000,
+        "unassignedPoints": 14
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
+        "skillCapacity": 12,
+        "statSoftCapPercent": 35
+      },
+      "_key": "char_m_341_leo"
+    },
+    {
+      "minChapter": 381,
+      "maxChapter": 384,
+      "level": 27,
+      "attributes": {
+        "vitality": 1870,
+        "strength": 1870,
+        "agility": 1660,
+        "stamina": 1850,
+        "intelligence": 2550,
+        "maxMana": 255000,
+        "unassignedPoints": 16
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "rare",
+        "mortalSoulValue": 3,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 10,
+        "maxContractSlots": 3,
+        "skillCapacity": 12,
+        "statSoftCapPercent": 35
+      },
+      "_key": "char_m_381_leo"
+    },
+    {
+      "minChapter": 385,
+      "maxChapter": 456,
+      "level": 28,
+      "attributes": {
+        "vitality": 2350,
+        "strength": 2320,
+        "agility": 2110,
+        "stamina": 2300,
+        "intelligence": 2800,
+        "maxMana": 280000,
+        "unassignedPoints": 20
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain",
+        "fusion_resonance"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "super_rare",
+        "mortalSoulValue": 4,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 11,
+        "maxContractSlots": 4,
+        "skillCapacity": 13,
+        "statSoftCapPercent": 40
+      },
+      "_key": "char_m_385_leo"
+    },
+    {
+      "minChapter": 457,
+      "maxChapter": 713,
+      "level": 38,
+      "attributes": {
+        "vitality": 4540,
+        "strength": 4540,
+        "agility": 4060,
+        "stamina": 4500,
+        "intelligence": 6070,
+        "maxMana": 667700,
+        "unassignedPoints": 24
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa"
+      ],
       "personalSkillIds": [
         "stealth",
         "critical_strike",
@@ -149,16 +479,122 @@
         "blade_mastery",
         "spatial_blink"
       ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain",
+        "fusion_resonance"
+      ],
       "soulProfile": {
-        "combinedMultiplier": 11,
-        "maxContractSlots": 4,
         "mortalSoulRank": "super_rare",
         "mortalSoulValue": 4,
         "primordialSoulValue": 7,
+        "combinedMultiplier": 11,
+        "maxContractSlots": 4,
         "skillCapacity": 13,
         "statSoftCapPercent": 40
       },
-      "_key": "char_m_121_leo"
+      "_key": "char_m_457_leo"
+    },
+    {
+      "minChapter": 714,
+      "maxChapter": 717,
+      "level": 45,
+      "attributes": {
+        "vitality": 5500,
+        "strength": 5500,
+        "agility": 5500,
+        "stamina": 5500,
+        "intelligence": 5500,
+        "maxMana": 605000,
+        "unassignedPoints": 30
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa",
+        "howl"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery",
+        "spatial_blink"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain",
+        "fusion_resonance",
+        "umbral_shadow_pounce",
+        "shadow_veil",
+        "shadow_step"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "super_rare",
+        "mortalSoulValue": 4,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 11,
+        "maxContractSlots": 4,
+        "skillCapacity": 14,
+        "statSoftCapPercent": 45
+      },
+      "_key": "char_m_714_leo"
+    },
+    {
+      "minChapter": 718,
+      "maxChapter": null,
+      "level": 46,
+      "attributes": {
+        "vitality": 5800,
+        "strength": 5800,
+        "agility": 5800,
+        "stamina": 5800,
+        "intelligence": 6000,
+        "maxMana": 650000,
+        "unassignedPoints": 34
+      },
+      "contractedBeastIds": [
+        "shyra",
+        "dryad",
+        "nyxa",
+        "howl"
+      ],
+      "personalSkillIds": [
+        "stealth",
+        "critical_strike",
+        "mana_sense",
+        "blade_mastery",
+        "spatial_blink"
+      ],
+      "copiedSkillIds": [
+        "shadow_pounce",
+        "feline_agility",
+        "obsidian_armor",
+        "abyssal_roar",
+        "shadow_domain",
+        "fusion_resonance",
+        "umbral_shadow_pounce",
+        "shadow_veil",
+        "shadow_step",
+        "nightfall_roar",
+        "shadow_claws"
+      ],
+      "soulProfile": {
+        "mortalSoulRank": "super_rare",
+        "mortalSoulValue": 4,
+        "primordialSoulValue": 7,
+        "combinedMultiplier": 11,
+        "maxContractSlots": 4,
+        "skillCapacity": 14,
+        "statSoftCapPercent": 45
+      },
+      "_key": "char_m_718_leo"
     }
   ]
 }

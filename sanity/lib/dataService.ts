@@ -1,6 +1,7 @@
 import { client } from './client';
 import { isDemoMode } from '../env';
 import { urlForImage } from './image';
+import { stegaClean } from 'next-sanity';
 
 // Import local JSON datasets as guaranteed offline fallback
 import shyraData from '@/data/beasts/shyra.json';
@@ -35,6 +36,7 @@ export interface MilestoneTrait {
 export interface Milestone {
   _key?: string;
   species?: string;
+  size?: string;
   portrait?: any;
   portraitAssetId?: string;
   imageUrl?: string;
@@ -52,16 +54,25 @@ export interface Milestone {
   traits?: Array<string | MilestoneTrait>;
 }
 
+export interface BeastTamerRef {
+  _id?: string;
+  name?: string;
+  slug?: string;
+}
+
 export interface BeastRecord {
   _id?: string;
   id: string;
   name: string;
   species: string;
+  size?: string;
   contractChapter: number;
   elementAffinity: string[];
   lore?: string;
   portrait?: any;
   imageUrl?: string;
+  tamer?: BeastTamerRef;
+  tamerId?: string;
   milestones: Milestone[];
 }
 
@@ -216,31 +227,40 @@ export function getBeastImageUrl(beast: BeastRecord, milestone?: Milestone | nul
  * Progression & Anti-Spoiler filter for a beast given a selected chapter
  */
 export function getBeastSnapshotAtChapter(beast: BeastRecord, chapter: number) {
+  const tamerId = beast.tamerId || beast.tamer?.slug || (beast.tamer?._id ? beast.tamer._id.replace('character-', '') : 'leo');
+
   // If beast contracted in a later chapter, it is locked/undiscovered
   if (beast.contractChapter > chapter) {
     return {
       isUnlocked: false,
       contractChapter: beast.contractChapter,
       name: 'Undiscovered Beast',
-      species: 'Unknown Domain Creature',
+      species: beast.species || 'Unknown Domain Creature',
       currentMilestone: null,
+      size: beast.size,
+      tamerId,
+      tamer: beast.tamer,
       portrait: null,
       imageUrl: undefined,
     };
   }
 
   // Find milestone active at this chapter
-  const matchingMilestone = beast.milestones.find((m) => {
+  const milestones = beast.milestones || [];
+  const matchingMilestone = milestones.find((m) => {
     const minOk = m.minChapter <= chapter;
     const maxOk = m.maxChapter === null || m.maxChapter === undefined || m.maxChapter >= chapter;
     return minOk && maxOk;
-  }) || beast.milestones[0];
+  }) || milestones[0] || null;
 
   return {
     isUnlocked: true,
     contractChapter: beast.contractChapter,
     name: beast.name,
     species: matchingMilestone?.species || beast.species,
+    size: matchingMilestone?.size || beast.size,
+    tamerId,
+    tamer: beast.tamer,
     currentMilestone: matchingMilestone,
     portrait: matchingMilestone?.portrait || matchingMilestone?.portraitAssetId || beast.portrait || (beast as any).portraitAssetId,
     imageUrl: getBeastImageUrl(beast, matchingMilestone),
@@ -271,30 +291,62 @@ export function getCharacterSnapshotAtChapter(character: CharacterRecord, chapte
 export async function fetchAllBeasts(): Promise<BeastRecord[]> {
   if (!isDemoMode && client) {
     try {
-      const sanityBeasts = await client.fetch<any[]>(`*[_type == "beast"] | order(contractChapter asc)`);
+      const sanityBeasts = await client.fetch<any[]>(`
+        *[_type == "beast"] {
+          ...,
+          "tamer": tamer->{
+            _id,
+            name,
+            "slug": coalesce(slug.current, id)
+          }
+        } | order(contractChapter asc)
+      `);
       if (sanityBeasts && sanityBeasts.length > 0) {
-        return sanityBeasts.map((b) => ({
-          ...b,
-          id: b.id?.current || b.id || b._id,
-          milestones: b.milestones || [],
-          elementAffinity: b.elementAffinity || [],
-        }));
+        return sanityBeasts.map((b) => {
+          const tamerSlug =
+            b.tamer?.slug ||
+            (b.tamer?._id ? b.tamer._id.replace('character-', '') : undefined) ||
+            b.tamerId ||
+            'leo';
+          return {
+            ...b,
+            id: stegaClean(b.id?.current || b.id || b._id),
+            tamerId: stegaClean(tamerSlug),
+            tamer: b.tamer,
+            milestones: b.milestones || [],
+            elementAffinity: (b.elementAffinity || []).map((e: string) => stegaClean(e)),
+          };
+        });
       }
     } catch (err) {
       console.warn('Falling back to local beasts due to Sanity fetch issue:', err);
     }
   }
-  return LOCAL_BEASTS;
+  return LOCAL_BEASTS.map((b) => ({
+    ...b,
+    tamerId: b.tamerId || 'leo',
+  }));
 }
 
 export async function fetchAllCharacters(): Promise<CharacterRecord[]> {
   if (!isDemoMode && client) {
     try {
-      const sanityChars = await client.fetch<any[]>(`*[_type == "character"]`);
+      const sanityChars = await client.fetch<any[]>(`
+        *[_type == "character"] {
+          ...,
+          "contractedBeasts": contractedBeasts[]->{
+            _id,
+            "id": coalesce(id.current, id, _id),
+            name,
+            species,
+            contractChapter
+          }
+        }
+      `);
       if (sanityChars && sanityChars.length > 0) {
         return sanityChars.map((c) => ({
           ...c,
-          id: c.slug?.current || c.id || c._id,
+          id: stegaClean(c.slug?.current || c.id || c._id),
           milestones: c.milestones || [],
         }));
       }

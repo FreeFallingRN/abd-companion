@@ -4,12 +4,14 @@
   "name": "Nyxa",
   "species": "Eclipse Sun Direwolf (Solmora Lunareth Imperium Lineage)",
   "contractChapter": 117,
+  "tamerId": "leo",
   "elementAffinity": [
     "light",
     "darkness",
     "shadow"
   ],
   "lore": "Nyxa is an Eclipse Sun Direwolf contracted in Chapter 117. Carries the royal Solmora Lunareth Imperium Lineage.",
+  "portraitAssetId": "image-ef8654a7e8c3c626b6f0f4177e958e54b1b4d9d4-1122x1402-png",
   "milestones": [
     {
       "species": "Eclipse Direwolf Pup",
@@ -21,14 +23,34 @@
       "iq": 105,
       "maxChapter": 160,
       "minChapter": 117,
-      "traits": [
-        { "name": "Sun-Blessed Physique", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant until eclipse baptism" },
-        { "name": "Moon-Shadow Instincts", "sharingStatus": "partial", "sharedPercent": 25, "tamerEffect": "+25% nocturnal perception and evasion" },
-        { "name": "Triple-Aura Ferocity", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" },
-        { "name": "Celestial Polarity Surge", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Chain Bond)" }
-      ],
       "starRank": 2,
       "subRank": "middle",
+      "traits": [
+        {
+          "name": "Sun-Blessed Physique",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant until eclipse baptism"
+        },
+        {
+          "name": "Moon-Shadow Instincts",
+          "sharedPercent": 25,
+          "sharingStatus": "partial",
+          "tamerEffect": "+25% nocturnal perception and evasion"
+        },
+        {
+          "name": "Triple-Aura Ferocity",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        },
+        {
+          "name": "Celestial Polarity Surge",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Chain Bond)"
+        }
+      ],
       "unlockedSkillIds": [
         "astral_aura_weave",
         "lunar_blink"
@@ -45,14 +67,34 @@
       "iq": 120,
       "maxChapter": null,
       "minChapter": 161,
-      "traits": [
-        { "name": "Sun-Blessed Physique", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "+50% daylight kinetic empowerment and vitality" },
-        { "name": "Moon-Shadow Instincts", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Absolute nocturnal reflex sharpening and shadow blending" },
-        { "name": "Triple-Aura Ferocity", "sharingStatus": "partial", "sharedPercent": 45, "tamerEffect": "Tripartite intimidation aura projecting mental suppression" },
-        { "name": "Celestial Polarity Surge", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Alternates polar radiant light and void disruption" }
-      ],
       "starRank": 3,
       "subRank": "pseudo",
+      "traits": [
+        {
+          "name": "Sun-Blessed Physique",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "+50% daylight kinetic empowerment and vitality"
+        },
+        {
+          "name": "Moon-Shadow Instincts",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Absolute nocturnal reflex sharpening and shadow blending"
+        },
+        {
+          "name": "Triple-Aura Ferocity",
+          "sharedPercent": 45,
+          "sharingStatus": "partial",
+          "tamerEffect": "Tripartite intimidation aura projecting mental suppression"
+        },
+        {
+          "name": "Celestial Polarity Surge",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "Alternates polar radiant light and void disruption"
+        }
+      ],
       "unlockedSkillIds": [
         "astral_aura_weave",
         "lunar_blink",

@@ -4,12 +4,14 @@
   "name": "Niri",
   "species": "Royal Dryad",
   "contractChapter": 77,
+  "tamerId": "leo",
   "elementAffinity": [
     "nature",
     "life",
     "earth"
   ],
   "lore": "Niri is a Royal Dryad contracted in Chapter 77. Possesses plant, life, and spiritual healing affinities.",
+  "portraitAssetId": "image-033d93f3ec25a42a1b11366638b55a7e968bba81-1023x1537-png",
   "milestones": [
     {
       "species": "Royal Dryad Sprout",
@@ -21,14 +23,34 @@
       "iq": 90,
       "maxChapter": 90,
       "minChapter": 77,
-      "traits": [
-        { "name": "Fast Regeneration", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "Continuous health and stamina restoration when near terrain" },
-        { "name": "Tough Body", "sharingStatus": "partial", "sharedPercent": 15, "tamerEffect": "Bark-textured skin layer deflecting basic physical strikes" },
-        { "name": "Half-Spirit Body", "sharingStatus": "locked", "sharedPercent": 0, "tamerEffect": "Dormant (Evolution requirement)" },
-        { "name": "High Mana Regeneration", "sharingStatus": "partial", "sharedPercent": 50, "tamerEffect": "+50% natural ambient mana recovery" }
-      ],
       "starRank": 2,
       "subRank": "high",
+      "traits": [
+        {
+          "name": "Fast Regeneration",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "Continuous health and stamina restoration when near terrain"
+        },
+        {
+          "name": "Tough Body",
+          "sharedPercent": 15,
+          "sharingStatus": "partial",
+          "tamerEffect": "Bark-textured skin layer deflecting basic physical strikes"
+        },
+        {
+          "name": "Half-Spirit Body",
+          "sharedPercent": 0,
+          "sharingStatus": "locked",
+          "tamerEffect": "Dormant (Evolution requirement)"
+        },
+        {
+          "name": "High Mana Regeneration",
+          "sharedPercent": 50,
+          "sharingStatus": "partial",
+          "tamerEffect": "+50% natural ambient mana recovery"
+        }
+      ],
       "unlockedSkillIds": [
         "natures_heal",
         "vine_estranglement",
@@ -46,14 +68,34 @@
       "iq": 125,
       "maxChapter": null,
       "minChapter": 91,
-      "traits": [
-        { "name": "Fast Regeneration", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Rapid cellular and spiritual recovery channeled from flora" },
-        { "name": "Tough Body", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Bark-textured skin granting Peak 4★ natural physical durability (Ch. 474)" },
-        { "name": "Half-Spirit Body", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "50% immunity to toxins, paralysis, curses, and soul erosion" },
-        { "name": "High Mana Regeneration", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Continuous high-output ambient mana replenishment" }
-      ],
       "starRank": 3,
       "subRank": "high",
+      "traits": [
+        {
+          "name": "Fast Regeneration",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Rapid cellular and spiritual recovery channeled from flora"
+        },
+        {
+          "name": "Tough Body",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Bark-textured skin granting Peak 4★ natural physical durability (Ch. 474)"
+        },
+        {
+          "name": "Half-Spirit Body",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "50% immunity to toxins, paralysis, curses, and soul erosion"
+        },
+        {
+          "name": "High Mana Regeneration",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Continuous high-output ambient mana replenishment"
+        }
+      ],
       "unlockedSkillIds": [
         "natures_heal",
         "vine_estranglement",

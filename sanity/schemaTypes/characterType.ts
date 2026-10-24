@@ -96,6 +96,18 @@ export const characterType = defineType({
       ],
     }),
     defineField({
+      name: 'contractedBeasts',
+      title: 'Contracted Companion Beasts',
+      description: 'The companion beasts bound under pact to this tamer (e.g. Shyra, Niri, Nyxa).',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'beast' }],
+        },
+      ],
+    }),
+    defineField({
       name: 'milestones',
       title: 'Tamer Progression Milestones',
       description: 'Progression states keyed to chapter intervals for timeline anti-spoiler filtering.',

@@ -4,11 +4,13 @@
   "name": "Ashira",
   "species": "Flame Wyvern",
   "contractChapter": 536,
+  "tamerId": "leo",
   "elementAffinity": [
     "fire",
     "draconic"
   ],
   "lore": "Ashira is a Flame Wyvern contracted in Chapter 536. Commands draconic fire sovereignty and magma flight.",
+  "portraitAssetId": "image-7f712bcf0ae4a030b8157bddb11a90d1f4b2d5d9-1123x1400-png",
   "milestones": [
     {
       "species": "Flame Wyvern",
@@ -20,12 +22,22 @@
       "iq": 95,
       "maxChapter": null,
       "minChapter": 536,
-      "traits": [
-        { "name": "Flame Ward Marking", "sharingStatus": "full", "sharedPercent": 100, "tamerEffect": "Absolute ambient and draconic flame damage immunity" },
-        { "name": "Hoard Resonance", "sharingStatus": "partial", "sharedPercent": 60, "tamerEffect": "+60% vitality recovery scaled to nearby precious minerals" }
-      ],
       "starRank": 2,
       "subRank": "high",
+      "traits": [
+        {
+          "name": "Flame Ward Marking",
+          "sharedPercent": 100,
+          "sharingStatus": "full",
+          "tamerEffect": "Absolute ambient and draconic flame damage immunity"
+        },
+        {
+          "name": "Hoard Resonance",
+          "sharedPercent": 60,
+          "sharingStatus": "partial",
+          "tamerEffect": "+60% vitality recovery scaled to nearby precious minerals"
+        }
+      ],
       "unlockedSkillIds": [
         "pyro_shielding",
         "flame_sovereignty",

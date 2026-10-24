@@ -22,9 +22,18 @@
     "species": {
       "type": "string"
     },
+    "size": {
+      "type": "string"
+    },
     "contractChapter": {
       "type": "integer",
       "minimum": 1
+    },
+    "tamerId": {
+      "type": "string"
+    },
+    "tamer": {
+      "type": ["string", "object"]
     },
     "elementAffinity": {
       "type": "array",
@@ -142,6 +151,9 @@
             }
           },
           "species": {
+            "type": "string"
+          },
+          "size": {
             "type": "string"
           },
           "portraitAssetId": {
