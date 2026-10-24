@@ -23,7 +23,6 @@
       "cognitionStage": "feral",
       "iq": 45,
       "minChapter": 8,
-      "maxChapter": 13,
       "starRank": 1,
       "subRank": "low",
       "traits": [
@@ -68,7 +67,6 @@
       "cognitionStage": "feral",
       "iq": 55,
       "minChapter": 14,
-      "maxChapter": 31,
       "starRank": 1,
       "subRank": "middle",
       "traits": [
@@ -113,7 +111,6 @@
       "cognitionStage": "juvenile",
       "iq": 70,
       "minChapter": 32,
-      "maxChapter": 39,
       "starRank": 1,
       "subRank": "high",
       "traits": [
@@ -159,7 +156,6 @@
       "cognitionStage": "juvenile",
       "iq": 80,
       "minChapter": 40,
-      "maxChapter": 42,
       "starRank": 1,
       "subRank": "peak",
       "traits": [
@@ -206,7 +202,6 @@
       "cognitionStage": "juvenile",
       "iq": 90,
       "minChapter": 43,
-      "maxChapter": 66,
       "starRank": 2,
       "subRank": "low",
       "traits": [
@@ -254,7 +249,6 @@
       "cognitionStage": "adolescent",
       "iq": 100,
       "minChapter": 67,
-      "maxChapter": 76,
       "starRank": 2,
       "subRank": "high",
       "traits": [
@@ -302,7 +296,6 @@
       "cognitionStage": "adolescent",
       "iq": 110,
       "minChapter": 77,
-      "maxChapter": 80,
       "starRank": 2,
       "subRank": "peak",
       "traits": [
@@ -350,7 +343,6 @@
       "cognitionStage": "adolescent",
       "iq": 120,
       "minChapter": 81,
-      "maxChapter": 217,
       "starRank": 3,
       "subRank": "pseudo",
       "traits": [
@@ -404,7 +396,6 @@
       "cognitionStage": "mature",
       "iq": 130,
       "minChapter": 218,
-      "maxChapter": 298,
       "starRank": 3,
       "subRank": "low",
       "traits": [
@@ -459,7 +450,6 @@
       "cognitionStage": "mature",
       "iq": 135,
       "minChapter": 299,
-      "maxChapter": 340,
       "starRank": 3,
       "subRank": "middle",
       "traits": [
@@ -514,7 +504,6 @@
       "cognitionStage": "mature",
       "iq": 138,
       "minChapter": 341,
-      "maxChapter": 380,
       "starRank": 3,
       "subRank": "high",
       "traits": [
@@ -569,7 +558,6 @@
       "cognitionStage": "mature",
       "iq": 140,
       "minChapter": 381,
-      "maxChapter": 384,
       "starRank": 3,
       "subRank": "peak",
       "traits": [
@@ -624,7 +612,6 @@
       "cognitionStage": "mature",
       "iq": 142,
       "minChapter": 385,
-      "maxChapter": 456,
       "starRank": 4,
       "subRank": "pseudo",
       "traits": [
@@ -680,7 +667,6 @@
       "cognitionStage": "mature",
       "iq": 145,
       "minChapter": 457,
-      "maxChapter": 713,
       "starRank": 4,
       "subRank": "low",
       "traits": [
@@ -736,7 +722,6 @@
       "cognitionStage": "mature",
       "iq": 150,
       "minChapter": 714,
-      "maxChapter": 717,
       "starRank": 4,
       "subRank": "middle",
       "traits": [
@@ -801,7 +786,6 @@
       "cognitionStage": "mature",
       "iq": 155,
       "minChapter": 718,
-      "maxChapter": null,
       "starRank": 4,
       "subRank": "middle",
       "traits": [

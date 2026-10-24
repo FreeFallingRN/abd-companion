@@ -120,15 +120,10 @@ export const characterType = defineType({
           fields: [
             defineField({
               name: 'minChapter',
-              title: 'Unlocked at Chapter (minChapter)',
+              title: 'Chapter',
               type: 'number',
+              description: 'The novel chapter where this milestone begins. Higher chapter milestones automatically supercede earlier ones.',
               validation: (Rule) => Rule.required().min(1),
-            }),
-            defineField({
-              name: 'maxChapter',
-              title: 'Superceded at Chapter (maxChapter)',
-              type: 'number',
-              description: 'Leave blank if this is the latest/current milestone.',
             }),
             defineField({
               name: 'level',
@@ -204,7 +199,6 @@ export const characterType = defineType({
           preview: {
             select: {
               minChapter: 'minChapter',
-              maxChapter: 'maxChapter',
               level: 'level',
               mortalSoulRank: 'soulProfile.mortalSoulRank',
               mortalSoulValue: 'soulProfile.mortalSoulValue',
@@ -213,8 +207,8 @@ export const characterType = defineType({
               str: 'attributes.strength',
               agi: 'attributes.agility',
             },
-            prepare({ minChapter, maxChapter, level, mortalSoulRank, mortalSoulValue, primordialSoulValue, vit, str, agi }) {
-              const chRange = maxChapter ? `Ch. ${minChapter}–${maxChapter}` : `Ch. ${minChapter}+`;
+            prepare({ minChapter, level, mortalSoulRank, mortalSoulValue, primordialSoulValue, vit, str, agi }) {
+              const chRange = minChapter ? `From Ch. ${minChapter}` : 'Base Stage';
               const levelStr = level ? `Level ${level}` : 'Stage';
               const soulRankFormatted = mortalSoulRank ? mortalSoulRank.replace(/_/g, ' ').toUpperCase() : 'COMMON';
               const soulStr = `${soulRankFormatted} (Mortal ${mortalSoulValue ?? 1} + Primordial ${primordialSoulValue ?? 7})`;

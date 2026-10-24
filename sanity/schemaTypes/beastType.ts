@@ -104,15 +104,10 @@ export const beastType = defineType({
             }),
             defineField({
               name: 'minChapter',
-              title: 'Unlocked at Chapter (minChapter)',
+              title: 'Chapter',
               type: 'number',
+              description: 'The novel chapter this evolutionary stage begins at. Higher chapter milestones automatically supercede earlier ones.',
               validation: (Rule) => Rule.required().min(1),
-            }),
-            defineField({
-              name: 'maxChapter',
-              title: 'Superceded at Chapter (maxChapter)',
-              type: 'number',
-              description: 'Leave blank if this is the latest/current evolutionary stage.',
             }),
             defineField({
               name: 'starRank',
@@ -272,14 +267,13 @@ export const beastType = defineType({
               starRank: 'starRank',
               subRank: 'subRank',
               minChapter: 'minChapter',
-              maxChapter: 'maxChapter',
               species: 'species',
               bloodlineTier: 'bloodlineTier',
               media: 'portrait',
             },
-            prepare({ starRank, subRank, minChapter, maxChapter, species, bloodlineTier, media }) {
+            prepare({ starRank, subRank, minChapter, species, bloodlineTier, media }) {
               const rankFormatted = starRank ? `${starRank}★ ${subRank ? subRank.toUpperCase() : ''}` : (subRank || 'Stage');
-              const chapterRange = maxChapter ? `Ch. ${minChapter}–${maxChapter}` : `Ch. ${minChapter}+`;
+              const chapterRange = minChapter ? `From Ch. ${minChapter}` : 'Base Stage';
               const title = species ? `${species} (${rankFormatted})` : rankFormatted;
               const subtitle = `${chapterRange} • Bloodline: ${bloodlineTier || 'Standard'}`;
               return {

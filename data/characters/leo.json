@@ -20,12 +20,11 @@
   "milestones": [
     {
       "minChapter": 1,
-      "maxChapter": 13,
       "level": 3,
       "attributes": {
         "vitality": 3.2,
         "strength": 2.8,
-        "agility": 3.0,
+        "agility": 3,
         "stamina": 3.5,
         "intelligence": 1.2,
         "maxMana": 96,
@@ -52,13 +51,12 @@
     },
     {
       "minChapter": 14,
-      "maxChapter": 31,
       "level": 12,
       "attributes": {
         "vitality": 14.5,
-        "strength": 12.0,
-        "agility": 15.0,
-        "stamina": 16.0,
+        "strength": 12,
+        "agility": 15,
+        "stamina": 16,
         "intelligence": 8.5,
         "maxMana": 765,
         "unassignedPoints": 4
@@ -87,14 +85,13 @@
     },
     {
       "minChapter": 32,
-      "maxChapter": 42,
       "level": 16,
       "attributes": {
-        "vitality": 24.0,
-        "strength": 22.0,
-        "agility": 25.0,
-        "stamina": 24.0,
-        "intelligence": 14.0,
+        "vitality": 24,
+        "strength": 22,
+        "agility": 25,
+        "stamina": 24,
+        "intelligence": 14,
         "maxMana": 1400,
         "unassignedPoints": 6
       },
@@ -124,14 +121,13 @@
     },
     {
       "minChapter": 43,
-      "maxChapter": 76,
       "level": 20,
       "attributes": {
-        "vitality": 32.0,
-        "strength": 30.0,
-        "agility": 34.0,
-        "stamina": 32.0,
-        "intelligence": 20.0,
+        "vitality": 32,
+        "strength": 30,
+        "agility": 34,
+        "stamina": 32,
+        "intelligence": 20,
         "maxMana": 2000,
         "unassignedPoints": 8
       },
@@ -163,7 +159,6 @@
     },
     {
       "minChapter": 77,
-      "maxChapter": 80,
       "level": 21,
       "attributes": {
         "vitality": 86.4,
@@ -203,7 +198,6 @@
     },
     {
       "minChapter": 81,
-      "maxChapter": 217,
       "level": 22,
       "attributes": {
         "vitality": 136.4,
@@ -245,7 +239,6 @@
     },
     {
       "minChapter": 218,
-      "maxChapter": 298,
       "level": 24,
       "attributes": {
         "vitality": 1020,
@@ -287,7 +280,6 @@
     },
     {
       "minChapter": 299,
-      "maxChapter": 340,
       "level": 25,
       "attributes": {
         "vitality": 1230,
@@ -329,7 +321,6 @@
     },
     {
       "minChapter": 341,
-      "maxChapter": 380,
       "level": 26,
       "attributes": {
         "vitality": 1770,
@@ -371,7 +362,6 @@
     },
     {
       "minChapter": 381,
-      "maxChapter": 384,
       "level": 27,
       "attributes": {
         "vitality": 1870,
@@ -413,7 +403,6 @@
     },
     {
       "minChapter": 385,
-      "maxChapter": 456,
       "level": 28,
       "attributes": {
         "vitality": 2350,
@@ -456,7 +445,6 @@
     },
     {
       "minChapter": 457,
-      "maxChapter": 713,
       "level": 38,
       "attributes": {
         "vitality": 4540,
@@ -500,7 +488,6 @@
     },
     {
       "minChapter": 714,
-      "maxChapter": 717,
       "level": 45,
       "attributes": {
         "vitality": 5500,
@@ -548,7 +535,6 @@
     },
     {
       "minChapter": 718,
-      "maxChapter": null,
       "level": 46,
       "attributes": {
         "vitality": 5800,

@@ -81,12 +81,6 @@
             "type": "integer",
             "minimum": 1
           },
-          "maxChapter": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
           "level": {
             "type": "integer",
             "minimum": 1

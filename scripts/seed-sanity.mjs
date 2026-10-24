@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { createClient } from '@sanity/client';
+import { createClient } from 'next-sanity';
 
 // Auto-load .env.local
 const envLocalPath = path.join(process.cwd(), '.env.local');
@@ -50,7 +50,6 @@ if (fs.existsSync(beastsDir)) {
           ? { _type: 'image', asset: { _type: 'reference', _ref: m.portraitAssetId } }
           : undefined,
         minChapter: m.minChapter,
-        maxChapter: m.maxChapter ?? null,
         starRank: m.starRank,
         subRank: m.subRank,
         bloodlineTier: m.bloodlineTier,
@@ -108,7 +107,6 @@ if (fs.existsSync(charsDir)) {
     const milestones = (char.milestones || []).map((m, mIdx) => ({
       _key: m._key || `char_m_${m.minChapter || mIdx}_${char.id}`,
       minChapter: m.minChapter,
-      maxChapter: m.maxChapter ?? null,
       level: m.level || 1,
       attributes: m.attributes ? {
         vitality: m.attributes.vitality,
@@ -228,6 +226,61 @@ if (Array.isArray(dangerZones)) {
   }
 }
 
+// 6. Story Chapters (Timeline)
+function getStoryArc(ch) {
+  if (ch <= 50) return 'Aurelius Awakening & Kendru Wilds';
+  if (ch <= 119) return 'Imperial Academy Trials';
+  if (ch <= 298) return 'Academy Tournament & Domain Expeditions';
+  if (ch <= 456) return 'Abyssal Rift & Continental Strife';
+  if (ch <= 713) return 'War of Dominions & Primordial Awakening';
+  return 'Inter-Academy World Tournament';
+}
+
+const milestoneSummaries = {
+  1: 'Leo awakens dual soul anomaly (Mortal + Primordial). Begins journey.',
+  8: 'Bound first contracted companion: Shyra (Obsidian Panther Cub).',
+  14: 'Shyra evolves to middle sub-rank cub; Leo unlocks Soul Crystal.',
+  32: 'Leo and Shyra form Blood Bond; kinetic burst feedback activated.',
+  40: 'Shyra reaches peak 1-Star cub stage; unlocked Critical Strike.',
+  43: 'Shyra advances to 2-Star Low Rank; unlocked Obsidian Armor.',
+  53: 'Contracted second beast: Kazz (Kobolt with faint draconic lineage).',
+  67: 'Shyra reaches 2-Star High Rank; unlocked Abyssal Roar.',
+  77: 'Shyra reaches 2-Star Peak Rank. Contracted third companion: Niri (Royal Dryad).',
+  81: 'Shyra reaches 3-Star Pseudo Rank. Kazz advances to Kobolt Raider.',
+  91: 'Niri evolves into Royal Dryad; unlocked Solar Beam and Chlorophyll Barrier.',
+  117: 'Contracted fourth companion: Nyxa (Eclipse Sun Direwolf Pup).',
+  120: 'Contracted fifth companion: Howl (Cragveil Colossus).',
+  161: 'Nyxa evolves to 3-Star Pseudo Rank; unlocked Celestial Polarity Surge.',
+  218: 'Shyra reaches 3-Star Low Rank mature form; unlocked Shadow Domain.',
+  299: 'Shyra advances to 3-Star Middle Rank (9m shoulder height).',
+  341: 'Shyra reaches 3-Star High Rank.',
+  381: 'Shyra reaches 3-Star Peak Rank.',
+  385: 'Shyra advances to 4-Star Pseudo Rank; unlocked Fusion Resonance.',
+  426: 'Contracted sixth companion: Zelut Whisk (Frostwhisk Mouse).',
+  457: 'Shyra reaches 4-Star Low Rank (Body Size Adjustment & shadow compression).',
+  535: 'Contracted seventh companion: Agnivar (Flame Wyvern, Draconic Lineage).',
+  536: 'Contracted eighth companion: Ashira (Flame Wyvern).',
+  714: 'Shyra achieves Void Evolution into Void-Obsidian Panther (Shadow Step & Shadow Veil).',
+  718: 'Shyra achieves Apex Void-Titan breakthrough (Purity 99%, Nightfall Roar & Shadow Claws).',
+};
+
+const chaptersData = readJson('chapters.json');
+if (chaptersData && typeof chaptersData === 'object') {
+  for (const [key, rawTitle] of Object.entries(chaptersData)) {
+    const chNum = parseInt(key, 10);
+    if (isNaN(chNum)) continue;
+    const cleanTitle = (rawTitle || '').replace(/^CH\.\s*\d+\s*[-:]?\s*/i, '').trim();
+    documents.push({
+      _id: `chapter-${chNum}`,
+      _type: 'chapterTimeline',
+      chapterNumber: chNum,
+      title: cleanTitle || `Chapter ${chNum}`,
+      arc: getStoryArc(chNum),
+      summary: milestoneSummaries[chNum] || undefined,
+    });
+  }
+}
+
 // Write NDJSON export for CLI / Web Import
 const ndjsonContent = documents.map((doc) => JSON.stringify(doc)).join('\n');
 const exportPath = path.join(process.cwd(), 'sanity-dataset-export.ndjson');
@@ -249,7 +302,10 @@ if (token && projectId && projectId !== 'demo') {
   let createdCount = 0;
   let skippedCount = 0;
 
-  for (const doc of documents) {
+  const chapterDocs = documents.filter((d) => d._type === 'chapterTimeline');
+  const otherDocs = documents.filter((d) => d._type !== 'chapterTimeline');
+
+  for (const doc of otherDocs) {
     try {
       const existing = await client.getDocument(doc._id);
       if (existing) {
@@ -280,6 +336,26 @@ if (token && projectId && projectId !== 'demo') {
       }
     } catch (err) {
       console.error(`Error seeding ${doc._id}:`, err.message);
+    }
+  }
+
+  // Batch seed chapters using transactions for speed
+  if (chapterDocs.length > 0) {
+    console.log(`\nSeeding ${chapterDocs.length} story chapters in batches...`);
+    const BATCH_SIZE = 100;
+    for (let i = 0; i < chapterDocs.length; i += BATCH_SIZE) {
+      const batch = chapterDocs.slice(i, i + BATCH_SIZE);
+      let tx = client.transaction();
+      for (const doc of batch) {
+        if (forceOverwrite) {
+          tx = tx.createOrReplace(doc);
+        } else {
+          tx = tx.createIfNotExists(doc);
+        }
+      }
+      await tx.commit();
+      process.stdout.write(`• Seeded chapters ${batch[0].chapterNumber} to ${batch[batch.length - 1].chapterNumber}\n`);
+      createdCount += batch.length;
     }
   }
 

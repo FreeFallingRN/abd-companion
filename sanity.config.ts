@@ -21,65 +21,57 @@ export default defineConfig({
           .items([
             S.listItem()
               .title('Chapters')
+              .schemaType('chapterTimeline')
               .child(
-                S.documentList()
+                S.documentTypeList('chapterTimeline')
                   .title('Story Chapters')
-                  .apiVersion(apiVersion)
-                  .filter('_type == "chapterTimeline"')
                   .defaultOrdering([{ field: 'chapterNumber', direction: 'asc' }])
               ),
             S.divider(),
             S.listItem()
               .title('Tamed Beasts')
+              .schemaType('beast')
               .child(
-                S.documentList()
+                S.documentTypeList('beast')
                   .title('Contracted Beasts')
-                  .apiVersion(apiVersion)
-                  .filter('_type == "beast"')
                   .defaultOrdering([{ field: 'contractChapter', direction: 'asc' }])
               ),
             S.listItem()
               .title('Tamers')
+              .schemaType('character')
               .child(
-                S.documentList()
+                S.documentTypeList('character')
                   .title('Tamers')
-                  .apiVersion(apiVersion)
-                  .filter('_type == "character"')
               ),
             S.divider(),
             S.listItem()
               .title('Skills')
+              .schemaType('skill')
               .child(
-                S.documentList()
+                S.documentTypeList('skill')
                   .title('Skills')
-                  .apiVersion(apiVersion)
-                  .filter('_type == "skill"')
                   .defaultOrdering([{ field: 'tier', direction: 'asc' }])
               ),
             S.listItem()
               .title('Traits')
+              .schemaType('trait')
               .child(
-                S.documentList()
+                S.documentTypeList('trait')
                   .title('Traits')
-                  .apiVersion(apiVersion)
-                  .filter('_type == "trait"')
                   .defaultOrdering([{ field: 'name', direction: 'asc' }])
               ),
             S.listItem()
               .title('Locations')
+              .schemaType('realmLocation')
               .child(
-                S.documentList()
+                S.documentTypeList('realmLocation')
                   .title('Locations')
-                  .apiVersion(apiVersion)
-                  .filter('_type == "realmLocation"')
               ),
           ]),
     }),
     presentationTool({
       title: 'Visual Editing',
-      previewUrl: {
-        preview: '/',
-      },
+      previewUrl: '/',
     }),
   ],
 

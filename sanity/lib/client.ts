@@ -8,7 +8,9 @@ export const client = isDemoMode
       dataset,
       apiVersion,
       useCdn: false,
+      perspective: 'published',
       stega: {
+        enabled: true,
         studioUrl: '/studio',
       },
     });

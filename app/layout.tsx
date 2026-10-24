@@ -1,6 +1,11 @@
 import type { Metadata, Viewport } from 'next';
+import dynamic from 'next/dynamic';
 import './globals.css';
-import { VisualEditingBridge } from '@/sanity/presentation/VisualEditingBridge';
+
+const VisualEditingBridge = dynamic(
+  () => import('@/sanity/presentation/VisualEditingBridge').then((m) => m.VisualEditingBridge),
+  { ssr: false }
+);
 
 export const metadata: Metadata = {
   title: 'Absolute Beast Dominion — Codex & Sanctuary',

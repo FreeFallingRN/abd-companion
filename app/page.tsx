@@ -10,6 +10,7 @@ import {
   LOCAL_SKILLS,
   LOCAL_CHAPTERS,
   getBeastSnapshotAtChapter,
+  getCharacterSnapshotAtChapter,
   getMilestoneTraits,
   getBeastImageUrl,
   BeastRecord,
@@ -62,53 +63,49 @@ export default function HomePage() {
     return raw.replace(/^CH\.\d+\s*[-:]?\s*/i, '').trim();
   };
 
-  // Canonical Mortal Soul rank progression
-  const getMortalSoulInfo = (ch: number) => {
-    if (ch < 40) return { name: 'Common', rank: 1 };
-    if (ch < 105) return { name: 'Uncommon', rank: 2 };
-    if (ch < 385) return { name: 'Rare', rank: 3 };
-    return { name: 'Super Rare', rank: 4 };
-  };
-
-  const mortalSoul = getMortalSoulInfo(currentChapter);
-  const primordialSoul = { name: 'Mythical', rank: 7 };
-  const totalSoulRank = mortalSoul.rank + primordialSoul.rank;
-
-  // Dynamic attributes for Leo according to novel canon
-  const getLeoStats = (ch: number) => {
-    if (ch < 8) {
-      // Kendru Awakening (before contracting Shyra)
-      return { vit: 2.5, str: 3.0, agi: 3.0, sta: 4.0, intVal: 1.0 };
-    }
-    if (ch < 40) {
-      // Kendru Frontline with Shyra (100% stat sharing)
-      return { vit: 3.0, str: 5.1, agi: 10.6, sta: 4.0, intVal: 1.0 };
-    }
-    if (ch < 105) {
-      // Academy Trials & Spiritual Island (Uncommon Soul 2)
-      return { vit: 15, str: 18, agi: 22, sta: 16, intVal: 10 };
-    }
-    if (ch < 385) {
-      // Storm Advancement to Rare Soul (Ch 105: Int ~191) through Fief War
-      return { vit: 38, str: 42, agi: 45, sta: 40, intVal: 25 };
-    }
-    if (ch < 535) {
-      // Elasian Bloom Mastery (Ch 167/385 updates)
-      return { vit: 758, str: 758, agi: 623, sta: 759, intVal: 1086 };
-    }
-    // Secret Realm Wyvern & Beyond
-    return { vit: 1170, str: 1170, agi: 960, sta: 1150, intVal: 1850 };
-  };
-
-  const { vit, str, agi, sta, intVal } = getLeoStats(currentChapter);
-  // Canonical Mana Formula: INT × Total Soul Rank × 10
-  const maxMana = Math.round(intVal * totalSoulRank * 10);
-
-  // Character portraits from Sanity (with fallback artwork)
+  // Character dossiers from Sanity (or fallback canonical data)
   const leoChar = charactersList.find((c) => c.id === 'leo');
   const lilyChar = charactersList.find((c) => c.id === 'lily');
-  const leoAvatarUrl = (leoChar?.portrait && urlForImage(leoChar.portrait)) || "https://lh3.googleusercontent.com/aida-public/AB6AXuBhbJyCncrv7U9rwD_bzdBowfebOUEEVhtRlkVJs6XnJzHABIcsiotVj-74mpu8PQGMdvIVUpH-x25us6ClONL7hFLMihMvJ8l4NX7-lX3yHQ41F-9BEQrsDFqA-G05GSnqknRYY5pqf623mj8HzIIiMhs9f6QRqP74XMhqTbZbESpzjGpx2ROakrEvOBYIN1gH3d_3lNITriFEh8XEgqM6XHygBcaYPeMKB8m3RXzapRkRELZ_Jhc9";
+  const leoAvatarUrl =
+    (leoChar?.portrait && urlForImage(leoChar.portrait)) ||
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuBhbJyCncrv7U9rwD_bzdBowfebOUEEVhtRlkVJs6XnJzHABIcsiotVj-74mpu8PQGMdvIVUpH-x25us6ClONL7hFLMihMvJ8l4NX7-lX3yHQ41F-9BEQrsDFqA-G05GSnqknRYY5pqf623mj8HzIIiMhs9f6QRqP74XMhqTbZbESpzjGpx2ROakrEvOBYIN1gH3d_3lNITriFEh8XEgqM6XHygBcaYPeMKB8m3RXzapRkRELZ_Jhc9";
   const lilyAvatarUrl = (lilyChar?.portrait && urlForImage(lilyChar.portrait)) || null;
+
+  // Active progression snapshot for Leo at currentChapter
+  // Milestones automatically supercede one another with higher chapters taking priority
+  const leoSnapshot = leoChar ? getCharacterSnapshotAtChapter(leoChar, currentChapter) : null;
+  const activeLeoMilestone = leoSnapshot?.currentMilestone;
+
+  // Canonical attributes directly from Leo's active milestone
+  const vit = activeLeoMilestone?.attributes?.vitality ?? 2.5;
+  const str = activeLeoMilestone?.attributes?.strength ?? 2.8;
+  const agi = activeLeoMilestone?.attributes?.agility ?? 3.0;
+  const sta = activeLeoMilestone?.attributes?.stamina ?? 3.5;
+  const intVal = activeLeoMilestone?.attributes?.intelligence ?? 1.2;
+  const unassignedPoints = activeLeoMilestone?.attributes?.unassignedPoints ?? 0;
+  const leoLevel = activeLeoMilestone?.level ?? 1;
+
+  // Soul profile directly from Leo's active milestone
+  const mortalRankName = activeLeoMilestone?.soulProfile?.mortalSoulRank
+    ? activeLeoMilestone.soulProfile.mortalSoulRank.replace(/_/g, ' ').replace(/\b\w/g, (l: string) => l.toUpperCase())
+    : currentChapter < 40
+    ? 'Common'
+    : currentChapter < 105
+    ? 'Uncommon'
+    : currentChapter < 385
+    ? 'Rare'
+    : 'Super Rare';
+  const mortalRankVal =
+    activeLeoMilestone?.soulProfile?.mortalSoulValue ??
+    (currentChapter < 40 ? 1 : currentChapter < 105 ? 2 : currentChapter < 385 ? 3 : 4);
+  const mortalSoul = { name: mortalRankName, rank: mortalRankVal };
+
+  const primordialSoulVal = activeLeoMilestone?.soulProfile?.primordialSoulValue ?? 7;
+  const primordialSoul = { name: 'Mythical', rank: primordialSoulVal };
+  const totalSoulRank = activeLeoMilestone?.soulProfile?.combinedMultiplier ?? (mortalRankVal + primordialSoulVal);
+
+  // Canonical Mana Formula: INT × Total Soul Rank × 10 (or active milestone maxMana)
+  const maxMana = activeLeoMilestone?.attributes?.maxMana ?? Math.round(intVal * totalSoulRank * 10);
 
   // Filter beasts for Codex view
   const filteredBeasts = beastsList.filter((b) => {
@@ -298,13 +295,13 @@ export default function HomePage() {
                     className="sovereign-avatar-img"
                   />
                   <span className="avatar-zoom-hint material-symbols-outlined">zoom_in</span>
-                  <div className="avatar-badge-bottom">1st-Ranker</div>
+                  <div className="avatar-badge-bottom">Lv. {leoLevel} • 1st-Ranker</div>
                 </div>
 
                 <div className="sovereign-info">
                   <div className="sovereign-title-row">
                     <h2 className="sovereign-name">LEO</h2>
-                    <span className="prodigy-badge">Commoner Prodigy</span>
+                    <span className="prodigy-badge">Commoner Prodigy • Level {leoLevel}</span>
                   </div>
                   <div className="sovereign-academy">
                     {currentChapter < 26
@@ -312,7 +309,7 @@ export default function HomePage() {
                       : 'Aurelius Beast Academy • Outer Sector 09 Bastion'}
                   </div>
                   <div className="anomaly-pill">
-                    Dual Soul Anomaly: Mortal [{mortalSoul.name} {mortalSoul.rank}] + Primordial [Mythical 7] • Combined Soul Rank {totalSoulRank}
+                    Dual Soul Anomaly: Mortal [{mortalSoul.name} {mortalSoul.rank}] + Primordial [{primordialSoul.name} {primordialSoul.rank}] • Combined Soul Rank {totalSoulRank}
                   </div>
                 </div>
               </div>
@@ -320,7 +317,12 @@ export default function HomePage() {
               {/* 5 Canonical Parameters */}
               <div className="parameters-section">
                 <div className="parameters-header">
-                  <span>Canonical Parameters (Ch. {currentChapter})</span>
+                  <span>Canonical Parameters (Ch. {currentChapter} • Lv. {leoLevel})</span>
+                  {unassignedPoints > 0 && (
+                    <span style={{ marginLeft: 'auto', fontSize: '0.8rem', color: 'var(--secondary)', fontWeight: 700 }}>
+                      +{unassignedPoints} Free Stat Points
+                    </span>
+                  )}
                 </div>
                 <div className="params-grid-5">
                   <div className="param-card">
@@ -879,33 +881,42 @@ export default function HomePage() {
                     Tamer Progression Milestones ({leoChar?.milestones?.length || 4} Canonical Stages)
                   </h3>
                   <div className="milestones-list">
-                    {(leoChar?.milestones || []).map((m, idx) => {
-                      const minCh = m.minChapter ?? m.chapter ?? 1;
-                      const maxCh = m.maxChapter;
-                      const isActive =
-                        minCh <= currentChapter &&
-                        (maxCh === null || maxCh === undefined || maxCh >= currentChapter);
-                      const isPast = maxCh !== null && maxCh !== undefined && maxCh < currentChapter;
-                      const isFuture = minCh > currentChapter;
+                    {(() => {
+                      const sortedLeoMilestones = [...(leoChar?.milestones || [])].sort((a, b) => {
+                        const chA = a.chapter ?? a.minChapter ?? 1;
+                        const chB = b.chapter ?? b.minChapter ?? 1;
+                        return chA - chB;
+                      });
 
-                      return (
-                        <div
-                          key={m._key || idx}
-                          className="milestone-item"
-                          style={{
-                            borderLeft: isActive ? '3px solid var(--primary)' : '1px solid var(--outline-variant)',
-                            background: isActive ? 'rgba(129, 140, 248, 0.08)' : undefined,
-                            opacity: isFuture ? 0.6 : 1,
-                          }}
-                        >
-                          <div className="milestone-top">
-                            <span className="ch-range">
-                              Chapters {minCh} – {maxCh ? maxCh : 'Ongoing'}
-                            </span>
-                            <span className="star-rank" style={{ color: isActive ? 'var(--primary)' : undefined, fontWeight: 700 }}>
-                              {isActive ? '⚡ ACTIVE STAGE' : isPast ? '✓ Completed' : '🔒 Future'} • Level {m.level || 1}
-                            </span>
-                          </div>
+                      return sortedLeoMilestones.map((m, idx) => {
+                        const startCh = m.chapter ?? m.minChapter ?? 1;
+                        const nextMilestone = sortedLeoMilestones[idx + 1];
+                        const nextCh = nextMilestone ? (nextMilestone.chapter ?? nextMilestone.minChapter) : null;
+                        const isActive = activeLeoMilestone
+                          ? (activeLeoMilestone._key ? activeLeoMilestone._key === m._key : (activeLeoMilestone.chapter ?? activeLeoMilestone.minChapter) === startCh)
+                          : false;
+                        const isPast = nextCh ? nextCh <= currentChapter : false;
+                        const isFuture = startCh > currentChapter;
+                        const chapterRangeLabel = nextCh ? `Chapters ${startCh} – ${nextCh - 1}` : `Chapter ${startCh}+ (Ongoing)`;
+
+                        return (
+                          <div
+                            key={m._key || idx}
+                            className="milestone-item"
+                            style={{
+                              borderLeft: isActive ? '3px solid var(--primary)' : '1px solid var(--outline-variant)',
+                              background: isActive ? 'rgba(129, 140, 248, 0.08)' : undefined,
+                              opacity: isFuture ? 0.6 : 1,
+                            }}
+                          >
+                            <div className="milestone-top">
+                              <span className="ch-range">
+                                {chapterRangeLabel}
+                              </span>
+                              <span className="star-rank" style={{ color: isActive ? 'var(--primary)' : undefined, fontWeight: 700 }}>
+                                {isActive ? '⚡ ACTIVE STAGE' : isPast ? '✓ Completed' : '🔒 Future'} • Level {m.level || 1}
+                              </span>
+                            </div>
 
                           {m.soulProfile && (
                             <div style={{ color: 'var(--secondary)', fontWeight: 700, fontSize: '0.85rem', marginBottom: '4px' }}>
@@ -932,8 +943,9 @@ export default function HomePage() {
                           )}
                         </div>
                       );
-                    })}
-                  </div>
+                    });
+                  })()}
+                </div>
                 </div>
               </section>
             ) : (
@@ -986,26 +998,41 @@ export default function HomePage() {
                       Progression Milestones
                     </h4>
                     <div className="milestones-list">
-                      {lilyChar.milestones.map((m, idx) => (
-                        <div key={m._key || idx} className="milestone-item">
-                          <div className="milestone-top">
-                            <span className="ch-range">
-                              Chapters {m.minChapter ?? 1} – {m.maxChapter ? m.maxChapter : 'Ongoing'}
-                            </span>
-                            <span className="star-rank">Level {m.level || 1}</span>
-                          </div>
-                          {m.attributes && (
-                            <div className="milestone-details">
-                              VIT: <strong>{m.attributes.vitality}</strong> • INT: <strong>{m.attributes.intelligence}</strong> • AGI: <strong>{m.attributes.agility}</strong> • Max Mana: <strong>{m.attributes.maxMana}</strong>
+                      {(() => {
+                        const sortedLilyMilestones = [...lilyChar.milestones].sort((a, b) => {
+                          const chA = a.chapter ?? a.minChapter ?? 1;
+                          const chB = b.chapter ?? b.minChapter ?? 1;
+                          return chA - chB;
+                        });
+
+                        return sortedLilyMilestones.map((m, idx) => {
+                          const startCh = m.chapter ?? m.minChapter ?? 1;
+                          const nextMilestone = sortedLilyMilestones[idx + 1];
+                          const nextCh = nextMilestone ? (nextMilestone.chapter ?? nextMilestone.minChapter) : null;
+                          const chapterRangeLabel = nextCh ? `Chapters ${startCh} – ${nextCh - 1}` : `Chapter ${startCh}+ (Ongoing)`;
+
+                          return (
+                            <div key={m._key || idx} className="milestone-item">
+                              <div className="milestone-top">
+                                <span className="ch-range">
+                                  {chapterRangeLabel}
+                                </span>
+                                <span className="star-rank">Level {m.level || 1}</span>
+                              </div>
+                              {m.attributes && (
+                                <div className="milestone-details">
+                                  VIT: <strong>{m.attributes.vitality}</strong> • INT: <strong>{m.attributes.intelligence}</strong> • AGI: <strong>{m.attributes.agility}</strong> • Max Mana: <strong>{m.attributes.maxMana}</strong>
+                                </div>
+                              )}
+                              {m.personalSkillIds && m.personalSkillIds.length > 0 && (
+                                <div className="milestone-trait-text">
+                                  ✨ Skills: {m.personalSkillIds.map((s) => s.replace(/_/g, ' ')).join(', ')}
+                                </div>
+                              )}
                             </div>
-                          )}
-                          {m.personalSkillIds && m.personalSkillIds.length > 0 && (
-                            <div className="milestone-trait-text">
-                              ✨ Skills: {m.personalSkillIds.map((s) => s.replace(/_/g, ' ')).join(', ')}
-                            </div>
-                          )}
-                        </div>
-                      ))}
+                          );
+                        });
+                      })()}
                     </div>
                   </div>
                 )}
@@ -1244,53 +1271,65 @@ export default function HomePage() {
             </h4>
 
             <div className="milestones-list">
-              {selectedBeast.milestones.map((m, idx) => {
-                const milestoneImg = getBeastImageUrl(selectedBeast, m);
-                const isFormSpecific = !!((m.portrait && urlForImage(m.portrait)) || m.imageUrl || (m.portraitAssetId && urlForImage(m.portraitAssetId)));
-                const traits = getMilestoneTraits(m);
-                const minCh = m.minChapter;
-                const maxCh = m.maxChapter;
-                const isCurrentStage = minCh <= currentChapter && (maxCh === null || maxCh === undefined || maxCh >= currentChapter);
+              {(() => {
+                const activeSnapshot = getBeastSnapshotAtChapter(selectedBeast, currentChapter);
+                const sortedBeastMilestones = [...(selectedBeast.milestones || [])].sort((a, b) => {
+                  const chA = (a as any).chapter ?? a.minChapter ?? 0;
+                  const chB = (b as any).chapter ?? b.minChapter ?? 0;
+                  return chA - chB;
+                });
 
-                return (
-                  <div key={idx} className={`milestone-item ${isCurrentStage ? 'current-stage' : ''}`}>
-                    <div className="milestone-card-layout">
-                      {milestoneImg ? (
-                        <div
-                          className="milestone-thumb-wrap"
-                          onClick={() =>
-                            setSelectedImage({
-                              url: milestoneImg,
-                              title: `${selectedBeast.name} — ${m.species || 'Evolutionary Form'}`,
-                              subtitle: `Stage ★ ${m.starRank} (${m.subRank}) • Chapters ${m.minChapter}–${m.maxChapter || 'Ongoing'}`,
-                            })
-                          }
-                          title="Click to view full evolutionary illustration"
-                        >
-                          <img
-                            src={milestoneImg}
-                            alt={m.species || selectedBeast.name}
-                            className="milestone-thumb-img"
-                          />
-                          <span className="milestone-thumb-tag">★ {m.starRank} {isFormSpecific ? 'Form' : 'Base'}</span>
-                        </div>
-                      ) : (
-                        <div className="milestone-thumb-placeholder" title="Base form portrait used. You can upload an evolutionary form portrait in Data Editor / Studio!">
-                          <span className="material-symbols-outlined" style={{ fontSize: '24px', color: 'var(--outline)' }}>image</span>
-                          <span style={{ fontSize: '10px', color: 'var(--outline)', fontWeight: 700 }}>Base Form</span>
-                        </div>
-                      )}
+                return sortedBeastMilestones.map((m, idx) => {
+                  const milestoneImg = getBeastImageUrl(selectedBeast, m);
+                  const isFormSpecific = !!((m.portrait && urlForImage(m.portrait)) || m.imageUrl || (m.portraitAssetId && urlForImage(m.portraitAssetId)));
+                  const traits = getMilestoneTraits(m);
+                  const startCh = (m as any).chapter ?? m.minChapter ?? selectedBeast.contractChapter;
+                  const nextMilestone = sortedBeastMilestones[idx + 1];
+                  const nextCh = nextMilestone ? ((nextMilestone as any).chapter ?? nextMilestone.minChapter) : null;
+                  const isCurrentStage = activeSnapshot.currentMilestone
+                    ? (activeSnapshot.currentMilestone._key ? activeSnapshot.currentMilestone._key === m._key : ((activeSnapshot.currentMilestone as any).chapter ?? activeSnapshot.currentMilestone.minChapter) === startCh)
+                    : false;
+                  const chapterRangeLabel = nextCh ? `Chapters ${startCh} – ${nextCh - 1}` : `Chapter ${startCh}+ (Current Peak)`;
 
-                      <div className="milestone-content-block">
-                        <div className="milestone-top">
-                          <span className="ch-range">
-                            Chapters {m.minChapter} – {m.maxChapter ? m.maxChapter : 'Ongoing'}
-                            {isCurrentStage && <span className="active-stage-pill">⚡ Active at Ch. {currentChapter}</span>}
-                          </span>
-                          <span className="star-rank">
-                            ★ {m.starRank} ({m.subRank})
-                          </span>
-                        </div>
+                  return (
+                    <div key={m._key || idx} className={`milestone-item ${isCurrentStage ? 'current-stage' : ''}`}>
+                      <div className="milestone-card-layout">
+                        {milestoneImg ? (
+                          <div
+                            className="milestone-thumb-wrap"
+                            onClick={() =>
+                              setSelectedImage({
+                                url: milestoneImg,
+                                title: `${selectedBeast.name} — ${m.species || 'Evolutionary Form'}`,
+                                subtitle: `Stage ★ ${m.starRank} (${m.subRank}) • ${chapterRangeLabel}`,
+                              })
+                            }
+                            title="Click to view full evolutionary illustration"
+                          >
+                            <img
+                              src={milestoneImg}
+                              alt={m.species || selectedBeast.name}
+                              className="milestone-thumb-img"
+                            />
+                            <span className="milestone-thumb-tag">★ {m.starRank} {isFormSpecific ? 'Form' : 'Base'}</span>
+                          </div>
+                        ) : (
+                          <div className="milestone-thumb-placeholder" title="Base form portrait used. You can upload an evolutionary form portrait in Data Editor / Studio!">
+                            <span className="material-symbols-outlined" style={{ fontSize: '24px', color: 'var(--outline)' }}>image</span>
+                            <span style={{ fontSize: '10px', color: 'var(--outline)', fontWeight: 700 }}>Base Form</span>
+                          </div>
+                        )}
+
+                        <div className="milestone-content-block">
+                          <div className="milestone-top">
+                            <span className="ch-range">
+                              {chapterRangeLabel}
+                              {isCurrentStage && <span className="active-stage-pill">⚡ Active at Ch. {currentChapter}</span>}
+                            </span>
+                            <span className="star-rank">
+                              ★ {m.starRank} ({m.subRank})
+                            </span>
+                          </div>
 
                         {m.species && (
                           <div className="milestone-species-title">
@@ -1352,8 +1391,9 @@ export default function HomePage() {
                     </div>
                   </div>
                 );
-              })}
-            </div>
+              });
+            })()}
+          </div>
 
             <div className="modal-footer">
               <button

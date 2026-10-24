@@ -80,12 +80,6 @@
             "type": "integer",
             "minimum": 1
           },
-          "maxChapter": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
           "starRank": {
             "type": "integer",
             "minimum": 1,

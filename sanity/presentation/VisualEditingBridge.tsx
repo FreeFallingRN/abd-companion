@@ -2,12 +2,17 @@
 
 import { VisualEditing } from 'next-sanity';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export function VisualEditingBridge() {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
 
-  // Do not mount VisualEditing when directly browsing the Studio UI to avoid self-nesting
-  if (pathname?.startsWith('/studio')) {
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || pathname?.startsWith('/studio')) {
     return null;
   }
 

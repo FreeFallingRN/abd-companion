@@ -31,11 +31,13 @@ export const chapterType = defineType({
   preview: {
     select: {
       title: 'title',
-      subtitle: 'chapterNumber',
+      chapterNumber: 'chapterNumber',
+      arc: 'arc',
     },
-    prepare({ title, subtitle }) {
+    prepare({ title, chapterNumber, arc }) {
       return {
-        title: `Chapter ${subtitle}: ${title || 'Untitled'}`,
+        title: `Chapter ${chapterNumber || '?'}: ${title || 'Untitled'}`,
+        subtitle: arc || undefined,
       };
     },
   },

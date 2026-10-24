@@ -41,7 +41,6 @@ export interface Milestone {
   portraitAssetId?: string;
   imageUrl?: string;
   minChapter: number;
-  maxChapter: number | null;
   starRank: number;
   subRank: string;
   bloodlineTier: string;
@@ -79,7 +78,6 @@ export interface BeastRecord {
 export interface CharacterMilestone {
   _key?: string;
   minChapter?: number;
-  maxChapter?: number | null;
   chapter?: number;
   level?: number;
   attributes?: {
@@ -89,6 +87,7 @@ export interface CharacterMilestone {
     stamina?: number;
     intelligence?: number;
     maxMana?: number;
+    unassignedPoints?: number;
   };
   soulProfile?: {
     mortalSoulRank: string;
@@ -245,13 +244,20 @@ export function getBeastSnapshotAtChapter(beast: BeastRecord, chapter: number) {
     };
   }
 
-  // Find milestone active at this chapter
+  // Find milestone active at this chapter:
+  // Growth milestones supercede one another automatically:
+  // Only the milestone starting chapter matters; higher chapters take priority!
   const milestones = beast.milestones || [];
-  const matchingMilestone = milestones.find((m) => {
-    const minOk = m.minChapter <= chapter;
-    const maxOk = m.maxChapter === null || m.maxChapter === undefined || m.maxChapter >= chapter;
-    return minOk && maxOk;
-  }) || milestones[0] || null;
+  const reached = milestones.filter((m) => {
+    const startCh = (m as any).chapter ?? m.minChapter ?? 0;
+    return startCh <= chapter;
+  });
+  reached.sort((a, b) => {
+    const chA = (a as any).chapter ?? a.minChapter ?? 0;
+    const chB = (b as any).chapter ?? b.minChapter ?? 0;
+    return chB - chA;
+  });
+  const matchingMilestone = reached[0] || milestones[0] || null;
 
   return {
     isUnlocked: true,
@@ -269,19 +275,25 @@ export function getBeastSnapshotAtChapter(beast: BeastRecord, chapter: number) {
 
 /**
  * Progression & Anti-Spoiler filter for character at chapter
+ * Growth milestones automatically supercede one another:
+ * Only the milestone starting chapter matters; higher chapters take priority!
  */
 export function getCharacterSnapshotAtChapter(character: CharacterRecord, chapter: number) {
-  const milestone = character.milestones.find((m) => {
-    const minCh = m.minChapter ?? m.chapter ?? 1;
-    const maxCh = m.maxChapter;
-    const minOk = minCh <= chapter;
-    const maxOk = maxCh === null || maxCh === undefined || maxCh >= chapter;
-    return minOk && maxOk;
-  }) || character.milestones[0];
+  const milestones = character.milestones || [];
+  const reached = milestones.filter((m) => {
+    const startCh = m.chapter ?? m.minChapter ?? 1;
+    return startCh <= chapter;
+  });
+  reached.sort((a, b) => {
+    const chA = a.chapter ?? a.minChapter ?? 1;
+    const chB = b.chapter ?? b.minChapter ?? 1;
+    return chB - chA;
+  });
+  const matchingMilestone = reached[0] || milestones[0] || null;
 
   return {
     character,
-    currentMilestone: milestone,
+    currentMilestone: matchingMilestone,
   };
 }
 

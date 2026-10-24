@@ -136,7 +136,6 @@ Each entry is strictly typed with numeric ranks, enum sub-ranks, and chapter num
   "milestones": [
     {
       "minChapter": 1,
-      "maxChapter": 40,
       "starRank": 1,
       "subRank": "low",
       "bloodlineTier": "noble",
@@ -151,7 +150,6 @@ Each entry is strictly typed with numeric ranks, enum sub-ranks, and chapter num
     {
       "species": "Obsidian Panther Cub",
       "minChapter": 71,
-      "maxChapter": null,
       "starRank": 2,
       "subRank": "high",
       "bloodlineTier": "noble",
@@ -172,7 +170,7 @@ Each entry is strictly typed with numeric ranks, enum sub-ranks, and chapter num
 The validation pipeline enforces:
 1. **Enum Strictness:** `starRank` (integer 1-10), `subRank` (`pseudo`, `low`, `middle`, `high`, `peak`), `bondStage` (`chain`, `blood`, `soul`), `bloodlineTier`, `cognitionStage`, and `soulRank` must strictly match their enum schemas.
 2. **Referential Integrity:** Every `unlockedSkillIds` entry must exist in `data/mechanics/skills.json`.
-3. **Timeline Sanity:** `minChapter` must be $\le$ `maxChapter`, and referenced chapters must exist in `data/chapters.json`.
+3. **Timeline Sanity:** Growth milestones automatically supercede each other based on starting `minChapter`, and referenced chapters must exist in `data/chapters.json`.
 4. **Chapter Attribution:** Every stat milestone, evolution, and trait unlock must specify the exact chapter number where it occurred.
 
 ---
